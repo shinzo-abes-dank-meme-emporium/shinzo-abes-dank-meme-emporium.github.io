@@ -1,0 +1,91 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+b.eg-highlight {
+  font-weigth: bold;
+}
+
+.page-header {
+  font-size: 2.5em;
+  border-bottom-style: solid;
+  padding: 5px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+  float: left;
+  padding: 10px;
+  width: 20%;
+}
+
+.sidebar-topic {
+  list-style-type: none;
+  font-size: 1.7em;
+  padding-bottom: 5px;
+}
+
+.sidebar-subtopic {
+  font-size: 1em;
+}
+
+.sidebar-subtopic-list {
+  list-style-type: square;
+  padding: 0 0 10px 20px;
+}
+
+.content {
+  float: right;
+  width: 80%;
+  border-left-style: solid;
+}
+
+.content-topic {
+  font-size: 3em;
+  text-align: center;
+}
+
+.content-topic.eng {
+  padding: 10px;
+}
+
+/* default is jap */
+.content-topic.jap {
+  padding: 0;
+}
+
+.bg-grey-light {
+  background-color: #F3F3F3;
+}
+
+.bg-grey-dark {
+  background-color: #E5E5E5;
+}

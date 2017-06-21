@@ -150,6 +150,188 @@ const chap_grammar_list = [
       }
     ],
     other: 'Translating it as "If only, then" seems to be a literal but poor translation.  The super literal (and IMO more clear) translation might be: "Conditioned on just/only verb/noun, thus result/statement".  HOW DOES さえ DIFFER FROM だけ？'
+  },{
+    grammar_point: '〜はず',
+    spec: '〜はず',
+    meaning: '"Supposed to 〜"; "Expected to 〜"',
+    use: {
+      text: 'Expresses one\'s conjecture with some certainty that some thing is expected/suposed to be.  Can be used with nounの、(adjな）な、verp(plain), (adjい）い。Is usually followed by だ・です。Can also be used with plain negations of the above options.',
+      species: [
+        {
+          jap: 'nounの + はず：',
+          eng: 'supposed to be noun'
+        },{
+          jap: '(adjな）な + はず：',
+          eng: 'supposed to be adj'
+        },{
+          jap: '(adjい）い + はず：',
+          eng: 'supposed to be adj'
+        },{
+          jap: 'verb(plain) + はず：',
+          eng: 'supposed to verb'
+        },{
+          jap: 'verb(pot.)(plain) + はず：',
+          eng: 'supposed to be able to verb'
+        }
+      ],
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『今日は日曜日だから、銀行は休み',
+          highlight: 'のはず',
+          post: 'です。』'
+        },
+        translation: 'It\'s Sunday today, and so banks are supposed to be closed.'
+      },{
+        sentence: {
+          ante: '『日本に住んでいだから日本語が上手',
+          highlight: 'なはず',
+          post: 'です。』'
+        },
+        translation: 'His Japanese should be good since he lived in Japan.'
+      },{
+        sentence: {
+          ante: '『中古（ちゅうこ）なら安い',
+          highlight: 'はず',
+          post: 'です。』'
+        },
+        translation: 'If it\'s a used one, it should be cheap.'
+      },{
+        sentence: {
+          ante: '『日本語の三年になれば、日本語の新聞が読める',
+          highlight: 'はず',
+          post: 'です。』'
+        },
+        translation: 'Students who are in Third Year Japanese should be able to read newspapers in Japanese.'
+      }
+    ],
+    other: ''
+  },{
+    grammar_point: '〜みたい',
+    spec: '〜みたい',
+    meaning: '"Seems", "Appears to be", "Looks like", "Is like".  Colloquial form of ようだ。(ie: seems to be, based on specific evidence)',
+    use: {
+      text: 'Unlike ようだ、みたい follows bare nouns and (adjな) stem.  However!, it does follow plain forms of (adjい) and verbs.  Can follow negations, in which case the 〜ない retains the い as with (adjい).',
+      species: [
+        {
+          jap: 'noun + みたい：',
+          eng: 'appears to be noun'
+        },{
+          jap: '(adjな）+ みたい：',
+          eng: 'appears to be adj'
+        },{
+          jap: '(adjい）い + みたい：',
+          eng: 'appears to be adj'
+        },{
+          jap: 'verb(plain) + みたい：',
+          eng: 'appears to verb'
+        }
+      ],
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『まるで夢',
+          highlight: 'みたい',
+          post: '。』'
+        },
+        translation: 'It\'s like a dream.  (lit. It seems just like a dream.)'
+      },{
+        sentence: {
+          ante: '『来年結婚する',
+          highlight: 'みたい',
+          post: 'よ。』'
+        },
+        translation: 'It looks like he/she is going to get married next year.'
+      }
+    ],
+    other: '〜みたい、using the same grammatical formations, ALSO means "like", "sort of", "resembling", or "similar to".  So I guess use your best judgement.'
+  },{
+    grammar_point: '(noun)として',
+    spec: '(noun)として',
+    meaning: '"As a 〜".',
+    use: {
+      text: 'Describes another noun, which noun is "as" the noun used in this construction.',
+      species: [],
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『英語の教師',
+          highlight: 'として',
+          post: '日本へ行くアメリカ人は、年々増えているようだ。』'
+        },
+        translation: 'It seems that the number of Americans who go to Japan as English teachers is increasing every year.'
+      },{
+        sentence: {
+          ante: '『チョムスキーは、言語学者',
+          highlight: 'として',
+          post: 'よりも政治運動（せいじうんどう）で有名かもしれない。』'
+        },
+        translation: 'Chomsky is perhaps more famous for his political activities than as a linguist. (wat)'
+      }
+    ],
+    other: 'In example sentence 1, it seems like in Japanese that 増える "to increase" does not need to refer specifically to a number, as it does in English.  Instead, can it refer to "people" in general and one can infer that one means "number of people" from context?  SAT questions come back to haunt me...'
+  },{
+    grammar_point: '(noun）ため（に）',
+    spec: '(noun）ため（に）',
+    meaning: '"Because (of) [noun]"; "Due to [noun]".',
+    use: {
+      text: 'Indicates the reason or cause for the following clause.  Follows nounの、(adjな）な、(adjい）い、and verb(plain).  に is an optional particle and usually omitted.  Can be used with negations.  Is a formal expression and usually used in writting or formal situations.',
+      species: [
+        {
+          jap: 'nounの + ため（に）：',
+          eng: 'because of noun'
+        },{
+          jap: '(adjな）な + ため（に）：',
+          eng: 'due to being adj'
+        },{
+          jap: '(adjい）い + ため（に）：',
+          eng: 'due to being adj'
+        },{
+          jap: 'verb(plain) + ため（に）：',
+          eng: 'because of doing verb'
+        },{
+          jap: '(cf. Chapter 5)',
+          eng: ''
+        },{
+          jap: '',
+          eng: '〜ため（に）also indicates a purpose for an action.  Usually, the correct translation partly depends on context.  However, if the verb follows an adjective,a verb which indicates state such as 分かる、できる、ある、etc., or verb(past) it ALWAYS indicates a reason.'
+        },{
+          jap: '日本語を<u>勉強する</u><b>ため</b>、日本行った。：',
+          eng: 'He went to Japan in order to study Japanese.'
+        },{
+          jap: '日本語を<u>勉強した</u><b>ため</b>、日本行った。：',
+          eng: 'He went to Japan because he studied Japanese.'
+        }
+      ],
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『大雪',
+          highlight: 'のため',
+          post: '、フライトがキャンセルされた。』'
+        },
+        translation: 'The flight was cancelled because of heavy snow.'
+      },{
+        sentence: {
+          ante: '『漢字は複雑',
+          highlight: 'なため',
+          post: '、覚えるのに時間がかかる。』'
+        },
+        translation: 'Kanji take a long time because they are complex.'
+      },{
+        sentence: {
+          ante: '『英語のできる通訳（つうやく）がいない',
+          highlight: 'ため',
+          post: '、幕府（ばくふ）は大変不便に感じていた。』'
+        },
+        translation: 'Because there was no interpreter who could handle English, the Shogunate was greatly inconvenienced.'
+      }
+    ],
+    other: 'In example sentence 1, it seems like in Japanese that 増える "to increase" does not need to refer specifically to a number, as it does in English.  Instead, can it refer to "people" in general and one can infer that one means "number of people" from context?  SAT questions come back to haunt me...'
   }
 ];
 

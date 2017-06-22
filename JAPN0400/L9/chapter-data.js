@@ -66,7 +66,7 @@ const chap_grammar_list = [
           highlight: 'わざわざ',
           post: '出かけるのは大変だから、電話で話そう。』'
         },
-        translation: 'It\'s not easy to take the time to go, so I will talk on the phone. (lit. Going out of my way to head out is opressive, so I will talk on the phone)'
+        translation: 'It\'s not easy to take the time to go, so I will talk on the phone. (lit. Going out of my way to head out is oppressive, so I will talk on the phone)'
       },{
         sentence: {
           ante: '『',
@@ -82,7 +82,7 @@ const chap_grammar_list = [
     spec: '〜より仕方がない',
     meaning: '"To have no choice but to 〜"',
     use: {
-      text: '（仕方：しかた）Denotes that 〜 is NOT what one normally wants to do, but one has no choice but to do it.  〜 is usually a verb.',
+      text: '（仕方：しかた）Denotes that "〜" is NOT what one normally wants to do, but one has no choice but to do it.  〜 is usually a verb.',
       species: []
     },
     example: [
@@ -103,6 +103,119 @@ const chap_grammar_list = [
       }
     ],
     other: 'I\'m pretty sure that this expression exclusively follows verbs, but idk, the book put X so I\'m going with it'
+  },{
+    grammar_point: 'the "Honorific Passive" (verbれる／られる）',
+    spec: 'the "Honorific Passive"',
+    meaning: 'Conjugation of verbs to a homologue of the passive form may be used as a form of 尊敬語（そんけいご）。',
+    use: {
+      text: 'This form is not as polite as the regular honorific form such as「お〜になる」、「いらしゃる」、etc., but is widely used in men\'s speech, newspapers, and formal writting.  The term "passive" uses the direct passive context of the verb.  That is, transitive verbs have a subject as the actor and a direct object acted upon.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『先生、本を',
+          highlight: '書かれた',
+          post: 'そうですが、いつご出版（しゅっぱん）のご予定でしょうか。』'
+        },
+        translation: 'Sensei, I hear that you have written a book.  When is it scheduled to be published?'
+      },{
+        sentence: {
+          ante: '『先生がアメリカへ',
+          highlight: '来られた',
+          post: 'ころは、今とずいぶん違っていたんでしょうね。』'
+        },
+        translation: 'When Sensei came to America, things were very different from what they are now, weren\'t they?'
+      }
+    ],
+    other: 'There is no formation of the honorific passive for certain verbs (eg: 分かる or できる).'
+  },{
+    grammar_point: 'せめて〜',
+    spec: 'せめて〜',
+    meaning: '"At least 〜"',
+    use: {
+      text: 'The implication is that 〜 is the limit for a given example, but something more or better would be desirable.  〜 may be a quanitity of something, or it could refer to the noun which is liminal.  Can also be combined with くらい／ぐらい as in せめて〜くらい（は）。くらい by itself is less specific in that it merely implies an illustrative example.  The book examples all use せめて to describe the subject marked with は、but I think that that is not necessarily the exclusive usage.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『漢字をたくさん習いたいが、時間がないので、',
+          highlight: 'せめて教育漢字',
+          post: 'は読み書きできるようになりたい。』'
+        },
+        translation: 'I want to learn lots of kanji, but I don\'t have the time, so I\'d like to be able to read and write AT LEAST the Kyouiku Kanji.'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'せめて一度',
+          post: 'は日本へ行ってみたいと思う人が多いだろう。』'
+        },
+        translation: 'There must be lots of people who would like to visit Japan AT LEAST once.'
+      },{
+        sentence: {
+          ante: '『毎晩',
+          highlight: 'せめて一時間ぐらい',
+          post: 'は日本語を勉強してもらいたいものだ。』'
+        },
+        translation: 'I would like [them] to spend AT LEAST APPROXIMATELY one hour every night studying Japanese.'
+      },{
+        sentence: {
+          ante: '『夫に',
+          highlight: 'せめてお皿洗い（おさらあらい）ぐらい',
+          post: 'してもらいたいと思う主婦は多いだろう。』'
+        },
+        translation: 'There must be many wives who want their husbands to AT LEAST wash the dishes.'
+      }
+    ],
+    other: 'せめて can also mean "at most" as in the phrase 『せめてつまらないものですが。』"At most, it\'s an uninteresting thing, but...".'
+  },{
+    grammar_point: 'X ように Y',
+    spec: 'X ように Y',
+    meaning: '"Y, so that X"; "In order to X, Y"; "For the purpose of X, Y".',
+    use: {
+      text: 'ように means "so that" or "in order to".  X is usually a verb or verb phrase.  X is often a potential verb, stative verb (ie: (verb)ている), or a verb in the negative form.  X is usually something that cannot be controlled by one\'s will (ie: "so that I won\'t forget" or "so that they can enjoy it").  Usage of 〜ように differs from that of 〜ために',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『みんなが',
+          highlight: '楽しめるように',
+          post: 'チョコレートをあげた。』'
+        },
+        translation: 'I gave everyone chocolate so that they can enjoy it. (pot. example)'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: '忘れないように',
+          post: '書いておいてください。』'
+        },
+        translation: 'Please write it down so that you don\'t forget it. (negative example)'
+      },{
+        sentence: {
+          ante: '『子どもの本は子供にも',
+          highlight: '分かるように',
+          post: 'やさしい言葉で書いてあります。』'
+        },
+        translation: 'Children\'s books are written in an easy language so that they\'ll be easy to understand.'
+      },{
+        sentence: {
+          ante: '『新しい車が',
+          highlight: '買えるように',
+          post: '貯金をしています。』'
+        },
+        translation: 'I am saving money SO THAT I CAN BUY a new car.'
+      },{
+        sentence: {
+          ante: '『新しい車が',
+          highlight: '買うために',
+          post: '貯金をしています。』'
+        },
+        translation: 'I am saving money IN ORDER TO BUY a new car.'
+      }
+    ],
+    other: '〜ように implies that a certain consequence will hold as the result of an action whereas 〜ために merely indicates the purpose of an action.  Normally, action verbs precede ために while verbs that precede ように indicate a state, event, or consequence that is beyond one\'s control.  Compare the last two example sentences.'
   }
 ];
 

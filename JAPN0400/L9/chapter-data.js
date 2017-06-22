@@ -52,31 +52,57 @@ const chap_note_list = [
 
 const chap_grammar_list = [
   {
-    grammar_point: '無',
-    spec: '無',
-    meaning: '無',
+    grammar_point: 'わざわざ',
+    spec: 'わざわざ',
+    meaning: 'To go out of one\'s way to do something',
     use: {
-      text: '無',
+      text: 'Denotes doing something in a way that takes more time and effor thtan necessary or purposely doing something that is not necessary.  Ie: there are two options and you chose the one that takes more.  Is not used in the same way as せっかく。',
       species: []
     },
     example: [
       {
         sentence: {
-          ante: '無',
-          highlight: '無',
-          post: '。』'
+          ante: '『',
+          highlight: 'わざわざ',
+          post: '出かけるのは大変だから、電話で話そう。』'
         },
-        translation: '無'
+        translation: 'It\'s not easy to take the time to go, so I will talk on the phone. (lit. Going out of my way to head out is opressive, so I will talk on the phone)'
       },{
         sentence: {
-          ante: '『無',
-          highlight: '無',
-          post: '。』'
+          ante: '『',
+          highlight: 'わざわざ',
+          post: '書き直さなくて（直す：なお（す））もいいんじゃないですか。』'
         },
-        translation: '無'
+        translation: 'I don\'t think you have to go through the trouble of rewritting it.'
       }
     ],
-    other: '無'
+    other: 'On the other hand, せっかく indicates that one has spent time, made an effort, or experienced hardship to obtain something or to REACH A CERTAIN STATE.  Often used with expressions like 〜のに or 〜ければ。I\'ve also heard せっかく describes as "referring to a state or result that has come about and the implication is that one should or should have taken advantage of the situation".'
+  },{
+    grammar_point: '〜より仕方がない',
+    spec: '〜より仕方がない',
+    meaning: '"To have no choice but to 〜"',
+    use: {
+      text: '（仕方：しかた）Denotes that 〜 is NOT what one normally wants to do, but one has no choice but to do it.  〜 is usually a verb.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『お金がない時は、アルバイトをする',
+          highlight: 'より仕方がない',
+          post: '。』'
+        },
+        translation: 'When one does not have any money, one does not have any choice but to work part-time.'
+      },{
+        sentence: {
+          ante: '『車がないから、歩いていく',
+          highlight: 'より仕方がない',
+          post: '。』'
+        },
+        translation: 'Since I don\'t have a car, I have no alternative but to go on foot.'
+      }
+    ],
+    other: 'I\'m pretty sure that this expression exclusively follows verbs, but idk, the book put X so I\'m going with it'
   }
 ];
 

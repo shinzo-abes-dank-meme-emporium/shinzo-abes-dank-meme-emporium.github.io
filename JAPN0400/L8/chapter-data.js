@@ -101,7 +101,7 @@ const chap_grammar_list = [
     spec: '〜さえ〜ば（result)',
     meaning: 'If only you 〜、then (result) will/would be.',
     use: {
-      text: 'A better way to think of this construction is as (condition)->(result), where (condition) is the 〜さえ〜ば construction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  Possible species as follows: ',
+      text: 'A better way to think of this construction is as (condition)->(result), where (condition) is the 〜さえ〜ば construction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  さえ means "even", "if only", "if just", "as long as".  Possible species as follows: ',
       species: [
         {
           jap: 'nounさえ + verb(ば)',
@@ -149,7 +149,7 @@ const chap_grammar_list = [
         translation: 'It is not the case that knowing kanji guarantees that you will be able to read newspapers.  (Just knowing kanji does not mean that you will be able to read newspapers.)'
       }
     ],
-    other: 'Translating it as "If only, then" seems to be a literal but poor translation.  The super literal (and IMO more clear) translation might be: "Conditioned on just/only verb/noun, thus result/statement".  HOW DOES さえ DIFFER FROM だけ？'
+    other: 'Translating it as "If only, then" seems to be a literal but poor translation.  The super literal (and IMO more clear) translation might be: "Conditioned on just/only verb/noun, thus result/statement".'
   },{
     grammar_point: '〜はず',
     spec: '〜はず',

@@ -10,6 +10,10 @@ $(window).on('load', function() {
   var course_name = local_course_name;
   var chap_list = local_chap_list;
 
+  //fix navbars and top bar
+  $(".sidebar").css("margin-top", $(".page-header").outerHeight());
+  $(".content").css("margin-top", $(".page-header").outerHeight());
+
   for(var i=0; i<chap_list.length; i++) {
     var cl_chap_name = chap_list[i].name;
     var cl_chap_path = chap_list[i].path;

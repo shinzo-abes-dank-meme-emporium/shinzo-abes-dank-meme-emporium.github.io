@@ -9,6 +9,10 @@ const course_nav_id = '#sidebar-course-list'
 $(window).on('load', function() {
   var course_list = local_course_list;
 
+  //fix navbars and top bar
+  $(".sidebar").css("margin-top", $(".page-header").outerHeight());
+  $(".content").css("margin-top", $(".page-header").outerHeight());
+
   for(var i=0; i<course_list.length; i++) {
     var cl_course_name = course_list[i].name;
     var cl_course_path = course_list[i].path;

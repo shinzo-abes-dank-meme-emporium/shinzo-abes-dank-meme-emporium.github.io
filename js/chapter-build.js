@@ -20,8 +20,9 @@ $(window).on('load', function() {
 
   $(header_id).append('／<a href="/">日本語</a>／<a href="/' + local_course_path + '">' + local_course_name + '</a>／' + chap_name);
 
-  $(".sidebar").css("margin-top", $(".page-header").height());
-  $(".content").css("margin-top", $(".page-header").height());
+  //fix navbars and top bar
+  $(".sidebar").css("margin-top", $(".page-header").outerHeight());
+  $(".content").css("margin-top", $(".page-header").outerHeight());
 
 
   /**

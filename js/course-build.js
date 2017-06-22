@@ -10,6 +10,8 @@ $(window).on('load', function() {
   var course_name = local_course_name;
   var chap_list = local_chap_list;
 
+  $(header_id).append('／<a href="/">日本語</a>／' + local_course_name);
+
   //fix navbars and top bar
   $(".sidebar").css("margin-top", $(".page-header").outerHeight());
   $(".content").css("margin-top", $(".page-header").outerHeight());
@@ -30,8 +32,5 @@ $(window).on('load', function() {
     $(chapter_nav_id).append(chapter_nav_entry);
     $(chapter_id).append(chapter_entry);
   }
-
-  $(header_id).append('／<a href="/">日本語</a>／' + local_course_name);
-  
 });
 

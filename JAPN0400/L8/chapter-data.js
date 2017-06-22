@@ -206,7 +206,7 @@ const chap_grammar_list = [
         translation: 'Students who are in Third Year Japanese should be able to read newspapers in Japanese.'
       }
     ],
-    other: ''
+    other: '...'
   },{
     grammar_point: '〜みたい',
     spec: '〜みたい',
@@ -360,7 +360,7 @@ const chap_grammar_list = [
       translation: ''
     },
   ],
-  other: ''
+  other: '...'
 }
 */
 

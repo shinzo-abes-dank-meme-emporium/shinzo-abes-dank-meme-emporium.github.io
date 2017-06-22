@@ -244,7 +244,7 @@ const chap_grammar_list = [
       translation: ''
     },
   ],
-  other: ''
+  other: '...'
 }
 */
 

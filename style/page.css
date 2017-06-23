@@ -88,6 +88,14 @@ a:hover {
   text-align: center;
 }
 
+.content-topic:before { 
+  display: block; 
+  content: " "; 
+  visibility: hidden; 
+  margin-top: -62px;
+  height: 62px;
+}
+
 .content-topic.eng {
   padding: 10px;
 }

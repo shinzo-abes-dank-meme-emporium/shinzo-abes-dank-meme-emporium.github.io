@@ -12,6 +12,7 @@
           box-sizing: border-box;
 }
 
+/*unfortunately, :before elements cannot be modified by javascript.  The height of the topbar should usually be 62px, so idk if it's reallya huge problem to have magic numbers...*/
 .anchor:before { 
   display: block; 
   content: " "; 

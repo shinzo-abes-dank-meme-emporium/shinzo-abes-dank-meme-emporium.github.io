@@ -22,7 +22,7 @@ $(window).on('load', function() {
     var cl_chap_path = chap_list[i].path;
 
     var chapter_entry = [
-    '<div class="chapter-entry" id="course-chap-' + i + '">',
+    '<div class="chapter-entry anchor" id="course-chap-' + i + '">',
     '  <chapter><a href="./' + cl_chap_path + '/">' + cl_chap_name + '</a></chapter>',
     '</div>'
     ].join('\n');

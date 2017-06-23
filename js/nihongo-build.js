@@ -19,7 +19,7 @@ $(window).on('load', function() {
     var cl_course_path = course_list[i].path;
 
     var course_entry = [
-    '<div class="course-entry" id="nihongo-course-' + i + '">',
+    '<div class="course-entry anchor" id="nihongo-course-' + i + '">',
     '  <course><a href="./' + cl_course_path + '/">' + cl_course_name + '</a></course>',
     '</div>'
     ].join('\n');

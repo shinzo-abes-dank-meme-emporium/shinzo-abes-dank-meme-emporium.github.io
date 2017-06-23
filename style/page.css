@@ -12,6 +12,12 @@
           box-sizing: border-box;
 }
 
+.anchor:before { 
+  display: block; 
+  content: " "; 
+  visibility: hidden; 
+}
+
 body {
   margin: 0;
   font-family: sans-serif;

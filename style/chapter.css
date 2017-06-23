@@ -26,13 +26,7 @@ kanji.meaning {
 }
 
 .grammar-entry {
-  padding: 10px;
-}
-
-.grammar-entry:before { 
-  display: block; 
-  content: " "; 
-  visibility: hidden; 
+  padding: 0 10px 20px 10px;
 }
 
 .grammar-entry section {
@@ -80,8 +74,9 @@ species.eng {
 }
 
 
+
 .note-entry {
-  padding: 10px;
+  padding: 0 10px 20px 10px;
 }
 
 /*

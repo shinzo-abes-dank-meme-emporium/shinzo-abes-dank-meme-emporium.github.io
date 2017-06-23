@@ -25,8 +25,8 @@ $(window).on('load', function() {
   $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
   $(".content").css("margin-top", $(".page-header").outerHeight());
 
-  $(".grammar-entry:before").css("margin-top", -$(".page-header").outerHeight());
-  $(".grammar-entry:before").css("height", $(".page-header").outerHeight());
+  $(".anchor:before").css("margin-top", -$(".page-header").outerHeight());
+  $(".anchor:before").css("height", $(".page-header").outerHeight());
 
 
   /**
@@ -59,7 +59,7 @@ $(window).on('load', function() {
 
     var note_entry = [
     '<div class="note-entry">',
-    '  <section class="note-topic" id="content-note-' + i + '">' + nl_topic + '</section>',
+    '  <section class="note-topic anchor" id="content-note-' + i + '">' + nl_topic + '</section>',
     '  <section class="note-expo">',
          note_expo,
     '  </section>',
@@ -142,7 +142,7 @@ $(window).on('load', function() {
     }
 
     var grammar_entry = [ 
-    '<div class="grammar-entry" id="content-grammar-point-' + i + '">',
+    '<div class="grammar-entry anchor" id="content-grammar-point-' + i + '">',
     '  <section class="grammar-point">' + gl_grammar_point + '</section>',
     '  <section class="grammar-meaning bg-grey-light"><grammar class="prepend">Meaning: </grammar><grammar>' + gl_meaning + '</grammar></section>',
     '  <section class="grammar-use bg-grey-dark"><grammar class="prepend">Use: </grammar><grammar>' + gl_use + '</grammar></section>',

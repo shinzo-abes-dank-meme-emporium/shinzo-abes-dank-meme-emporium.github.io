@@ -33,7 +33,7 @@ $(window).on('load', function() {
       subtopic_list: [
         {
           subtopic: '',
-          desc: ''
+          desc: ['']
         }
       ]
     }
@@ -56,13 +56,18 @@ $(window).on('load', function() {
 
     var note_entry = [
     '<div class="note-entry">',
-    '  <section class="note-topic">' + nl_topic + '</section>',
+    '  <section class="note-topic" id="content-note-' + i + '">' + nl_topic + '</section>',
     '  <section class="note-expo">',
          note_expo,
     '  </section>',
     '</div>'
     ].join('\n');
 
+    var note_nav_entry = [
+    '  <li class="sidebar-subtopic"><a href="#content-note-' + i + '">' + nl_spec + '</a></li>'
+    ].join('\n');
+
+    $(misc_nav_id).append(note_nav_entry);
     $(misc_id).append(note_entry);
   }
 

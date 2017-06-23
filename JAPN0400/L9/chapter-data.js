@@ -216,6 +216,198 @@ const chap_grammar_list = [
       }
     ],
     other: '〜ように implies that a certain consequence will hold as the result of an action whereas 〜ために merely indicates the purpose of an action.  Normally, action verbs precede ために while verbs that precede ように indicate a state, event, or consequence that is beyond one\'s control.  Compare the last two example sentences.'
+  },{
+    grammar_point: '(adjな）に／(adjい）く・見える',
+    spec: '〜に／く・見える',
+    meaning: '"Seems [adj]"; "Appears [adj]".',
+    use: {
+      text: '(adjな) and (adjい）are used adverbially.',
+      species: [
+        {
+          jap: '(adjい）く見える：',
+          eng: 'Seems adj'
+        },{
+          jap: '(adjに）に見える：',
+          eng: 'Seems adj'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『いつも',
+          highlight: '元気に見える',
+          post: '。』'
+        },
+        translation: 'He always seems to be in good health.'
+      },{
+        sentence: {
+          ante: '『日本人は年より',
+          highlight: '若く見える',
+          post: '。』'
+        },
+        translation: 'Japanese people look younger than their age.'
+      }
+    ],
+    other: 'Not sure how this differs from みたい or compares to そう・らしい・よう。Probably more formal than みたい、and can be combined with そう・らしい・よう。'
+  },{
+    grammar_point: '(noun, phrase)〜こそ',
+    spec: 'こそ',
+    meaning: 'Emphatic particle.',
+    use: {
+      text: 'こそ emphasizes the preciding noun or phrase.  There should be some reason WHY one has to emphasize a particular noun or phrase (eg: providing a counterargument, making a stronger statement).  Generally replaces subject particles (が／を／も／は）but can be attached to other particles as 〜＿こそ (eg: 〜にこそ）。The book doesn\'t have much info on this, but below are some formation examples I found online.',
+      species: [
+        {
+          jap: '(temporal noun)こそ：',
+          eng: 'Emphasizes the time period.  eg: when expressing determination to do something in the time period or show strong desire for something that hasn\'t been happening up to now.'
+        },{
+          jap: '(noun)こそ：',
+          eng: '"That very noun", "Precisely that noun".  Usually positive.  Indicates that the highlighted noun is some very such thing.  Often used with demonstrative nouns (それ／これ・あれ／etc.).  With demonstrative nouns, can be used to emphasize another party (as with accusations, blame, or with shifting compliments) (eg: こちらこそ no no I am to blame、あんたこそ no no you are the one looking good today)'
+        },{
+          jap: '(verbて）こそ：',
+          eng: 'Emphasizes condition or reason.  eg: "Only when you do verb, etc..."'
+        },{
+          jap: '（〜から）こそ：',
+          eng: 'Using 〜から as usual and appending こそ, the emphasis shifts to "the reason why".  eg: "Preciesly because 〜、etc..."'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『',
+          highlight: '明日こそ',
+          post: '晴れますように。』'
+        },
+        translation: 'I really hope the weather will be nice tomorrow.'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: '相撲（すもう）こそ',
+          post: '日本の伝統的なスポーツです。』'
+        },
+        translation: 'Sumō is the traditional Japanese sport (and nothing else).'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: '愛こそ',
+          post: 'がすべてだ。』'
+        },
+        translation: 'Love is everything. (idk why が is retained though)'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'こちらこそ',
+          post: 'ありがとうございました。』'
+        },
+        translation: 'Thank you very much, too.  (in response to an ありがとう、"I am the one who should thank you").'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'めぐちゃんこそ',
+          post: '本当にかわいいよ。』'
+        },
+        translation: 'You are also cute, Megu.  (in response to a compliment)'
+      }
+    ],
+    other: 'ｎｏｔ　ｔｏ　ｂｅ　ｃｏｎｆｕｓｅｄ　ｗｉｔｈ　クソ。Sort of like Latin "temet nosce", "know thyself", where "-met" acts as an emphatic particle to "te".  Also, I just remembered that Latin has another emphatic particle "-ne", which is used almost exactly like the Japanese sentence ending particle 〜ね。すごいね。'
+  },{
+    grammar_point: 'X と言っても Y',
+    spec: 'X と言っても Y',
+    meaning: '"Even though I said X, Y"; "It\'s true that X, but Y."',
+    use: {
+      text: 'X usually ends with plain forms, but だ is generally omitted.  Y is given to qualify X.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『寒い',
+          highlight: 'と言っても',
+          post: '、湖（みずうみ）が凍る（こお）ことはありません。』'
+        },
+        translation: 'Although I said it\'s cold, the lakes never freeze'
+      }
+    ],
+    other: 'ただいま'
+  },{
+    grammar_point: 'ただ',
+    spec: 'ただ',
+    meaning: '"Just"; "Only"',
+    use: {
+      text: 'Usually used with だけ。Can mean "just" as in 「ただ牛だ。」"It\'s only a cow", or as in "I\'ve just come home"「ただいま〜」',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『',
+          highlight: 'ただ',
+          post: 'いい成績を取ることしか考えていないような学生は困ります。』'
+        },
+        translation: 'A student who is only concerned about getting good grades is problematic.  (Wow, an appearence of the every-useful しか〜ない grammar point!)'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'ただ',
+          post: '英語が話せるようになることだけが国際化じゃありません。』'
+        },
+        translation: 'Just being able to speak English doesn\'t mean one has become International.  (notice the additional use of だけ）'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: '(noun, phrase)に限らない',
+    spec: '(noun, phrase)に限らない',
+    meaning: '"Not limited to 〜"',
+    use: {
+      text: '限る：かぎ（る）。Can also be used in the positive, if one uses 〜に限られている (the passive of 限る), to mean "Is limited to 〜".',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『日本語を勉強している学生は、日本語専攻',
+          highlight: 'に限りません',
+          post: '。』'
+        },
+        translation: 'Students who study Japanese are not limited to Japanese majors.'
+      },{
+        sentence: {
+          ante: '『大学院に行けるのは大学を卒業した者',
+          highlight: 'に限られている',
+          post: '。』'
+        },
+        translation: 'Only those who have graduated from college can go to graduate school.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: 'どんな(noun(+particle))でも',
+    spec: 'どんな(noun(+particle))でも',
+    meaning: '"Any 〜"',
+    use: {
+      text: 'Generally, が and を are omitted when followed by でも。Other particles (eg: と／から／に／etc.) remain as どんな〜にでも。',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『',
+          highlight: 'どんな贈り物でも',
+          post: 'いいです。』'
+        },
+        translation: 'Any present will do.'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'どんな人からでも',
+          post: 'カードをもらうとうれしい。』'
+        },
+        translation: 'I\'ts nice to receive a card no matter who it is from.'
+      }
+    ],
+    other: 'As in chapter 5, でも is a contraction of であっても'
   }
 ];
 

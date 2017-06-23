@@ -16,6 +16,8 @@
   display: block; 
   content: " "; 
   visibility: hidden; 
+  margin-top: -62px;
+  height: 62px;
 }
 
 body {

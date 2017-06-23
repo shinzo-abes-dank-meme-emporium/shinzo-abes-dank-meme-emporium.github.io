@@ -29,6 +29,12 @@ kanji.meaning {
   padding: 10px;
 }
 
+.grammar-entry:before { 
+  display: block; 
+  content: " "; 
+  visibility: hidden; 
+}
+
 .grammar-entry section {
   padding: 3px 0 3px 0;
 }

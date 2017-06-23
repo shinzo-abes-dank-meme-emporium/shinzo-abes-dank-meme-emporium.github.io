@@ -14,6 +14,7 @@ $(window).on('load', function() {
 
   //fix navbars and top bar
   $(".sidebar").css("margin-top", $(".page-header").outerHeight());
+  $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
   $(".content").css("margin-top", $(".page-header").outerHeight());
 
   for(var i=0; i<chap_list.length; i++) {

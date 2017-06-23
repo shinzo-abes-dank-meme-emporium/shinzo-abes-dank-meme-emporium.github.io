@@ -74,6 +74,12 @@ a:hover {
   border-left-style: solid;
 }
 
+.content:before { 
+  display: block; 
+  content: " "; 
+  visibility: hidden; 
+}
+
 .content-topic {
   font-size: 3em;
   text-align: center;

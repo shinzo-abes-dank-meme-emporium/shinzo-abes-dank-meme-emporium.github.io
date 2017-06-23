@@ -52,31 +52,150 @@ const chap_note_list = [
 
 const chap_grammar_list = [
   {
-    grammar_point: '無',
-    spec: '無',
-    meaning: '無',
+    grammar_point: '分数 (fractions)',
+    spec: '分数 (fractions)',
+    meaning: '分数：ぶんすう',
     use: {
-      text: '無',
+      text: 'A fraction is expressed in Japanese as「＃分の＃」.  However, in Japanese, the denominator becomes before the numerator, as in「denominator 分の numerator」',
+      species: [
+        {
+          jap: '二分の一',
+          eng: ' = 1/2'
+        },{
+          jap: '五分の三',
+          eng: ' = 3/5'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '',
+          highlight: '',
+          post: ''
+        },
+        translation: '...'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: 'S1 ほど S2',
+    spec: 'S1 ほど S2',
+    meaning: '"It is S2, to the extent that S1"; "It is so very S2 that S1".',
+    use: {
+      text: 'ほど is a sentence connecter that uses S2 to describe S1.  S1 is generally ends in a verb(plain)[pres.].  Can also be rearranged to「S2て、S1ほどです。」。ほど means "extent", "approximately", "degree".',
+      species: [
+        {
+          jap: 'S1 ほど S2：',
+          eng: 'To the extent that S1, such is S2.'
+        },{
+          jap: 'S2て、S1 ほど です：',
+          eng: 'It is S2, to the extent that S1.'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『ラーメンは、',
+          highlight: '涙が出るほど',
+          post: 'からいことがある。』'
+        },
+        translation: 'Ramen can be so hot that it brings a tear to your eyes. (lit. as for ramen, so much so that you cry, such can it be spicy).'
+      },{
+        sentence: {
+          ante: '『ラーメンはからくて',
+          highlight: '涙が出るほどです',
+          post: '。』'
+        },
+        translation: '(lit. Ramen is spicy to the extent that you cry).'
+      }
+    ],
+    other: 'I assume that「S1 ほど S2」, which is more difficult to translate into English, is the more natural sounding Japanese choice.  Also, ほど is sort of like Latin "tantum".  It was so ___ that ___!'
+  },{
+    grammar_point: '(Q word)よりも',
+    spec: '(Q word)よりも',
+    meaning: '"More than any(Q word)".',
+    use: {
+      text: '(Q word) can be something like 何、どこ、etc.  何 can be pronounced as「なに」or「なん」',
       species: []
     },
     example: [
       {
         sentence: {
-          ante: '無',
-          highlight: '無',
-          post: '。』'
+          ante: '『今、',
+          highlight: '何よりも',
+          post: 'チーズが欲しいですねえ。』'
         },
-        translation: '無'
+        translation: 'Right now, I want cheese more than anything.'
       },{
         sentence: {
-          ante: '『無',
-          highlight: '無',
-          post: '。』'
+          ante: '『',
+          highlight: '何よりも',
+          post: '健康（けんこう）が一番です。』'
         },
-        translation: '無'
+        translation: 'Health is the most important thing in the world.'
       }
     ],
-    other: '無'
+    other: '...'
+  },{
+    grammar_point: '（Xは）Yに限る',
+    spec: '（Xは）Yに限る',
+    meaning: '"As for X, Y is the best thing to do"; "As for X, there is nothing better than Y".',
+    use: {
+      text: '「限る：かぎ（る）」Y can be a noun or verb(plain)[pres.].  ',
+      species: [
+        {
+          jap: '(noun)に限る',
+          eng: ''
+        },{
+          jap: 'verb(plain)[pres.]に限る',
+          eng: ''
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『暑い<b>日には</b>冷たいビールを',
+          highlight: '飲むに限る',
+          post: '。』'
+        },
+        translation: 'Nothing is better than drinking cold beer on a hot day.'
+      },{
+        sentence: {
+          ante: '『古い都を訪ねたければ',
+          highlight: '京都に限ります',
+          post: '。』'
+        },
+        translation: 'If you want to visit an old city, Kyōto is the best place.'
+      }
+    ],
+    other: '限る means to restrict, to limit, to confine as a transitive verb.  It can also be an intransitive verb meaning to be restriected, to be limited, to be confined.'
+  },{
+    grammar_point: '〜まま',
+    spec: '〜まま',
+    meaning: '',
+    use: {
+      text: '',
+      species: [
+        {
+          jap: '(noun)に限る',
+          eng: ''
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『暑い<b>日には</b>冷たいビールを',
+          highlight: '飲むに限る',
+          post: '。』'
+        },
+        translation: 'Nothing is better than drinking cold beer on a hot day.'
+      }
+    ],
+    other: '限る means to restrict, to limit, to confine as a transitive verb.  It can also be an intransitive verb meaning to be restriected, to be limited, to be confined.'
   }
 ];
 

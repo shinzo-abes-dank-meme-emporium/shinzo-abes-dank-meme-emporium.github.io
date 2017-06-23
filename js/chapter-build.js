@@ -25,6 +25,9 @@ $(window).on('load', function() {
   $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
   $(".content").css("margin-top", $(".page-header").outerHeight());
 
+  $(".grammar-entry:before").css("margin-top", -$(".page-header").outerHeight());
+  $(".grammar-entry:before").css("height", $(".page-header").outerHeight());
+
 
   /**
     {

@@ -70,6 +70,9 @@ a:hover {
 
 .sidebar-subtopic {
   font-size: 1em;
+  padding: 3px 0 3px 0;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
 
 .sidebar-subtopic-list {

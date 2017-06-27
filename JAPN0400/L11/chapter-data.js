@@ -283,7 +283,7 @@ const chap_grammar_list = [
         translation: 'I was talking and lost track of time.'
       }
     ],
-    other: 'I assume that どうしても means "even if what(ever)".'
+    other: '...'
   },{
     grammar_point: '(noun)に気をつける',
     spec: '(noun)に気をつける',

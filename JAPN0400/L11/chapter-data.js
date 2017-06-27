@@ -311,19 +311,19 @@ const chap_grammar_list = [
       text: 'An indirect quote of a command or request.  The person to whom the request is directed is marked with ～に。 Can also be used with passive forms of the "asking" verbs to mean that someone was asked to do something by someone else.',
       species: [
         {
-          jap: '（～に）verb(plain)ようにお願いする'
+          jap: '（～に）verb(plain)ようにお願いする',
           eng: '：to request someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように言う'
+          jap: '（～に）verb(plain)ように言う',
           eng: '：to tell someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように頼む'
+          jap: '（～に）verb(plain)ように頼む',
           eng: '：to ask someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように注意する'
+          jap: '（～に）verb(plain)ように注意する',
           eng: '：to advise someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように言われる'
+          jap: '（～に）verb(plain)ように言われる',
           eng: '：to be told to do verb (works with passives of the other verbs, too)'
         }
       ]
@@ -361,16 +361,16 @@ const chap_grammar_list = [
       text: 'Remember, verb(vol.)とする means "to try to do verb".  Also, verb[past.]ら (ie: ～たら) means "when" or "if".  Volitional formation:',
       species: [
         {
-          jap: '「～る」　 > 　「～よう」'
+          jap: '「～る」　 > 　「～よう」',
           eng: '：verb(vol.) (る verbs)'
         },{
-          jap: '「～／う／」　 > 　「～／お／う」'
+          jap: '「～／う／」　 > 　「～／お／う」',
           eng: '：verb(vol.) (う verbs)'
         },{
-          jap: '「くる」　 > 　「こよう」'
+          jap: '「くる」　 > 　「こよう」',
           eng: ''
         },{
-          jap: '「する」　 > 　「しよう」'
+          jap: '「する」　 > 　「しよう」',
           eng: ''
         }
       ]
@@ -401,17 +401,14 @@ const chap_grammar_list = [
       text: 'くらい in this instance indicate the degree or extent of a situation (like ほど).  X is just a phrase that ends in て (or also で、so the book says... I think the important part is that it\'s a phrase that will be connected to Y).  Y may be an adjective or verb.',
       species: [
         {
-          jap: '（Xて、）（adjい）いくらいだ'
+          jap: '（Xて、）（adjい）いくらいだ',
           eng: '：X, to the extent that it\'s (like/almost) adj'
         },{
-          jap: '（Xて、）（adjな）なくらいだ'
+          jap: '（Xて、）（adjな）なくらいだ',
           eng: '：X, to the extent that it\'s (like/almost) adj'
         },{
-          jap: '（Xて、）（verb(plain))くらいだ'
+          jap: '（Xて、）（verb(plain))くらいだ',
           eng: '：X, to the extent that it\'s (like/almost) verb'
-        },{
-          jap: 'Yくらい can also precede the phrase it qualifies, just as in 「YくらいX」'
-          eng: ''
         }
       ]
     },
@@ -446,7 +443,7 @@ const chap_grammar_list = [
         translation: 'This reading is so diffuclt that (to the extent that) I almost gives me a headache.'
       }
     ],
-    other: 'Just like ほど、くらい will act as an indiator for the extent of its preceding phrase.'
+    other: 'Just like ほど、くらい will act as an indiator for the extent of its preceding phrase.  Yくらい can also precede the phrase it qualifies, just as in 「YくらいX」'
   },{
     grammar_point: 'verb(plain)[past.]ものだ',
     spec: 'verb(plain)[past.]ものだ',

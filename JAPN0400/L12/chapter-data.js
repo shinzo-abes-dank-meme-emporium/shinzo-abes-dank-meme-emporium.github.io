@@ -52,31 +52,45 @@ const chap_note_list = [
 
 const chap_grammar_list = [
   {
-    grammar_point: '無',
-    spec: '無',
-    meaning: '無',
+    grammar_point: 'ろくに ～ない',
+    spec: 'ろくに ～ない',
+    meaning: '"Not much ～"; "Not enough ～"',
     use: {
-      text: '無',
-      species: []
+      text: 'The adverb ろくに means "enough" or "sufficient", but is always followed by a negative predicate.  Thus, the meaning always implies a lack of sufficiency.  Maybe translate the whole thing as "Not sufficiently ～".  Can be used with nouns using ろくな。',
+      species: [
+        {
+          jap: 'ろくにverb(plain)[neg.]',
+          eng: '：not sufficiently verb'
+        },{
+          jap: 'ろくに(adjい）くない',
+          eng: '：not sufficiently adj'
+        },{
+          jap: 'ろくに(adjな）じゃない',
+          eng: '：not sufficiently adj'
+        },{
+          jap: 'ろくな(noun）じゃない',
+          eng: '：not sufficiently noun'
+        }
+      ]
     },
     example: [
       {
         sentence: {
-          ante: '無',
-          highlight: '無',
-          post: '。』'
+          ante: '『',
+          highlight: 'ろくに',
+          post: '勉強<b>しない</b>のに文句ばかり言うのは困る。』'
         },
-        translation: '無'
+        translation: 'It\'s not good to complain without studying sufficiently.'
       },{
         sentence: {
-          ante: '『無',
-          highlight: '無',
+          ante: '『病気の時は',
+          highlight: 'ろくに食べられない',
           post: '。』'
         },
-        translation: '無'
+        translation: 'When you are sick, you can hardly eat anything. (lit. you are not able to eat sufficiently)'
       }
     ],
-    other: '無'
+    other: '...'
   }
 ];
 

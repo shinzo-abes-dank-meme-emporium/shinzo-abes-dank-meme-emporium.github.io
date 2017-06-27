@@ -161,13 +161,13 @@ const chap_grammar_list = [
     spec: 'verb(plain)[neg.]うちに',
     meaning: '"Before 〜"; "Before 〜 happens"',
     use: {
-      text: 'When 〜うちに is preceded by negative verbs, it means "before 〜 happens".  This only applies to verbs in the negative case.  Usually, adjectives followed by ならない will be used to convey "before something becomes adj".',
+      text: 'When 〜うちに is preceded by negative verbs, it means "before 〜 happens".  This only applies to verbs in the negative case.  Usually, adjectives are followed by なる[neg.] (ならない) which is used to convey "before something becomes adj".',
       species: [
         {
-          jap: '(verb)（ない・／あ／ない）うちに：',
+          jap: '(verb)[neg.]うちに：',
           eng: 'Before verb happens'
         },{
-          jap: '(adjい／な)ならないうちに：',
+          jap: '(adjい／な)（く／に）ならないうちに：',
           eng: 'Before something becomes adj'
         }
       ]

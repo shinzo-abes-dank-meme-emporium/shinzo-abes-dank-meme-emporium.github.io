@@ -224,6 +224,307 @@ const chap_grammar_list = [
       }
     ],
     other: '...'
+  },{
+    grammar_point: 'どうしても～([pos.]/[neg.])',
+    spec: 'どうしても～([pos.]/[neg.])',
+    meaning: '(w/ [positive]): "By all means", "No matter what"; (w/ [negative]): "Can\'t, no matter how hard one tries"',
+    use: {
+      text: 'Can be used with positive or negative predicate (ie: verbs, adj, nounだ, etc.)',
+      species: [
+        {
+          jap: 'どうしても～[pos.]：',
+          eng: 'By all means, ～'
+        },{
+          jap: 'どうしても～[neg.]：',
+          eng: 'Can\'t do ～ no matter how hard one tries'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『',
+          highlight: 'どうしても分からない',
+          post: '時は、先生に聞いてください。』'
+        },
+        translation: 'When you don\'t understand no matter how hard you try, please ask your teacher.'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'どうしても',
+          post: '一度日本へ<b>行ってみたい</b>。』'
+        },
+        translation: 'I would like to go to Japan, no matter what.'
+      }
+    ],
+    other: 'I assume that どうしても means "even if what(ever)".'
+  },{
+    grammar_point: 'つい',
+    spec: 'つい',
+    meaning: '"Inadvertently"; "Involuntarily"',
+    use: {
+      text: 'つい is an adverb and can be inserted as such.  Usually precedes the phrase it modifies.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『言ってはいけないことが',
+          highlight: 'つい',
+          post: '口に出ることがある。』'
+        },
+        translation: 'Sometimes, we accidentally say things we should not say.'
+      },{
+        sentence: {
+          ante: '『話をしていて、',
+          highlight: 'つい',
+          post: '時間を忘れてしまった。』'
+        },
+        translation: 'I was talking and lost track of time.'
+      }
+    ],
+    other: 'I assume that どうしても means "even if what(ever)".'
+  },{
+    grammar_point: '(noun)に気をつける',
+    spec: '(noun)に気をつける',
+    meaning: '"To pay attention to ～"; "To be careful/mindful of ～"',
+    use: {
+      text: 'Also used as a forewarning:「（～に）気をつけてください！」',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『日本語を話すときは、',
+          highlight: 'アクセントに気を付けて',
+          post: '。』'
+        },
+        translation: 'When you speak Japanese, please be mindful of pitch patterns.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: '（～に）verb(plain)ように（お願いする／言う／頼む／注意する）',
+    spec: '（～に）verb(plain)ように（お願いする／言う／頼む／注意する）',
+    meaning: '"To request/tell/ask (someone (～に)) (to do something)"',
+    use: {
+      text: 'An indirect quote of a command or request.  The person to whom the request is directed is marked with ～に。 Can also be used with passive forms of the "asking" verbs to mean that someone was asked to do something by someone else.',
+      species: [
+        {
+          jap: '（～に）verb(plain)ようにお願いする'
+          eng: '：to request someone to do verb'
+        },{
+          jap: '（～に）verb(plain)ように言う'
+          eng: '：to tell someone to do verb'
+        },{
+          jap: '（～に）verb(plain)ように頼む'
+          eng: '：to ask someone to do verb'
+        },{
+          jap: '（～に）verb(plain)ように注意する'
+          eng: '：to advise someone to do verb'
+        },{
+          jap: '（～に）verb(plain)ように言われる'
+          eng: '：to be told to do verb (works with passives of the other verbs, too)'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『先生に推薦状を書いていただく',
+          highlight: 'ようにお願いした',
+          post: '。』'
+        },
+        translation: 'I asked my teacher to write a letter of recommendation.'
+      },{
+        sentence: {
+          ante: '『お母さんにショウートパンツをはいて学校へ行かない',
+          highlight: 'ように注意された',
+          post: '。』'
+        },
+        translation: 'My mom advised me not to go to school wearing shorts.'
+      },{
+        sentence: {
+          ante: '『夜十一時までには帰ってくる',
+          highlight: 'ように言われた',
+          post: '。』'
+        },
+        translation: 'I was told to come home by 11 at night.'
+      }
+    ],
+    other: '（～に）verb(plain)ように言う is equivalent to a sentence with a direct quote, ie: 「verb(て）くださいと言う」、「verb(stem)なさいと言う」'
+  },{
+    grammar_point: 'verb(vol.)としたら',
+    spec: 'verb(vol.)としたら',
+    meaning: '"When I was about to verb"',
+    use: {
+      text: 'Remember, verb(vol.)とする means "to try to do verb".  Also, verb[past.]ら (ie: ～たら) means "when" or "if".  Volitional formation:',
+      species: [
+        {
+          jap: '「～る」　 > 　「～よう」'
+          eng: '：verb(vol.) (る verbs)'
+        },{
+          jap: '「～／う／」　 > 　「～／お／う」'
+          eng: '：verb(vol.) (う verbs)'
+        },{
+          jap: '「くる」　 > 　「こよう」'
+          eng: ''
+        },{
+          jap: '「する」　 > 　「しよう」'
+          eng: ''
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『デパートへ',
+          highlight: '行こうとしたら',
+          post: '、雨が降ってきた。』'
+        },
+        translation: 'When I was about to leave for the department store, it began to rain.'
+      },{
+        sentence: {
+          ante: '『電話で彼を聞いて、',
+          highlight: '話そうとしたら',
+          post: '、涙が出てきた。』'
+        },
+        translation: 'When I heard his voice and tried to talk, tears came to my eyes.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: '（Xて、）Yくらいだ',
+    spec: '（Xて、）Yくらいだ',
+    meaning: '"X, to the extent that (it\'s like/almost) Y."',
+    use: {
+      text: 'くらい in this instance indicate the degree or extent of a situation (like ほど).  X is just a phrase that ends in て (or also で、so the book says... I think the important part is that it\'s a phrase that will be connected to Y).  Y may be an adjective or verb.',
+      species: [
+        {
+          jap: '（Xて、）（adjい）いくらいだ'
+          eng: '：X, to the extent that it\'s (like/almost) adj'
+        },{
+          jap: '（Xて、）（adjな）なくらいだ'
+          eng: '：X, to the extent that it\'s (like/almost) adj'
+        },{
+          jap: '（Xて、）（verb(plain))くらいだ'
+          eng: '：X, to the extent that it\'s (like/almost) verb'
+        },{
+          jap: 'Yくらい can also precede the phrase it qualifies, just as in 「YくらいX」'
+          eng: ''
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『アメリカにずっとすんでいるので、英語の方が日本語より',
+          highlight: '上手なくらいだ',
+          post: '。』'
+        },
+        translation: 'He has lived America so long that his English is almost better than his Japanese.'
+      },{
+        sentence: {
+          ante: '『ごちそうがたくさなって、全部',
+          highlight: '食べられないくらいでした',
+          post: '。』'
+        },
+        translation: 'There was so much food that we almost could not eat it all.'
+      },{
+        sentence: {
+          ante: '『日本の人名（じんめい）は読み方がたくさなって、',
+          highlight: '日本人にも',
+          post: '難しいくらいです。』'
+        },
+        translation: 'There are so many ways of reading Japanese names that they are even difficult for Japanese people (to read).'
+      },{
+        sentence: {
+          ante: '『この読み物は頭が',
+          highlight: '痛くなるくらい',
+          post: '難しいです。』'
+        },
+        translation: 'This reading is so diffuclt that (to the extent that) I almost gives me a headache.'
+      }
+    ],
+    other: 'Just like ほど、くらい will act as an indiator for the extent of its preceding phrase.'
+  },{
+    grammar_point: 'verb(plain)[past.]ものだ',
+    spec: 'verb(plain)[past.]ものだ',
+    meaning: '"Used to verb"',
+    use: {
+      text: 'Expresses something one used to do in the past or to reminisce about the past.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『子供のころは、よく弟と',
+          highlight: 'けんかをしたものだ',
+          post: '。』'
+        },
+        translation: 'When I was a kid, I used to fight with my brother a lot.'
+      },{
+        sentence: {
+          ante: '『大学時代は、よく遊びよく',
+          highlight: '勉強したものだ',
+          post: '。』'
+        },
+        translation: 'In my college days, I used to play hard and study hard.'
+      }
+    ],
+    other: 'NOTE: this is strictly different from ～ものですから。 There\'s probably a connection between the「もの」but I haven\'t been able to figure it out yet...'
+  },{
+    grammar_point: 'verb(stem)たて（の・だ）',
+    spec: 'verb(stem)たて（の・だ）',
+    meaning: '"Something was <i>just</i> done"; "Freshly ～"; "Newly ～".',
+    use: {
+      text: 'Attaches to a limited number of verbs.  When used to modify a noun, is followed by の。 I\'ve read that it is ascribed to verbs that "produce results" or have a concept of "emergence".',
+      species: [
+        {
+          jap: '<b>Examples:</b>',
+          eng: ''
+        },{
+          jap: '焼きたて',
+          eng: '：freshly baked（焼く：や（く））'
+        },{
+          jap: 'とりたて',
+          eng: '：freshly picked'
+        },{
+          jap: 'ペンキ塗りたて',
+          eng: '：newly painted（塗る：ぬ（る））'
+        },{
+          jap: '<b>BAD Examples:</b>',
+          eng: ''
+        },{
+          jap: '読みたて',
+          eng: '：freshly read?'
+        },{
+          jap: '寝たて',
+          eng: '：freshly slept?'
+        },{
+          jap: '食べたて',
+          eng: '：newly eaten?'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『',
+          highlight: '焼きたて',
+          post: 'のパンはおいしい。』'
+        },
+        translation: 'Freshly baked bread is delicious.'
+      },{
+        sentence: {
+          ante: '『',
+          highlight: 'ぬりたて',
+          post: 'のペンキに気を付けてください。』'
+        },
+        translation: 'Please watch out for wet paint (the just painted paint).'
+      }
+    ],
+    other: 'The kanji for ～たて is　～立て、but the kana usage seems to be used more.'
   }
 ];
 

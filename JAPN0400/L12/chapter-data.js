@@ -59,16 +59,16 @@ const chap_grammar_list = [
       text: 'The adverb ろくに means "enough" or "sufficient", but is always followed by a negative predicate.  Thus, the meaning always implies a lack of sufficiency.  Maybe translate the whole thing as "Not sufficiently ～".  Can be used with nouns using ろくな。',
       species: [
         {
-          jap: 'ろくにverb(plain)[neg.]',
+          jap: 'ろくに verb(plain)[neg.]',
           eng: '：not sufficiently verb'
         },{
-          jap: 'ろくに(adjい）くない',
+          jap: 'ろくに (adjい)くない',
           eng: '：not sufficiently adj'
         },{
-          jap: 'ろくに(adjな）じゃない',
+          jap: 'ろくに (adjな)じゃない',
           eng: '：not sufficiently adj'
         },{
-          jap: 'ろくな(noun）じゃない',
+          jap: 'ろくな (noun)じゃない',
           eng: '：not sufficiently noun'
         }
       ]
@@ -99,16 +99,16 @@ const chap_grammar_list = [
       text: 'Gives a reason or a cause, usually for an undesireable situation.  Has some indication of blame being put upon the cause.  せい can be followed by で or から to further emphasize reason.  せい is a noun, and is used as such:',
       species: [
         {
-          jap: '(noun)のせい',
+          jap: '(noun)の せい',
           eng:''
         },{
-          jap: '(adjい）いせい',
+          jap: '(adjい)い せい',
           eng:''
         },{
-          jap: '(adjな）なせい',
+          jap: '(adjな)な せい',
           eng:''
         },{
-          jap: 'verb(plain)せい',
+          jap: 'verb(plain) せい',
           eng:''
         },{
           jap: 'YをXのせいにする',
@@ -149,16 +149,16 @@ const chap_grammar_list = [
       text: 'Gives a posisble reason for some undesirable situation in S2.',
       species: [
         {
-          jap: '(noun)のせいか、〜',
+          jap: '(noun)の せいか、〜',
           eng:''
         },{
-          jap: '(adjい）いせいか、〜',
+          jap: '(adjい)い せいか、〜',
           eng:''
         },{
-          jap: '(adjな）なせいか、〜',
+          jap: '(adjな)な せいか、〜',
           eng:''
         },{
-          jap: 'verb(plain)せいか、〜',
+          jap: 'verb(plain) せいか、〜',
           eng:''
         }
       ]
@@ -189,13 +189,13 @@ const chap_grammar_list = [
       text: '(cf. 〜せい because of (blame)) 〜おかげで is used when responsibility for a desireable situation is to be recognized.  It is used much like 〜せいか except for positive situations.  おかげ is a noun.',
       species: [
         {
-          jap: '(noun)のおかげ（で、〜）',
+          jap: '(noun)の おかげ（で、〜）',
           eng:''
         },{
-          jap: '(adjい）いおかげ（で、〜）',
+          jap: '(adjい)い おかげ（で、〜）',
           eng:''
         },{
-          jap: '(adjな）なおかげ（で、〜）',
+          jap: '(adjな)な おかげ（で、〜）',
           eng:''
         },{
           jap: 'verb(plain)おかげ（で、〜）',
@@ -324,10 +324,10 @@ const chap_grammar_list = [
       text: 'Follows the stem of certain verbs and nouns.  Expresses idea that one tends to do something, with a negative implication.  がち can be followed by particles.  When がち modifies another noun or a nominalizer like こと、it will be followed by 〜な。',
       species: [
         {
-          jap: '(noun)がち',
+          jap: '(noun) がち',
           eng: ''
         },{
-          jap: 'verb(stem)がち',
+          jap: 'verb(stem) がち',
           eng: ''
         },{
           jap: '(eg) しがち',

@@ -206,7 +206,7 @@ const chap_grammar_list = [
         translation: 'Kanji is not easily able to be remembered.  Kanji takes a long time to be able to be remembered.'
       }
     ],
-    other: 'You can do なかなかverb(potential)[neg] for "Not easily able to be done".'
+    other: 'You can do なかなかverb(potential)[neg] for "Not easily able to be done".  なかなか is actually a very nuanced word and has various translations.  It is given in the dictionary as "with considerable difficulty" and "by no means".  They don\'t mean the same thing, but, in general, なかなか〜ない may imply a passage of time, an expectation (that is not met), a great deal of effort (over a length of time), or that such expectation is acheived with great difficulty.'
   },
   {
     grammar_point: '(Q word)(sentence plain)か分かる[neg]',

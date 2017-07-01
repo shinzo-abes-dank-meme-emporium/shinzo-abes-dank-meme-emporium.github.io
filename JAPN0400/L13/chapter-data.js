@@ -302,6 +302,187 @@ const chap_grammar_list = [
       }
     ],
     other: '〜ものの is similar in meaning to the other conjuntions 〜が、けど、〜けれど、and 〜けれども。 It differs from 〜のに in that 〜のに implies a meaning of "despite 〜". 「(noun)なしで」means "Without a (noun)".'
+  },{
+    grammar_point: '一方で（は〜、他方では〜）',
+    spec: '一方で（は〜、他方では〜）',
+    meaning: '（「一方」いっぽう）;（「他方」たほう）"On one hand"; "On the other hand"',
+    use: {
+      text: 'Often used in the phrase「一方では〜、他方では」, but one of the two phrases is often omitted.  The は〜 is optional.  Either 一方で or 他方で can mean "On the one hand" or "On the other hand".  When only one is used, it usually means, "On the other hand".  Usually used to show contrast, and as such, it\'s useful to use this construction after a conjunction that indicates contradiction (ie: が、けど、etc.)',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『働く女性は年々増えているが、',
+          highlight: '一方で',
+          post: '、重要なポストについている女性は極めて（きわ(めて)）少ない。』'
+        },
+        translation: 'The (number of) women working is increasing every year, but, on the other hand, women who hold important posts are quite few (in number).'
+      },{
+        sentence: {
+          ante: '『チーズは、',
+          highlight: '一方では',
+          post: '美味しいだが、<b>他方では</b>黄色い（きいろ(い)）です。』'
+        },
+        translation: 'As for cheese, on the one hand it is delicious but, on the other hand, it is yellow.'
+      }
+    ],
+    other: 'Note that 方 means "direction" or "way", as in 〜方がいい or 方法。'
+  },{
+    grammar_point: '毎(temporal noun)のように',
+    spec: '毎(temporal noun)のように',
+    meaning: '"Almost every (temporal noun)"',
+    use: {
+      text: 'Indicates that the frequency of something is such that it seems like it happens almost every (temporal noun).  Can be used with any number of temporal nouns (eg: 週、月、年、回、時間、etc.).  (eg: 毎日のように：Specifically means that it APPEARS like every day, not that it is literally every day.)',
+      species: [
+        {
+          jap: '(eg):',
+          eng: ''
+        },{
+          jap: '毎 日 のように',
+          eng: '：Almost every day'
+        },{
+          jap: '毎 週 のように',
+          eng: '：Almost every week'
+        },{
+          jap: '毎 回 のように',
+          eng: '：Almost every instance'
+        },{
+          jap: '毎 時間 のように',
+          eng: '：Almost every time'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『キーンさんは、',
+          highlight: '毎日のように',
+          post: '中華料理（ちゅうかりょうり）を食べたそうだ。』'
+        },
+        translation: 'I hear that Mr. Keene ate Chinese food almost every day.'
+      },{
+        sentence: {
+          ante: '『日本語のクラスでは、',
+          highlight: '毎時間のように',
+          post: '宿題がある。』'
+        },
+        translation: 'In Japanese class, we have homework almost every time (ie: class period).'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: 'せいぜい（〜だけ）',
+    spec: 'せいぜい（〜だけ）',
+    meaning: '"At most 〜"',
+    use: {
+      text: 'Indicates a maximum limit, which is still a small amount.  Usually used with 〜だけ to empasize the thing of which there is less than desired.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『大きいクラスでは、一時間に',
+          highlight: 'せいぜい',
+          post: '一、二度当たれば（あ(たる)）いい方だ。』'
+        },
+        translation: 'In a large class, it\'s considered good if you get called on at most once or twice.'
+      },{
+        sentence: {
+          ante: '『日本のサラリーマンは、休みを取ったとしても',
+          highlight: 'せいぜい',
+          post: '四、五日<b>だけ</b>でしょう。』'
+        },
+        translation: 'Japanese white-collar workers, even if they take a vacation, it\'s at most only four or five days.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: '〜ながら（も）',
+    spec: '〜ながら（も）',
+    meaning: '"Although 〜"; "Despite 〜"',
+    use: {
+      text: 'Compared to the 〜ながら learned previously, for「S1 ながら S2」, when S1 ends in a noun, adjective, or a stative verb (verbている), then it expresses the idea of "Although".  However, when S1 ends in an action verb, it expresses the idea of simultaneity.',
+      species: [
+        {
+          jap: '(noun) ながら',
+          eng: ''
+        },{
+          jap: '(adjい)い ながら',
+          eng: ''
+        },{
+          jap: '(adjな) ながら',
+          eng: ''
+        },{
+          jap: 'verb(stative)(stem) ながら',
+          eng: '：(ie: verb(てい)) Although verb'
+        },{
+          jap: '<b>Compare to:</b>',
+          eng: ''
+        },{
+          jap: 'verb(stem) ながら',
+          eng: '：While verb'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『日本は、小さい島国',
+          highlight: 'ながら',
+          post: '経済大国だ。』'
+        },
+        translation: 'Although Japan is a small island-country, it is an economic superpower.'
+      },{
+        sentence: {
+          ante: '『残念',
+          highlight: 'ながら',
+          post: '強雨は伺えません。』'
+        },
+        translation: 'I\'m sorry but I can\'t visit you today.'
+      },{
+        sentence: {
+          ante: '『日本に住んでい',
+          highlight: 'ながら',
+          post: '日本語が一言も話せないのは不思議（ふしぎ）だ。』'
+        },
+        translation: 'It\'s curious that he can\'t speak a word of Japanese, despite living in Japan.'
+      },{
+        sentence: {
+          ante: '『分からない',
+          highlight: 'ながら',
+          post: '一生懸命（いっしょうけんめい）ＣＤを聞いていたら、だんだん分かるようになってきた。』'
+        },
+        translation: 'Although I didn\'t understand, when I listened and listened to the CD I slowly started to comprehend it it.'
+      }
+    ],
+    other: 'AMAZINGLY, this is almost EXACTLY like how we use "while" in English.  Compare: "While I ate the cheese, I read the newspaper" (ie: I ate the cheese and simultaneously read the newspaper); "While there was an effort, it was not enough" (ie: ALTHOUGH there was an effort, it was not enough).  スゴイ'
+  },{
+    grammar_point: '(noun)としては',
+    spec: '(noun)としては',
+    meaning: '"For a 〜"; "Considering 〜"; "Even though 〜"',
+    use: {
+      text: 'Used to indicate that, despite the subject being as it is, it is somehow able to do something.  Perhaps used to show mild surprise or contrast?',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『前田さんは、日本人',
+          highlight: 'としては',
+          post: '英語が上手です。』'
+        },
+        translation: 'Maeda-san speaks good English for a Japanese person.'
+      },{
+        sentence: {
+          ante: '『東京は、大都市',
+          highlight: 'としては',
+          post: '犯罪が少ない。』'
+        },
+        translation: 'Tōkyō has little crime for a big city.'
+      }
+    ],
+    other: '(cf. として："As 〜")'
   }
 ];
 

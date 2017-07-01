@@ -507,7 +507,7 @@ const chap_grammar_list = [
 */
 
 
-
+console.log("FILE LOADED")
 
 
 

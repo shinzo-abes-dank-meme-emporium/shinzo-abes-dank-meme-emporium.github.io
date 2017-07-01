@@ -1,4 +1,4 @@
-"use strict";
+
 
 let local_course_name = '日本語３００';
 let local_course_path = 'JAPN0300'

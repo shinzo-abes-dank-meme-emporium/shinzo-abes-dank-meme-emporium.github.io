@@ -1,8 +1,8 @@
 "use strict";
 
-const local_course_name = '日本語３００';
-const local_course_path = 'JAPN0300'
-const local_chap_name = '第３課';
+var local_course_name = '日本語３００';
+var local_course_path = 'JAPN0300'
+var local_chap_name = '第３課';
 
 /**
 {
@@ -12,9 +12,9 @@ const local_chap_name = '第３課';
   (opt)kaku: 'hai' or ''
 }
 */
-const chap_kanji_str = 'kanji,reading,meaning,kaku\n研究室,けんきゅうしつ,office (ie: professor\'s),\n授業,じゅぎょう,class (lecture),\n期末試験,きまつしけん,final exam,\n受ける,う（ける）,"to take (a class, test), to receive",hai\n推薦状,すいせんじょう,recommendation,\n留学,りゅうがく,study abroad,hai\n奨学金,しょうがくきん,scholarship,\n申し込む,もう（し）こ（む）,to apply,hai\n締め切り,し（め）き（り）,deadline,\n送る,おく（る）,to send,hai\n頼む,たの（む）,to ask a favor,hai\n痛い,いた（い）,painful,\n教室,きょうしつ,classroom,\n宿題,しゅくだい,homework,\n部屋,へや,room,hai\n寄る,よ（る）,to stop by,\n情報,じょうほう,information,\n交換,こうかん,exchange,\n利用する,りよう（する）,to use,hai\n授業料,じゅぎょうりょう,tuition,\n数,かず,number,hai\n同じ,おな（じ）,"same (noun/verb acting prenominally, cf. 似ている（似る）：to be similar)",\n選ぶ,えら（ぶ）,to choose,\n面接,めんせつ,interview,\n成績,せいせき,grade,\n性格,せいかく,character; personality,\n態度,だいど,attitude,\n目的,もくてき,aim; goal; purpose,hai\n優先,ゆうせん,priority,\n以外,いがい,other than; besides; excepting,\n場合,ばあい,case; situation,\n助ける,たす（ける）,"to help, to save/rescue",\n全部,ぜんぶ,all; entire (NB: only for inanimate objects) (cf. 全員),\n帰国,きこく,a return to one\'s home country (する：to return...),\n単位,たんい,credit (for a course),\n交渉,こうしょう,negotation,\n認める,みと（める）,"to approve, acknoledge, to admit, to recognize",\n国際学部,こくさいがくぶ,International Division (of University),\n文学,ぶんがく,Literature,hai\n歴史,れきし,History,hai\n経済,けいざい,Economics,hai\n政治,せいじ,Politics,hai\n宗教,しゅうきょう,Religion,hai\n音楽,おんがく,Music,hai\n普通,ふつう,"the common, usual, ordinary",hai\n活動,かつどう,activity,\n家庭,かてい,"home, household",\n特に,とく（に）,"particularlly, especially",\n希望,きぼう,wish; hope,\n者,もの,person,\n悪い,わる（い）,bad,\n住宅事情,じゅうたくじじょう,housing condition,\n留学希望者,りゅうがくきぼうしゃ,one who wishes to go study abroad,\n忘れる,わす（れる）,to forget,\n〜枚,〜まい,"counter for thin, flat objects",\nお願い,（お）ねが（い）,a request,\n伺う,うかが（う）,hum. form of 行く、来る、聞く,\n用紙,ようし,form,\n主（な）,おも（な）,"main (ie: the main ""topic"", etc)",\n行う,おこな（う）,"to carry out, to conduct (usually used in written lang.)",\n・,ほとんど〜ない,hardly,';
+var chap_kanji_str = 'kanji,reading,meaning,kaku\n研究室,けんきゅうしつ,office (ie: professor\'s),\n授業,じゅぎょう,class (lecture),\n期末試験,きまつしけん,final exam,\n受ける,う（ける）,"to take (a class, test), to receive",hai\n推薦状,すいせんじょう,recommendation,\n留学,りゅうがく,study abroad,hai\n奨学金,しょうがくきん,scholarship,\n申し込む,もう（し）こ（む）,to apply,hai\n締め切り,し（め）き（り）,deadline,\n送る,おく（る）,to send,hai\n頼む,たの（む）,to ask a favor,hai\n痛い,いた（い）,painful,\n教室,きょうしつ,classroom,\n宿題,しゅくだい,homework,\n部屋,へや,room,hai\n寄る,よ（る）,to stop by,\n情報,じょうほう,information,\n交換,こうかん,exchange,\n利用する,りよう（する）,to use,hai\n授業料,じゅぎょうりょう,tuition,\n数,かず,number,hai\n同じ,おな（じ）,"same (noun/verb acting prenominally, cf. 似ている（似る）：to be similar)",\n選ぶ,えら（ぶ）,to choose,\n面接,めんせつ,interview,\n成績,せいせき,grade,\n性格,せいかく,character; personality,\n態度,だいど,attitude,\n目的,もくてき,aim; goal; purpose,hai\n優先,ゆうせん,priority,\n以外,いがい,other than; besides; excepting,\n場合,ばあい,case; situation,\n助ける,たす（ける）,"to help, to save/rescue",\n全部,ぜんぶ,all; entire (NB: only for inanimate objects) (cf. 全員),\n帰国,きこく,a return to one\'s home country (する：to return...),\n単位,たんい,credit (for a course),\n交渉,こうしょう,negotation,\n認める,みと（める）,"to approve, acknoledge, to admit, to recognize",\n国際学部,こくさいがくぶ,International Division (of University),\n文学,ぶんがく,Literature,hai\n歴史,れきし,History,hai\n経済,けいざい,Economics,hai\n政治,せいじ,Politics,hai\n宗教,しゅうきょう,Religion,hai\n音楽,おんがく,Music,hai\n普通,ふつう,"the common, usual, ordinary",hai\n活動,かつどう,activity,\n家庭,かてい,"home, household",\n特に,とく（に）,"particularlly, especially",\n希望,きぼう,wish; hope,\n者,もの,person,\n悪い,わる（い）,bad,\n住宅事情,じゅうたくじじょう,housing condition,\n留学希望者,りゅうがくきぼうしゃ,one who wishes to go study abroad,\n忘れる,わす（れる）,to forget,\n〜枚,〜まい,"counter for thin, flat objects",\nお願い,（お）ねが（い）,a request,\n伺う,うかが（う）,hum. form of 行く、来る、聞く,\n用紙,ようし,form,\n主（な）,おも（な）,"main (ie: the main ""topic"", etc)",\n行う,おこな（う）,"to carry out, to conduct (usually used in written lang.)",\n・,ほとんど〜ない,hardly,';
 
-const chap_note_list = [
+var chap_note_list = [
   {
     topic: '借りる　and　貸す',
     spec: '借りる　and　貸す',
@@ -27,7 +27,7 @@ const chap_note_list = [
           '　貸す：か（す）　to lend'
         ]
       },{
-        subtopic: 'Instead, use the「(て or caus.て)いただけないでしょうか。」construction (etc: もらう、くれる）',
+        subtopic: 'Instead, use the「(て or caus.て)いただけないでしょうか。」varruction (etc: もらう、くれる）',
         desc: ['Also, don\'t do 借りて, that means "please let me lend"...']
       },{
         subtopic: '',
@@ -115,7 +115,7 @@ const chap_note_list = [
   }
 ];
 
-const chap_grammar_list = [
+var chap_grammar_list = [
   {
     grammar_point: 'verb[neg]で',
     spec: 'verb[neg]で',
@@ -155,7 +155,7 @@ const chap_grammar_list = [
           eng: 'Could you do verb?'
         },{
           jap: '',
-          eng: 'This kind of construction (て + verb of giving/receiving) also works with くれる、あげる、もらう with expected results:'
+          eng: 'This kind of varruction (て + verb of giving/receiving) also works with くれる、あげる、もらう with expected results:'
         }
       ]
     },
@@ -214,7 +214,7 @@ const chap_grammar_list = [
     spec: '(〜ば)〜ほど',
     meaning: '"The more/less 〜 is so, the more/less ＿＿ is."',
     use: {
-      text: 'The same verb/adj/noun is used for both 〜, first in 〜ば form and then in plain form + ぼど。For nouns and なadj., であれば／ある will be suffixed.  Pos. constructions give the "more" meaning, neg. constructions give the "less" meaning.  The 〜 may be positive and the ＿＿ may be negative, in which case the translation would be "the more, the less", and vice versa, etc.  For nouns/adjな、ある will be negated and not the noun/adj.  I kind of like the literal translations, as un-English as they are.',
+      text: 'The same verb/adj/noun is used for both 〜, first in 〜ば form and then in plain form + ぼど。For nouns and なadj., であれば／ある will be suffixed.  Pos. varructions give the "more" meaning, neg. varructions give the "less" meaning.  The 〜 may be positive and the ＿＿ may be negative, in which case the translation would be "the more, the less", and vice versa, etc.  For nouns/adjな、ある will be negated and not the noun/adj.  I kind of like the literal translations, as un-English as they are.',
       species: [
         {
           jap: 'verb[pos.]ばverb[pos.]ほど＿[pos.]＿：',
@@ -363,7 +363,7 @@ const chap_grammar_list = [
         translation: 'There are scholarships other than those from the Ministry of Eduction, Culture, Sports, Science, and Technology. (lit. "Other than MECSST"のscholarhsips exist)'
       }
     ],
-    other: 'I quite like literal translations.  Overthrow Western grammatical constructs!'
+    other: 'I quite like literal translations.  Overthrow Western grammatical varructs!'
   },{
     grammar_point: '必ずしも（clause）というわけではない',
     spec: '必ずしも〜というわけではない',

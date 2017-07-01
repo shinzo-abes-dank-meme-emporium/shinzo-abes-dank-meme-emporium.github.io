@@ -126,7 +126,6 @@ $(window).on('load', function() {
         }
       });
     }
-    console.log(total_grammar)
   }
 });
 

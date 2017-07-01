@@ -3,7 +3,7 @@
 const dataFilename = 'chapter-data.js'
 const initURL = 'https://shinzo-abes-dank-meme-emporium.github.io'
 
-const grammar_id = "#content-grammar";
+const search_results_ID = "#content-search-results";
 
 
 /*
@@ -86,11 +86,11 @@ function buildGrammarEntry(entry, path) {
   ].join('\n');
 
   // console.log(grammar_entry);
-  $(grammar_id).append(grammar_entry);
+  $(search_results_ID).append(grammar_entry);
 }
 
 function searchGrammar(query, callback) {
-  $(grammar_id).empty();
+  $(search_results_ID).empty();
   callback = callback || noop
   for (var i=0; i<total_grammar.length; i++) {
     let grammar_entry = total_grammar[i].entry;

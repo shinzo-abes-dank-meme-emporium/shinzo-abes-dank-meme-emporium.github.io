@@ -6,6 +6,16 @@ const initURL = 'https://shinzo-abes-dank-meme-emporium.github.io'
 const grammar_results_ID = "#grammar-search-results";
 const kanji_results_ID = "#kanji-search-results";
 
+const database = [
+  {
+    course: 'JAPN0300',
+    chapters: ['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  },{
+    course: 'JAPN0400',
+    chapters: ['L8', 'L9', 'L10', 'L11', 'L12', 'L13', 'L14', 'L15']
+  }
+]
+
 
 /*
 [
@@ -19,20 +29,15 @@ let total_grammar = [];
 
 /*
 [
-  {kanji}
+  {
+    kanji: '',
+    reading: '',
+    meaning: '',
+    (opt)kaku: 'hai' or ''
+  }
 ]
 */
 let total_kanji = [];
-
-const database = [
-  {
-    course: 'JAPN0300',
-    chapters: ['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
-  },{
-    course: 'JAPN0400',
-    chapters: ['L8', 'L9', 'L10', 'L11', 'L12', 'L13', 'L14', 'L15']
-  }
-]
 
 function noop() {}
 
@@ -44,15 +49,17 @@ function buildGrammarEntry(entry, path) {
   var gl_example_list = entry.example;
   var gl_other = entry.other;
 
-  /*use: {
+  /*
+  use: {
     text: '',
     species: [
       {
         jap: '',
         eng: ''
       }
-    ],
-  }*/
+    ]
+  }
+  */
 
   var gl_use = gl_use_obj.text;
   var gl_use_species_list = gl_use_obj.species;
@@ -70,7 +77,7 @@ function buildGrammarEntry(entry, path) {
         post: ''
       },
       translation: ''
-    },
+    }
   ]*/
   var sent_ante = gl_example_list[0].sentence.ante;
   var sent_highlight = gl_example_list[0].sentence.highlight;
@@ -95,7 +102,6 @@ function buildGrammarEntry(entry, path) {
   '</div>'
   ].join('\n');
 
-  // console.log(grammar_entry);
   $(grammar_results_ID).append(grammar_entry);
 }
 
@@ -142,13 +148,11 @@ function searchKanji(query, callback) {
   for (var i=0; i<total_kanji.length; i++) {
     let kanji_entry = total_kanji[i];
     // let kanji_path = total_kanji[i].path;
+    // not used... yet?
 
     let kanji = kanji_entry.kanji;
     let reading = kanji_entry.reading;
     let clean_reading = reading.replace(/[（）]/g,'')
-
-    // console.log(kanji_entry)
-    // console.log(clean_reading)
 
     if (kanji.includes(query) || clean_reading.includes(query)) {
       buildKanjiEntry(kanji_entry)
@@ -209,6 +213,15 @@ $('#kanji-search-input').keyup(function(e) {
     searchKanji(input)
   }
 });
+
+$("#kanji-clear-button").click(function() {
+  $(kanji_results_ID).empty();
+});
+$("#grammar-clear-button").click(function() {
+  $(grammar_results_ID).empty();
+});
+
+
 
 
 

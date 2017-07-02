@@ -188,6 +188,9 @@ $(window).on('load', function() {
       });
     }
   }
+
+  $(".loading-text").css("display", "none");
+  $(".search-bar").css("display", "initial");
 });
 
 $("#grammar-submit-button").click(function() {

@@ -139,8 +139,6 @@ function isMatch(splitQuery, grammar_entry) {
     let grammar_point = grammar_entry.grammar_point;
     let grammar_alt_def = grammar_entry.alt_def;
 
-    console.log(grammar_entry);
-
     if (grammar_point.includes(firstEl) || grammar_alt_def.includes(firstEl)) {
       return true && isMatch(rest, grammar_entry)
     }

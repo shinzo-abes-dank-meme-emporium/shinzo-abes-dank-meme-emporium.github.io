@@ -91,10 +91,10 @@ var chap_note_list = [
 
 var chap_grammar_list = [
   {
-    grammar_point: 'verb(plain, past)ばかり',
-    spec: 'verb(plain, past)ばかり',
-    alt_def: '',
-    meaning: 'Have just (verb)ed, have just finished (verb)ing.',
+    grammar_point: 'verb(plain)[past]ばかり',
+    spec: 'verb(plain)[past]ばかり',
+    alt_def: 'たばかり',
+    meaning: '"Have just verb-ed"; "Have just finsished verb-ing"',
     use: {
       text: 'ばかり can end a sentence (ばかり（だ・です)）and preceed conjunctions (ばかりだから) and other nouns (ばかりのnoun).',
       species: []
@@ -115,9 +115,9 @@ var chap_grammar_list = [
     grammar_point: 'あの',
     spec: 'あの',
     alt_def: '',
-    meaning: 'あの refers to a noun that is not in sight.  あの is used when both the speaker and listener are familiar with the person or thing.',
+    meaning: '"That 〜"',
     use: {
-      text: 'あの preceeds a noun.',
+      text: 'あの preceeds a noun.  あの refers to a noun that is not in sight.  あの is used when both the speaker and listener are familiar with the person or thing.',
       species: []
     },
     example: [
@@ -133,12 +133,12 @@ var chap_grammar_list = [
     other: 'あの differs from その in that その refers to a noun with which only one person is familiar.'
   },
   {
-    grammar_point: 'verb(plain)ようになる',
-    spec: 'verb(plain)ようになる',
-    alt_def: '',
-    meaning: 'Such (verb)ing has become (or came to be) [past] or will become (or will be) [present] (or take place, etc.).  (ie: using なる with verbs)',
+    grammar_point: 'verb(plain)ようになる[past, pres.]',
+    spec: 'verb(plain)ようになる[past, pres.]',
+    alt_def: 'ようになった、なった',
+    meaning: '"Such verb has become/came to be" (なる[past]); "Such verb will become/will be/will take place" (なる[present])',
     use: {
-      text: 'Conjugate なる in the [past] for verbing that has become.  Conjugate なる in the [present] for verbing that will become.',
+      text: 'In other words, how to use なる with verbs.  Conjugate なる in the [past] for verbing that has become.  Conjugate なる in the [present] for verbing that will become.',
       species: [
         {
           jap: 'verb(plain)ようになる：',
@@ -192,10 +192,10 @@ var chap_grammar_list = [
     other: '...'
   },
   {
-    grammar_point: 'verb(plain)ところ',
-    spec: 'verb(plain)ところ',
-    alt_def: '',
-    meaning: 'Is about to verb [present]; is currently (verb)ing [ている]; has just (verb)ed [past].',
+    grammar_point: 'verb(plain)[pres., prog., past]ところ',
+    spec: 'verb(plain)[pres., prog., past]ところ',
+    alt_def: 'ているところ、たところ、ったところ',
+    meaning: '"Is about to verb" [pres.]ところ; "Is currently verb-ing [ている]ところ; "Has just verb-ed" [past]ところ.',
     use: {
       text: 'The meaning changes based on tense of verb(plain).  ところ usually written with kana alone.  ところ declines as a noun.',
       species: [

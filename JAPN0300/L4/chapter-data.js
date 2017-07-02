@@ -8,7 +8,8 @@ var local_chap_name = '第４課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -88,6 +89,7 @@ var chap_grammar_list = [
   {
     grammar_point: '別に（〜ない）',
     spec: '別に（〜ない）',
+    alt_def: '',
     meaning: '（漢字：べつ（に））Not particularly.',
     use: {
       text: 'Adverb.  Usually followed by a negative form of a verb.  Means that something is not particularly the case.',
@@ -114,6 +116,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜かな',
     spec: '〜かな',
+    alt_def: '',
     meaning: '"I wonder."  Emphatic.',
     use: {
       text: '〜かな is the colloquial form of 〜でしょうか meaning "I wonder".  Also used as 〜かなと思う to provide more emphasis.',
@@ -154,6 +157,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'たしか',
     spec: 'たしか',
+    alt_def: '',
     meaning: 'If I remember correctly, if I am not mistaken.',
     use: {
       text: 'Usually put at the beginning of the clause that is unsure.  Injects the implication of uncertainty that the speaker has.  NOT to be confused with たしかに：certainly.',
@@ -181,6 +185,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（X）は（Y）で有名だ',
     spec: '（X）は（Y）で有名だ',
+    alt_def: '',
     meaning: 'X is famous for Y.',
     use: {
       text: 'Y can be a noun or noun phrase (ie: sentence（の・こと）',
@@ -207,6 +212,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'nounにする',
     spec: 'nounにする',
+    alt_def: '',
     meaning: 'To decide on noun.  To have/take noun.',
     use: {
       text: 'Used when one decides on one choice of many.  Like an item on a menu, or date for an event.',
@@ -226,6 +232,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜ようだ',
     spec: '〜ようだ',
+    alt_def: '',
     meaning: 'It seems like 〜。 It looks like 〜。 (Based on physical evidence)',
     use: {
       text: 'Used when there is good evidence to support what seems.  Can be used with noun/adj/verb',
@@ -259,6 +266,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'nounのように',
     spec: 'nounのように',
+    alt_def: '',
     meaning: 'Like, as if it were noun.',
     use: {
       text: 'An adverbial construction of よう。 lit. "noun likeningly".  ',
@@ -278,6 +286,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（nounA）のような（nounB）',
     spec: '（nounA）のような（nounB）',
+    alt_def: '',
     meaning: 'Noun B looks/is like noun A.',
     use: {
       text: 'In this way, よう connects two nouns.  This is like らしい connecting two nouns.',
@@ -297,6 +306,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'さえ',
     spec: 'さえ',
+    alt_def: '',
     meaning: 'Even',
     use: {
       text: 'Is a particle which emphasizes the case which is unexpected.  Acts with mostly the same meaning as in English.  Usually replaces the particle, but particles can remain as ＿さえ。  Conjugation as such:',
@@ -324,6 +334,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'いつのまにか',
     spec: 'いつのまにか',
+    alt_def: '',
     meaning: 'Before one knows/realizes it',
     use: {
       text: 'A saying/phrasing.  Used before the phrase which is what is before one realizes.',
@@ -343,6 +354,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜になれる',
     spec: '〜になれる',
+    alt_def: '',
     meaning: 'to be used to; to be accustomed to',
     use: {
       text: 'Follows a noun directly or a sentenceの。',
@@ -362,6 +374,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（verbて）くる／いく',
     spec: '（verbて）くる／いく',
+    alt_def: '',
     meaning: 'A change/process/transition has been taking place up until now (くる）。  A change/process/transition will take place from now own （いく）。',
     use: {
       text: 'くる and いく are kana forms of 来る and 行く respectively.  In this form, the verbs are usually written with kana alone.  くる is usually conjugated in the past (to convey the meaning of "has come to be").',
@@ -392,6 +405,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜わけではない',
     spec: '〜わけではない',
+    alt_def: '',
     meaning: 'It does not necessarily mean that...; it does not follow that...',
     use: {
       text: 'This construction negates what one would conclude from previously mentioned statements or situations.  Is preceeded by words of the plain form.',
@@ -411,6 +425,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verbないで済む',
     spec: 'verbないで済む',
+    alt_def: '',
     meaning: '（漢字：す（む）：to finish）One manages to get by without doing verb.  One "doesn\'t even have to verb.',
     use: {
       text: 'verbないで is the negative て form.',
@@ -430,6 +445,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜ずつ',
     spec: '〜ずつ',
+    alt_def: '',
     meaning: 'Each; at a time.',
     use: {
       text: 'Follows a number or number + counter or limited quanitity (like 少し).  Indicates that a quanitity is equally distributed among two or more objects, time, etc.',
@@ -456,6 +472,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（verb/adj)（stem）すぎる',
     spec: '（verb/adj)（stem）すぎる',
+    alt_def: '',
     meaning: 'Too adj.  Do verb too much.',
     use: {
       text: 'Conjugation as such:',
@@ -489,6 +506,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜以上',
     spec: '〜以上',
+    alt_def: '',
     meaning: '（漢字：いじょう）More than 〜。(some quanitity)',
     use: {
       text: 'Preceeded by some number and counter.  If the counter is generic (ie: つ、本、枚), a noun can follow to further specify what is "more than".  As a whole, the phrase indicates some quanitity of which there is more than.  Sort of like a particle?  Specifically, 以上 means "more than and including #" meaning there could be some number of things or more.',
@@ -513,7 +531,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

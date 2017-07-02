@@ -8,7 +8,8 @@ var local_chap_name = '第２課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -106,6 +107,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb[neg]で',
     spec: 'verb[neg]で',
+    alt_def: '',
     meaning: 'Without verb(ing)...; Instead of verb(ing)...',
     use: {
       text: '(ie: verbないで).  A negative verb(て) form.  Usually followed by another verb and indicates a manner in which the action is carried out.  Often carries the connotation that one was expected to do the verb but did not.',
@@ -126,6 +128,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb(ば)いいのに',
     spec: 'verb(ば)いいのに',
+    alt_def: '',
     meaning: 'You should verb.  (lit. It would be good if you verb)',
     use: {
       text: 'Casual.  Usually ends the sentence.  Usually used to suggest the opposite of what the other person is doing or not doing.',
@@ -146,6 +149,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'それに（and other conjunctions)',
     spec: 'それに',
+    alt_def: '',
     meaning: 'moreover; besides',
     use: {
       text: 'A carnival of conjunctions: ',
@@ -191,6 +195,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'なかなかverb[neg]',
     spec: 'なかなかverb[neg]',
+    alt_def: '',
     meaning: 'Not easily (verb).  Verb is not easily done.',
     use: {
       text: 'なかなか、when used with a verb[neg] means something is not easly done or it takes time to do verb.',
@@ -211,6 +216,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(Q word)(sentence plain)か分かる[neg]',
     spec: '(Q word)(sentence)か分かる[neg]',
+    alt_def: '',
     meaning: 'I don\'t know when/what/where/who/etc. (sentence).',
     use: {
       text: 'Used to embed a wh-question in another sentence.  End the embedded question in plain form plus か.  だ is optional.  かどうか embeds a yes-no question.',
@@ -248,6 +254,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'しかverb[neg]',
     spec: 'しかverb[neg]',
+    alt_def: '',
     meaning: 'Only; no more than',
     use: {
       text: 'Implies that the aforementioned amount/item is not enough or less than expected.  しか replaces は、が、を (like も), but other particles are retained as ＿しか (eg: nounにしか).',
@@ -297,6 +304,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(sentence A)つまり(sentence B)',
     spec: 'つまり',
+    alt_def: '',
     meaning: '"Sentence A.  In other words/that is/namely/in short, sentence B."',
     use: {
       text: 'Used at the beginning of a sentence to summarize/expand the previous sentence.',
@@ -317,6 +325,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(sentence)わけです。',
     spec: '(sentence)わけです。',
+    alt_def: '',
     meaning: 'That is to say; it follows that; that means (sentence)',
     use: {
       text: 'States a logical conclusion which can be drawn from previous statements.  The sentence ends in plain form, can be past or present.',
@@ -350,6 +359,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'nounによって',
     spec: 'nounによって',
+    alt_def: '',
     meaning: 'Depending on (noun).',
     use: {
       text: 'nounによって can be followed by a noun or verb and describes the noun or verb.  ',
@@ -378,6 +388,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'nounに当たる',
     spec: 'nounに当たる',
+    alt_def: '',
     meaning: '（漢字：あ（たる））To correspond to; to be equal to (noun)',
     use: {
       text: 'Compares an aforementioned noun to the nounに and states (or asks a question about) the equality of the two.',
@@ -406,6 +417,7 @@ var chap_grammar_list = [
   {
     grammar_point: '（nounの・verb phrase）ような(noun)',
     spec: '〜（のnoun・verb）ような(noun)',
+    alt_def: '',
     meaning: 'A (noun) like/such as 〜。',
     use: {
       text: 'Compares a noun to another noun or verb phrase.  Cannot be used with adjectives.  Verbような(noun) means "A noun which is like verb-phrase(noun)", I think, wherein (noun) is an unwritten but implied repetition of noun to which the verb-phrase is related, such as eg2.',
@@ -438,7 +450,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

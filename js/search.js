@@ -133,11 +133,13 @@ function isMatch(splitQuery, grammar_entry) {
     return true;
   }
   else {
-    let firstEl = splitQuery[0]
+    let firstEl = splitQuery[0];
     let rest = splitQuery.slice(1);
 
     let grammar_point = grammar_entry.grammar_point;
     let grammar_alt_def = grammar_entry.alt_def;
+
+    console.log(grammar_entry);
 
     if (grammar_point.includes(firstEl) || grammar_alt_def.includes(firstEl)) {
       return true && isMatch(rest, grammar_entry)

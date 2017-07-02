@@ -8,7 +8,8 @@ var local_chap_name = '第１３課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +55,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(noun)たら／(noun)ったら',
     spec: '(noun)たら／(noun)ったら',
+    alt_def: '',
     meaning: 'Indicates topic of sentence (with sense of surprise, dispelief, reproach, etc.)',
     use: {
       text: 'Used in informal conversation.',
@@ -80,6 +82,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'よっぽど',
     spec: 'よっぽど',
+    alt_def: '',
     meaning: '"Considerably / really / to a great extent (more than normal)"',
     use: {
       text: 'Colloquial form of よほど。 Indicates that something is of a degree considerably greater than usual.',
@@ -106,6 +109,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜に違いない',
     spec: '〜に違いない',
+    alt_def: '',
     meaning: '"It must be 〜"; "There is no mistaking 〜"',
     use: {
       text: 'Can be formed as such:',
@@ -160,6 +164,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'さすが（に）',
     spec: 'さすが（に）',
+    alt_def: '',
     meaning: '"Indeed"; "As can be expected"; "Of course"',
     use: {
       text: 'Gives the connotation that the speaker is favorably impressed.  Often preceeded by「〜だけあって」meaning "〜 being the case"; "precisely because 〜"; "as expected from 〜".  Meaning and formation of「〜だけあって」in the next grammar point.',
@@ -179,6 +184,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜だげあって',
     spec: '〜だげあって',
+    alt_def: '',
     meaning: '"〜 being the case"; "precisely because 〜"; "as expected from 〜"',
     use: {
       text: 'Can be used as:',
@@ -212,6 +218,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)なんか／(noun)なんて',
     spec: '(noun)なんか／(noun)なんて',
+    alt_def: '',
     meaning: '"Something/somebody like 〜".',
     use: {
       text: 'Follows nouns and is used much like "like" in English.  Both なんか and なんて can follow a noun, but only なんて can follow a sentence.  なんて is a contraction of many forms (eg:)',
@@ -269,6 +276,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜ものの',
     spec: '〜ものの',
+    alt_def: '',
     meaning: '"Although 〜、"',
     use: {
       text: 'Conjunction that means "although".  Tends to be used in writting.  Used as such:',
@@ -305,6 +313,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '一方で（は〜、他方では〜）',
     spec: '一方で（は〜、他方では〜）',
+    alt_def: '',
     meaning: '（「一方」いっぽう）;（「他方」たほう）"On one hand"; "On the other hand"',
     use: {
       text: 'Often used in the phrase「一方では〜、他方では」, but one of the two phrases is often omitted.  The は〜 is optional.  Either 一方で or 他方で can mean "On the one hand" or "On the other hand".  When only one is used, it usually means, "On the other hand".  Usually used to show contrast, and as such, it\'s useful to use this construction after a conjunction that indicates contradiction (ie: が、けど、etc.)',
@@ -331,6 +340,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '毎(temporal noun)のように',
     spec: '毎(temporal noun)のように',
+    alt_def: '',
     meaning: '"Almost every (temporal noun)"',
     use: {
       text: 'Indicates that the frequency of something is such that it seems like it happens almost every (temporal noun).  Can be used with any number of temporal nouns (eg: 週、月、年、回、時間、etc.).  (eg: 毎日のように：Specifically means that it APPEARS like every day, not that it is literally every day.)',
@@ -374,6 +384,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'せいぜい（〜だけ）',
     spec: 'せいぜい（〜だけ）',
+    alt_def: '',
     meaning: '"At most 〜"',
     use: {
       text: 'Indicates a maximum limit, which is still a small amount.  Usually used with 〜だけ to empasize the thing of which there is less than desired.',
@@ -400,6 +411,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜ながら（も）',
     spec: '〜ながら（も）',
+    alt_def: '',
     meaning: '"Although 〜"; "Despite 〜"',
     use: {
       text: 'Compared to the 〜ながら learned previously, for「S1 ながら S2」, when S1 ends in a noun, adjective, or a stative verb (verbている), then it expresses the idea of "Although".  However, when S1 ends in an action verb, it expresses the idea of simultaneity.',
@@ -460,6 +472,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)としては',
     spec: '(noun)としては',
+    alt_def: '',
     meaning: '"For a 〜"; "Considering 〜"; "Even though 〜"',
     use: {
       text: 'Used to indicate that, despite the subject being as it is, it is somehow able to do something.  Perhaps used to show mild surprise or contrast?',
@@ -491,7 +504,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

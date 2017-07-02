@@ -8,7 +8,8 @@ var local_chap_name = '第５課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -70,6 +71,7 @@ var chap_grammar_list = [
   {
     grammar_point: '（〜に）気がつく',
     spec: '（〜に）気がつく',
+    alt_def: '',
     meaning: 'To notice 〜。  〜 caught one\'s attention',
     use: {
       text: 'The kanji of つく is 付く。 つく is a verb and is conjugated as such.  The thing which is noticed can be a noun or a phrase (sentence + の・こと).',
@@ -89,6 +91,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'せっかく',
     spec: 'せっかく',
+    alt_def: '',
     meaning: 'Indicates that something has been done with a great deal of trouble.',
     use: {
       text: 'The true meaning and usage of せっかく is probably quite nuanced.  From what I have read, せっかく means that a positive opportunity has arisen or come about with effort (and, in certain scenarios, it would be/was a shame not to seize it or to have it go to waste).  There is a similar word わざわざ which means "someone has gone out of their way to do something".  Compare:',
@@ -116,6 +119,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain)わけにはいく[neg.]',
     spec: 'verb(plain)わけにはいく[neg.]',
+    alt_def: '',
     meaning: 'Using verb(plain, pres., pos.) means "One cannot do certain things for social/moral/societal reasons.  Using verb(plain, pres. neg.) means "One can\'t help but to do verb"',
     use: {
       text: 'いく[neg.] is conjugated as いかない or いけません etc.  Meanings or using the [pos.] or [neg.] forms of verbs:',
@@ -150,6 +154,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'そうかと言って',
     spec: 'そうかと言って',
+    alt_def: '',
     meaning: 'But.  And yet.  (lit. "Having said that, ")',
     use: {
       text: 'Used to qualify a preceeding statement.  Usually used with 〜わけにはいかない or 〜わけではない etc.',
@@ -176,6 +181,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain, present)ために',
     spec: 'verb(plain)ために',
+    alt_def: '',
     meaning: 'In order to verb.',
     use: {
       text: 'ため means "purpose" or "sake".  Literally, you might translate verb(pl, pres)ために as "verb-purpose-ly".  Verbための will modify a following noun.  This translation is more difficult, but the literal translation is also fun (lit. "the for-the-purpose-of-verb noun").',
@@ -210,6 +216,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（〜て）も',
     spec: '（〜て）も',
+    alt_def: '',
     meaning: 'Even when/if 〜',
     use: {
       text: 'Verbs and adjectives in the て form with the particle も gives the meaning "even when/if 〜".  The main sentence is usually in the non-past, as in "Even if A, B is so".  な adjectives and nouns take the form 〜であっても which is usually contracted to でも。 Conjugation as follows:',
@@ -264,6 +271,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb[neg.](stem)ず（に）',
     spec: 'verb[neg.](stem)ず（に）',
+    alt_def: '',
     meaning: '〜ず connects sentences where the final verb would end as 〜なくて。 〜ずに is used in the same context as 〜ないで (ie: without doing).',
     use: {
       text: '〜ず is a negative form in classical Japanese.  The modern equivalent is 〜ない。 This helps a bit with figuring out the conjugation of 〜ず： Conjugate the verb as you would for ない but use ず instead.',
@@ -304,6 +312,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'nounによると',
     spec: 'nounによると',
+    alt_def: '',
     meaning: 'According to 〜',
     use: {
       text: 'Used to indicate a source of information.  Usually followed by expressions to indicate hearsay (eg: そうだ).  よる is the verb here, meaning "based on" or "coming from" (compare to 〜によって：depending on 〜)',
@@ -323,6 +332,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'noun化',
     spec: 'noun化',
+    alt_def: '',
     meaning: '〜ization.  Carries the meaning of 〜になる or 〜にする。',
     use: {
       text: 'Hard to translate or define.  Usually using the English suffix "〜ization" gets the point across.  Usually attached to kanji compounds.  Usually combined with する to mean "〜ize" or される "〜ized".  For example:',
@@ -363,6 +373,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'Causative-Passive (verb(caus.))(pass.)',
     spec: 'Causative-Passive (verb(caus.))(pass.)',
+    alt_def: '',
     meaning: 'To be made to verb',
     use: {
       text: 'Formed by conjugating a verb in the causative and then taking the passive of that form.  This ultimately ends up as ／あ／せられる which can be contracted to ／あ／される UNLESS such contraction would duplicate the さ。 Conjugation of the causative and passive:',
@@ -437,7 +448,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

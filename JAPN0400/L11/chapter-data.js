@@ -8,7 +8,8 @@ var local_chap_name = '第１１課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +55,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb(plain)（もん／もの）ですから',
     spec: 'verb(plain)（もん／もの）ですから',
+    alt_def: '',
     meaning: '"Because of 〜"; "〜 happened, regretably"',
     use: {
       text: 'When verb is verb(plain)[past], there is a semblance of apology in the statment.  When the verb is verb(plain)[present], the speaker is just giving a reason or stating something that happened.  In both cases, the speaker feels bad for what happened and in both cases the situation could not be avoided.  The past form of verbs is used for apologies.',
@@ -95,6 +97,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜うちに',
     spec: '〜うちに',
+    alt_def: '',
     meaning: '"While 〜"; "While 〜 situation holds"',
     use: {
       text: 'There are two versions of 〜うちに。 The second is explained below.  〜うちに is preceded by nouns, adjectives, and verbs in simple (る・／う／) or progressive/stative (〜ている) forms.  You should not use with past forms.  It expresses a sense of "while a certain situation holds".  うち means "inside", "within", and "while", among other things.',
@@ -159,6 +162,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain)[neg.]うちに',
     spec: 'verb(plain)[neg.]うちに',
+    alt_def: '',
     meaning: '"Before 〜"; "Before 〜 happens"',
     use: {
       text: 'When 〜うちに is preceded by negative verbs, it means "before 〜 happens".  This only applies to verbs in the negative case.  Usually, adjectives are followed by なる[neg.] (ならない) which is used to convey "before something becomes adj".',
@@ -193,6 +197,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜が気になる',
     spec: '〜が気になる',
+    alt_def: '',
     meaning: '"〜 weighs on one\'s mind"; "To be concerned about 〜"',
     use: {
       text: '〜 can be a noun or a phrase ending in a nominalized verb (verbの）。',
@@ -227,6 +232,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'どうしても～([pos.]/[neg.])',
     spec: 'どうしても～([pos.]/[neg.])',
+    alt_def: '',
     meaning: '(w/ [positive]): "By all means", "No matter what"; (w/ [negative]): "Can\'t, no matter how hard one tries"',
     use: {
       text: 'Can be used with positive or negative predicate (ie: verbs, adj, nounだ, etc.)',
@@ -261,6 +267,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'つい',
     spec: 'つい',
+    alt_def: '',
     meaning: '"Inadvertently"; "Involuntarily"',
     use: {
       text: 'つい is an adverb and can be inserted as such.  Usually precedes the phrase it modifies.',
@@ -287,6 +294,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)に気をつける',
     spec: '(noun)に気をつける',
+    alt_def: '',
     meaning: '"To pay attention to ～"; "To be careful/mindful of ～"',
     use: {
       text: 'Also used as a forewarning:「（～に）気をつけてください！」',
@@ -306,6 +314,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（～に）verb(plain)ように（お願いする／言う／頼む／注意する）',
     spec: '（～に）verb(plain)ように（お願いする／言う／頼む／注意する）',
+    alt_def: '',
     meaning: '"To request/tell/ask (someone (～に)) (to do something)"',
     use: {
       text: 'An indirect quote of a command or request.  The person to whom the request is directed is marked with ～に。 Can also be used with passive forms of the "asking" verbs to mean that someone was asked to do something by someone else.',
@@ -356,6 +365,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(vol.)としたら',
     spec: 'verb(vol.)としたら',
+    alt_def: '',
     meaning: '"When I was about to verb"',
     use: {
       text: 'Remember, verb(vol.)とする means "to try to do verb".  Also, verb[past.]ら (ie: ～たら) means "when" or "if".  Volitional formation:',
@@ -396,6 +406,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（Xて、）Yくらいだ',
     spec: '（Xて、）Yくらいだ',
+    alt_def: '',
     meaning: '"X, to the extent that (it\'s like/almost) Y."',
     use: {
       text: 'くらい in this instance indicate the degree or extent of a situation (like ほど).  X is just a phrase that ends in て (or also で、so the book says... I think the important part is that it\'s a phrase that will be connected to Y).  Y may be an adjective or verb.',
@@ -447,6 +458,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain)[past.]ものだ',
     spec: 'verb(plain)[past.]ものだ',
+    alt_def: '',
     meaning: '"Used to verb"',
     use: {
       text: 'Expresses something one used to do in the past or to reminisce about the past.',
@@ -473,6 +485,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(stem)たて（の・だ）',
     spec: 'verb(stem)たて（の・だ）',
+    alt_def: '',
     meaning: '"Something was <i>just</i> done"; "Freshly ～"; "Newly ～".',
     use: {
       text: 'Attaches to a limited number of verbs.  When used to modify a noun, is followed by の。 I\'ve read that it is ascribed to verbs that "produce results" or have a concept of "emergence".',
@@ -530,7 +543,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

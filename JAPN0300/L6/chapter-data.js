@@ -129,6 +129,7 @@ var chap_grammar_list = [
   {
     grammar_point: '〜って',
     spec: '〜って',
+    alt_def: '',
     meaning: '"They say, 〜"; "〜, so I hear."',
     use: {
       text: 'A sentence ending in plain form is put before って。　Used to qualify information obtained through secondary sources (vs what is known firsthand).  Such distinction is important in Japanese.',
@@ -149,6 +150,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(verb/adj)ことは(verb/adj)（が、〜）',
     spec: '〜ことは（〜が）',
+    alt_def: '',
     meaning: 'It is[present] indeed the case that (verb/adj)(, but...); It was[past] indeed the case that (verb/adj)(, but...)',
     use: {
       text: 'This is another way to qualify one\'s statements.  The verb or adjective is repeated before and after ことは。 Both sides should match in tense.  〜が is optional (ie: You don\'t need to say "Indeed ___, but", you can just say "Indeed ___."',
@@ -189,6 +191,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(noun)でいいです／(noun)でけっこうです',
     spec: 'nounでいいです／nounでけっこうです',
+    alt_def: '',
     meaning: '(noun) will do; (noun) will suffice',
     use: {
       text: 'けっこう means "sufficient, enough".',
@@ -209,6 +212,7 @@ var chap_grammar_list = [
   {
     grammar_point: '〜とは限る[neg]',
     spec: '〜とは限る[neg]',
+    alt_def: '',
     meaning: '（漢字：「かぎ」る）It is not necessarily the case that ~(sentence).  It does not mean that ~(sentence).',
     use: {
       text: '限る[neg] is 限らない／限りません。 The preceeding statement should end in plain form.  The expression is often used with 必ずしも（also expresses "not always; not necessarily").',
@@ -238,6 +242,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb(plain)（前に・〜後（で）・〜時（に））',
     spec: 'verb(plain)（前に・〜後（で）・〜時（に））',
+    alt_def: '',
     meaning: 'Before 〜; After 〜; When(present/past) 〜',
     use: {
       text: 'Time particles indicate the temporal situation of the preceeding action to the following clause.  There are rules which govern whether to use [present] or [past] in the preceeding action, however, the main verb always governs the embeded verb\'s tense in translation.  It\'s quite fun to think about the sequence of actions.  For 後 and 時 their particles are optional.',
@@ -339,6 +344,7 @@ var chap_grammar_list = [
   {
     grammar_point: '何(counter)も',
     spec: '何(counter)も',
+    alt_def: '',
     meaning: '何(counter)も is a phrase which means "many of that which is counted by (counter)".',
     use: {
       text: '何(counter)も also has a negative analogue 「一(counter)も[neg]」',
@@ -380,6 +386,7 @@ var chap_grammar_list = [
   {
     grammar_point: '(verb A (volitional)）か（verb B (vol.)）かと（心配する・迷う・考える）',
     spec: 'verb(volitional)かverb(vol.)かと',
+    alt_def: '',
     meaning: 'Wondering whether to (verb A) or (verb B).',
     use: {
       text: 'Such construction is followed by 心配する、迷う、考える。  Such verbs can be [past] as well (wodered whether to...).  Indicates the subject is wondering which option to take.',
@@ -413,6 +420,7 @@ var chap_grammar_list = [
   {
     grammar_point: '〜のではない（でしょうか・だろうか・か）',
     spec: '〜のではない（でしょうか・だろうか・か）',
+    alt_def: '',
     meaning: 'Might it not be the case that 〜。  Perhaps 〜。 (I kind of like just inserting "perhaps", it softens the claim without adding too much extra wording)',
     use: {
       text: 'Yet another indirect way to express one\'s opinon.  「〜」is usually a sentence ending in plain form.  「〜ではないだろうか」can be followed by と plus verbs like 思う、心配する、etc.  There are several contractions and rules as follows:',
@@ -466,6 +474,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'むしろ',
     spec: 'むしろ',
+    alt_def: '',
     meaning: 'Rather (than); more ___ than the other (more preferable, fits the description more, etc)',
     use: {
       text: 'むしろ is used when comparing two alternatives to say that one is more ___ than the other.  Usually preceeded by a より clause which describes what is lesser.  Translation is very contextual; think of むしろ as a "leaning towards" or describing preference.',
@@ -495,6 +504,7 @@ var chap_grammar_list = [
   {
     grammar_point: '意外に',
     spec: '意外に',
+    alt_def: '',
     meaning: 'More/less than expected; contrary to one\'s expectation.',
     use: {
       text: '意外に（漢字：いがい（に））is a phrase.  意外と is a more colloquial form.  What comes after (ie: adj) is what was contrary to expectation.  The adjectives are in plain form (the examples only use [past], but I\'m sure [present] also occurs?), but are comparative in translation thanks to 意外に。',
@@ -539,6 +549,7 @@ var chap_grammar_list = [
   {
     grammar_point: '',
     spec: '',
+    alt_def: '',
     meaning: '',
     use: {
       text: '',

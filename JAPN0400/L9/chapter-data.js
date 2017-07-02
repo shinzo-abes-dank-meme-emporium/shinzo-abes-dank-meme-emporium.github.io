@@ -8,7 +8,8 @@ var local_chap_name = '第９課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +55,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'わざわざ',
     spec: 'わざわざ',
+    alt_def: '',
     meaning: 'To go out of one\'s way to do something',
     use: {
       text: 'Denotes doing something in a way that takes more time and effor thtan necessary or purposely doing something that is not necessary.  Ie: there are two options and you chose the one that takes more.  Is not used in the same way as せっかく。',
@@ -80,6 +82,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜より仕方がない',
     spec: '〜より仕方がない',
+    alt_def: '',
     meaning: '"To have no choice but to 〜"',
     use: {
       text: '（仕方：しかた）Denotes that "〜" is NOT what one normally wants to do, but one has no choice but to do it.  〜 is usually a verb.',
@@ -106,6 +109,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'the "Honorific Passive" (verbれる／られる）',
     spec: 'the "Honorific Passive"',
+    alt_def: '',
     meaning: 'Conjugation of verbs to a homologue of the passive form may be used as a form of 尊敬語（そんけいご）。',
     use: {
       text: 'This form is not as polite as the regular honorific form such as「お〜になる」、「いらしゃる」、etc., but is widely used in men\'s speech, newspapers, and formal writting.  The term "passive" uses the direct passive context of the verb.  That is, transitive verbs have a subject as the actor and a direct object acted upon.',
@@ -132,6 +136,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'せめて〜',
     spec: 'せめて〜',
+    alt_def: '',
     meaning: '"At least 〜"',
     use: {
       text: 'The implication is that 〜 is the limit for a given example, but something more or better would be desirable.  〜 may be a quanitity of something, or it could refer to the noun which is liminal.  Can also be combined with くらい／ぐらい as in せめて〜くらい（は）。くらい by itself is less specific in that it merely implies an illustrative example.  The book examples all use せめて to describe the subject marked with は、but I think that that is not necessarily the exclusive usage.',
@@ -172,6 +177,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'X ように Y',
     spec: 'X ように Y',
+    alt_def: '',
     meaning: '"Y, so that X"; "In order to X, Y"; "For the purpose of X, Y".',
     use: {
       text: 'ように means "so that" or "in order to".  X is usually a verb or verb phrase.  X is often a potential verb, stative verb (ie: (verb)ている), or a verb in the negative form.  X is usually something that cannot be controlled by one\'s will (ie: "so that I won\'t forget" or "so that they can enjoy it").  Usage of 〜ように differs from that of 〜ために',
@@ -219,6 +225,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(adjな）に／(adjい）く・見える',
     spec: '〜に／く・見える',
+    alt_def: '',
     meaning: '"Seems [adj]"; "Appears [adj]".',
     use: {
       text: '(adjな) and (adjい）are used adverbially.',
@@ -253,6 +260,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun, phrase)〜こそ',
     spec: 'こそ',
+    alt_def: '',
     meaning: 'Emphatic particle.',
     use: {
       text: 'こそ emphasizes the preciding noun or phrase.  There should be some reason WHY one has to emphasize a particular noun or phrase (eg: providing a counterargument, making a stronger statement).  Generally replaces subject particles (が／を／も／は）but can be attached to other particles as 〜＿こそ (eg: 〜にこそ）。The book doesn\'t have much info on this, but below are some formation examples I found online.',
@@ -314,6 +322,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'X と言っても Y',
     spec: 'X と言っても Y',
+    alt_def: '',
     meaning: '"Even though I said X, Y"; "It\'s true that X, but Y."',
     use: {
       text: 'X usually ends with plain forms, but だ is generally omitted.  Y is given to qualify X.',
@@ -333,6 +342,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'ただ',
     spec: 'ただ',
+    alt_def: '',
     meaning: '"Just"; "Only"',
     use: {
       text: 'Usually used with だけ。Can mean "just" as in 「ただ牛だ。」"It\'s only a cow", or as in "I\'ve just come home"「ただいま〜」',
@@ -359,6 +369,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun, phrase)に限らない',
     spec: '(noun, phrase)に限らない',
+    alt_def: '',
     meaning: '"Not limited to 〜"',
     use: {
       text: '限る：かぎ（る）。Can also be used in the positive, if one uses 〜に限られている (the passive of 限る), to mean "Is limited to 〜".',
@@ -385,6 +396,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'どんな(noun(+particle))でも',
     spec: 'どんな(noun(+particle))でも',
+    alt_def: '',
     meaning: '"Any 〜"',
     use: {
       text: 'Generally, が and を are omitted when followed by でも。Other particles (eg: と／から／に／etc.) remain as どんな〜にでも。',
@@ -416,7 +428,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

@@ -8,7 +8,9 @@ var local_chap_name = '第８課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +56,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'ＸはＹくらいです',
     spec: 'ＸはＹくらいです',
+    alt_def: '',
     meaning: '"Y is about the only X"',
     use: {
       text: 'This expression is used when Y is about the only case where X holds true.  X and Y can be nouns or noun phrases (ie: verbの・こと）.  です may be substituted for an appropriate sentence ending verb (like かもしれない、でしょう、etc.).  くらい or ぐらい may be used.',
@@ -80,6 +83,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'やっぱり',
     spec: 'やっぱり',
+    alt_def: '',
     meaning: 'As expected; Also; Again',
     use: {
       text: 'Conversational form of やはり。  Adverb which indicates that what is being said is what was expected from general or specific knowledge.',
@@ -99,6 +103,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜さえ〜ば（result)',
     spec: '〜さえ〜ば（result)',
+    alt_def: '',
     meaning: 'If only you 〜、then (result) will/would be.',
     use: {
       text: 'A better way to think of this construction is as (condition)->(result), where (condition) is the 〜さえ〜ば construction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  さえ means "even", "if only", "if just", "as long as".  Possible species as follows: ',
@@ -153,6 +158,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜はず',
     spec: '〜はず',
+    alt_def: '',
     meaning: '"Supposed to 〜"; "Expected to 〜"',
     use: {
       text: 'Expresses one\'s conjecture with some certainty that some thing is expected/suposed to be.  Can be used with nounの、(adjな）な、verp(plain), (adjい）い。Is usually followed by だ・です。Can also be used with plain negations of the above options.',
@@ -210,6 +216,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜みたい',
     spec: '〜みたい',
+    alt_def: '',
     meaning: '"Seems", "Appears to be", "Looks like", "Is like".  Colloquial form of ようだ。(ie: seems to be, based on specific evidence)',
     use: {
       text: 'Unlike ようだ、みたい follows bare nouns and (adjな) stem.  However!, it does follow plain forms of (adjい) and verbs.  Can follow negations, in which case the 〜ない retains the い as with (adjい).',
@@ -250,6 +257,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)として',
     spec: '(noun)として',
+    alt_def: '',
     meaning: '"As a 〜".',
     use: {
       text: 'Describes another noun, which noun is "as" the noun used in this construction.',
@@ -276,6 +284,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun）ため（に）',
     spec: '(noun）ため（に）',
+    alt_def: '',
     meaning: '"Because (of) [noun]"; "Due to [noun]".',
     use: {
       text: 'Indicates the reason or cause for the following clause.  Follows nounの、(adjな）な、(adjい）い、and verb(plain).  に is an optional particle and usually omitted.  Can be used with negations.  Is a formal expression and usually used in writting or formal situations.',
@@ -340,7 +349,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

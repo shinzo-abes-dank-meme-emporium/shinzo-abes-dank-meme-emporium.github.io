@@ -8,7 +8,8 @@ var local_chap_name = '第１２課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +55,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'ろくに ～ない',
     spec: 'ろくに ～ない',
+    alt_def: '',
     meaning: '"Not much ～"; "Not enough ～"',
     use: {
       text: 'The adverb ろくに means "enough" or "sufficient", but is always followed by a negative predicate.  Thus, the meaning always implies a lack of sufficiency.  Maybe translate the whole thing as "Not sufficiently ～".  Can be used with nouns using ろくな。',
@@ -94,6 +96,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜せい',
     spec: '〜せい',
+    alt_def: '',
     meaning: '"Perhaps because 〜"',
     use: {
       text: 'Gives a reason or a cause, usually for an undesireable situation.  Has some indication of blame being put upon the cause.  せい can be followed by で or から to further emphasize reason.  せい is a noun, and is used as such:',
@@ -144,6 +147,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'S1 せいか、S2',
     spec: 'S1 せいか、S2',
+    alt_def: '',
     meaning: '"Perhaps because S1, S2 holds".',
     use: {
       text: 'Gives a posisble reason for some undesirable situation in S2.',
@@ -184,6 +188,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜おかげ（で、S2)',
     spec: '〜おかげ（で、S2)',
+    alt_def: '',
     meaning: '"Thanks to 〜".',
     use: {
       text: '(cf. 〜せい because of (blame)) 〜おかげで is used when responsibility for a desireable situation is to be recognized.  It is used much like 〜せいか except for positive situations.  おかげ is a noun.',
@@ -217,6 +222,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(て)ごらんなさい',
     spec: 'verb(て)ごらんなさい',
+    alt_def: '',
     meaning: '"Try verbing" (NOT TO USE to superiors)',
     use: {
       text: 'Polite form of verb(て)みなさい  〜なさい is used by superiors to give commands to those in lower status, and so 〜ごらんなさい cannot be used by a person of lower status to their superior.  verb(て)ごらん is a more informal version (eg: used by mothers to their children).',
@@ -236,6 +242,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)ぐらい',
     spec: '(noun)ぐらい',
+    alt_def: '',
     meaning: '"The [least / liminal / lower-bounded] noun"',
     use: {
       text: 'Indicates that the noun is the lowest degree.  ie: easiest, lightest, shortest, etc.  The specific superlative adjective seems to be implied.',
@@ -262,6 +269,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜に越したことはない',
     spec: '〜に越したことはない',
+    alt_def: '',
     meaning: '（「越す」こ（す）：to surpass, to exceed) "Nothing can be better than 〜"; "The best thing to do is 〜".',
     use: {
       text: 'Usually used with verb(plain)[pres.].  ie:',
@@ -293,6 +301,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '思うように',
     spec: '思うように',
+    alt_def: '',
     meaning: '"As one wishes"; "According to one\'s will".',
     use: {
       text: 'Is an adverbial phrase.  Thankfully, it literally means "As one wishes" or "like-one\'s-wish-ingly.  In the book, it\'s preceeded by なかなか followed by a [neg.] to mean "By no means 〜 as one wishes".',
@@ -319,6 +328,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜がち',
     spec: '〜がち',
+    alt_def: '',
     meaning: '"Tends to 〜"; "To be prone to 〜"; "To be apt to 〜".',
     use: {
       text: 'Follows the stem of certain verbs and nouns.  Expresses idea that one tends to do something, with a negative implication.  がち can be followed by particles.  When がち modifies another noun or a nominalizer like こと、it will be followed by 〜な。',
@@ -370,7 +380,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

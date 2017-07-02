@@ -8,7 +8,8 @@ var local_chap_name = '第１５課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +55,7 @@ var chap_grammar_list = [
   {
     grammar_point: '無',
     spec: '無',
+    alt_def: '',
     meaning: '無',
     use: {
       text: '無',
@@ -85,7 +87,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

@@ -89,6 +89,7 @@ var chap_grammar_list = [
   {
     grammar_point: '何と言っても',
     spec: '何と言っても',
+    alt_def: '',
     meaning: 'Undeniably; no doubt; by any account.  (lit. No matter what you say, lit.lit. Even if you say what/that)',
     use: {
       text: 'Pretty self explanitory phrase.',
@@ -108,6 +109,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜たっけ／〜だっけ',
     spec: '〜たっけ／〜だっけ',
+    alt_def: '',
     meaning: '〜、if I remember correctly; 〜、what was it again?; 〜、if I am right',
     use: {
       text: 'A phrase used to indicate that the speaker does not remember or is unsure about certain information that was known or told previously; trying to jog one\'s memory to remember again.  As opposed to asking a question to find out information for the first time.  This is why the past form is usually used.  Is only used in casual speech.  Usually used with the past（〜たっけ）but can also be used with the present where だ is used（だっけ）.  ですっけ cannot be used.',
@@ -204,6 +206,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain)ようにする',
     spec: 'verb(plain)ようにする',
+    alt_def: '',
     meaning: 'To make an effort to do verb.  To make it a point to do verb.',
     use: {
       text: 'yup',
@@ -223,6 +226,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(stem)（始める・終わる）',
     spec: 'verb(stem)始める',
+    alt_def: '',
     meaning: '（始める：はじ（める））To begin verbing.  （終わる：お（わる））To finish verbing.',
     use: {
       text: 'Using the past forms of 始めろ・終わる means began/finished verbing.',
@@ -257,6 +261,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(sentence）verb(stem)（sentence)',
     spec: '(sentence）verb(stem)（sentence)',
+    alt_def: '',
     meaning: 'The verb(stem) can be used as verb(て) to connect two sentences.',
     use: {
       text: 'This is generally restricted to written style.',
@@ -276,6 +281,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'Q word + verb(て）も',
     spec: 'Q word + verb(て）も',
+    alt_def: '',
     meaning: 'No matter what/when/who/where/many times/etc. one verbs...',
     use: {
       text: 'Question words (eg: 何／いつ／だれ／どこ／何度／etc.) (with particles where needed) follwed by verb(て）も gives this meaning.',
@@ -309,6 +315,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'Q word + で（ある）も',
     spec: 'Q word + で（ある）も',
+    alt_def: '',
     meaning: '"Every/any - one, thing, time, where, etc."',
     use: {
       text: 'であるも is usually contracted to でも。 This construction can also be used as 「どのnounでも」to mean "every noun" or "any noun".  For example:',
@@ -352,6 +359,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜を始め',
     spec: '〜を始め',
+    alt_def: '',
     meaning: '"Starting with 〜, "; "Including 〜, "',
     use: {
       text: 'When you want to give a list of items, this phrase will be used to introduce the most obvious example and is usually followed by more examples.',
@@ -371,6 +379,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'nounにとって',
     spec: 'nounにとって',
+    alt_def: '',
     meaning: '"For noun"; "To noun"',
     use: {
       text: 'Also: "regarding noun, ", "concerning noun, ", "as far as noun is concerned".  Is usually used to mark a subject, thus は and も are usually used after 〜にとって。 とって comes from the verb 取る。',
@@ -397,6 +406,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜的（な）',
     spec: '〜的（な）',
+    alt_def: '',
     meaning: '（漢字：てき）"〜type"; "〜ic"; "〜ical"',
     use: {
       text: 'Suffixing this to a noun makes it into an adjな and gives a meaning of "noun-ical".  Also gives a meaning of a "typical noun" or "noun-type".  Adding the particle に will adverbialize it, meaning "noun-ical-ly".',
@@ -449,6 +459,7 @@ var chap_grammar_list = [
   {
     grammar_point: '',
     spec: '',
+    alt_def: '',
     meaning: '',
     use: {
       text: '',

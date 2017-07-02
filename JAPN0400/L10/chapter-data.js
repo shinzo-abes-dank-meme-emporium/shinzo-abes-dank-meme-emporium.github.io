@@ -8,7 +8,8 @@ var local_chap_name = '第１０課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -54,6 +55,7 @@ var chap_grammar_list = [
   {
     grammar_point: '分数 (fractions)',
     spec: '分数 (fractions)',
+    alt_def: '',
     meaning: '分数：ぶんすう',
     use: {
       text: 'A fraction is expressed in Japanese as「＃分の＃」.  However, in Japanese, the denominator becomes before the numerator, as in「denominator 分の numerator」',
@@ -81,6 +83,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'S1 ほど S2',
     spec: 'S1 ほど S2',
+    alt_def: '',
     meaning: '"It is S2, to the extent that S1"; "It is so very S2 that S1".',
     use: {
       text: 'ほど is a sentence connecter that uses S2 to describe S1.  S1 is generally ends in a verb(plain)[pres.].  Can also be rearranged to「S2て、S1ほどです。」。ほど means "extent", "approximately", "degree".',
@@ -115,6 +118,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(Q word)よりも',
     spec: '(Q word)よりも',
+    alt_def: '',
     meaning: '"More than any(Q word)".',
     use: {
       text: '(Q word) can be something like 何、どこ、etc.  何 can be pronounced as「なに」or「なん」',
@@ -141,6 +145,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（Xは）Yに限る',
     spec: '（Xは）Yに限る',
+    alt_def: '',
     meaning: '"As for X, Y is the best thing to do"; "As for X, there is nothing better than Y".',
     use: {
       text: '「限る：かぎ（る）」Y can be a noun or verb(plain)[pres.].  ',
@@ -175,6 +180,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜まま',
     spec: '〜まま',
+    alt_def: '',
     meaning: '"Unchanged"; "As it is"; "Still being in the state of 〜"',
     use: {
       text: '〜まま indicates that some condition/state is unchanged.  It can be attached to nouns, adjectives, and verbs.  When 〜まま modifies a noun, の follows 〜まま (ie: 〜ままの(noun)).  Can also be used with negative forms (〜ないまま).  Can also be used with demonstrative nouns (この、その、あの).  Usage of 〜まま seems to imply that there is a state that was acheived previously and that such state was/is maintained.  As such, the progressive form of verbs (〜ている) is not used since because it would be awkward (I think...)',
@@ -251,7 +257,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

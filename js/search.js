@@ -128,17 +128,41 @@ function buildKanjiEntry(entry) {
   $(kanji_results_ID).append(kanji_entry);
 }
 
+function isMatch(splitQuery, grammar_entry) {
+  if (splitQuery.length == 0) {
+    return true;
+  }
+  else {
+    let firstEl = splitQuery[0]
+    let rest = splitQuery.slice(1);
+
+    let grammar_point = grammar_entry.grammar_point;
+    let grammar_alt_def = grammar_entry.alt_def;
+
+    if (grammar_point.includes(firstEl) || grammar_alt_def.includes(firstEl)) {
+      return true && isMatch(rest, grammar_entry)
+    }
+    else {
+      return false && isMatch(rest, grammar_entry)
+    }
+  }
+}
+
 function searchGrammar(query, callback) {
   $(grammar_results_ID).empty();
   callback = callback || noop
 
+  // does not split on space (ie: whole search with space is considered)
+  // splits on '　＋' (ie: include things that have this AND this)
+  let splitQuery = query.split('　＋');
+
   for (var i=0; i<total_grammar.length; i++) {
     let grammar_entry = total_grammar[i].entry;
     let grammar_path = total_grammar[i].path
-    let grammar_point = grammar_entry.grammar_point;
-    if (grammar_point.includes(query)) {
+
+    if (isMatch(splitQuery, grammar_entry)) {
       buildGrammarEntry(grammar_entry, grammar_path)
-    }
+    } // and the next query, too
   }
 }
 

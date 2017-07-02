@@ -360,7 +360,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb(stem)方',
     spec: 'verb(stem)方',
-    meaning: 'The way of (verb)ing.  How to verb.  (lit. the verb way)',
+    meaning: '（「方」かた：way）The way of (verb)ing.  How to verb.  (lit. the verb way)',
     use: {
       text: '方 in this case is a nounal suffix attached to verb(stem)s.  Verb(stem)方 is declined as a noun.  する＋方 is usually written as 仕方 and not し方。',
       species: [

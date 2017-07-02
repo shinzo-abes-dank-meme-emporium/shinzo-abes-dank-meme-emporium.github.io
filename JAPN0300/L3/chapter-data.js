@@ -8,7 +8,8 @@ var local_chap_name = '第３課';
 {
   kanji: '',
   reading: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   (opt)kaku: 'hai' or ''
 }
 */
@@ -119,6 +120,7 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb[neg]で',
     spec: 'verb[neg]で',
+    alt_def: 'ないで',
     meaning: 'Don\'t (verb).',
     use: {
       text: 'A contraction of a request using the negative て form of verbs: verb[neg]でください。',
@@ -143,6 +145,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(causative, て)いただけないでしょうか',
     spec: 'verb(causative, て)いただけないでしょうか',
+    alt_def: 'せていただけないでしょうか',
     meaning: 'May I do ___?  Lit. "Could I not receive the favor of your letting me do 〜?".',
     use: {
       text: 'A very indirect way of asking for permission to do something.  Not to be confused with verb(て)いただけないでしょうか which means "Could you do ___?".',
@@ -173,6 +176,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜中に',
     spec: '〜中に',
+    alt_def: 'ちゅうに',
     meaning: 'Sometime during 〜。  By the end of 〜。',
     use: {
       text: 'Decribes a time frame (eg: by the end of this week, by the end of today, etc.).  The reading of 「中」 will be 「ちゅう」 or 「じゅう」 depending on the preceeding word.',
@@ -212,6 +216,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '（〜[pos./neg.]ば）〜ほど＿＿',
     spec: '(〜ば)〜ほど',
+    alt_def: '',
     meaning: '"The more/less 〜 is so, the more/less ＿＿ is."',
     use: {
       text: 'The same verb/adj/noun is used for both 〜, first in 〜ば form and then in plain form + ぼど。For nouns and なadj., であれば／ある will be suffixed.  Pos. constructions give the "more" meaning, neg. constructions give the "less" meaning.  The 〜 may be positive and the ＿＿ may be negative, in which case the translation would be "the more, the less", and vice versa, etc.  For nouns/adjな、ある will be negated and not the noun/adj.  I kind of like the literal translations, as un-English as they are.',
@@ -341,6 +346,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'noun以外（に・の）',
     spec: 'noun以外（の・に）',
+    alt_def: '',
     meaning: '（漢字：いがい）Other than noun; besides noun.',
     use: {
       text: '以外 literally just means "besides" or "excepting".  Using 以外に creates an adverbial phrase (try using noun-exceptingly, it\'s fun!), 以外の will preceed another noun and modify it.',
@@ -367,6 +373,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '必ずしも（clause）というわけではない',
     spec: '必ずしも〜というわけではない',
+    alt_def: '',
     meaning: '（漢字：かなら（ずしも））It does not necessarily mean that 〜。',
     use: {
       text: 'What comes before という is a clause which gives detail to わけ。必ず means "always, without exception, invariably".  必ずしも is the negation of that: "not always, not necessarily" and acts adverbially.  わけ means "conclusion from reasoning".  The ではない is a double-negative in the sense of an intesifier, not in the sense of "not-not".',
@@ -391,6 +398,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun/verbて)ばかり（だ）',
     spec: '(noun/verbて)ばかり（だ）',
+    alt_def: '',
     meaning: 'Nothing but noun.  Do nothing but verb.',
     use: {
       text: 'Conveys a sense that there is so much X that it appears as if there is only X',
@@ -425,6 +433,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'なるべく',
     spec: 'なるべく',
+    alt_def: '',
     meaning: 'as (much, fast, ＿＿) as possible; if at all possible',
     use: {
       text: 'Usually followed by a phrase or action which should be "___ as much as possible".',
@@ -451,6 +460,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain)べき',
     spec: 'verb(plain)べき',
+    alt_def: '',
     meaning: 'One should/ought to verb.  I should verb.',
     use: {
       text: 'べき is conjugated like a noun (followed by だ・です・etc).  Negation of べき is べきではない。  するべき may be contracted to すべき、but both are used.  Is a strong suggestion, maybe too strong to use casually directly to others; keep it to "I should" or "one should".',
@@ -490,7 +500,8 @@ var chap_grammar_list = [
 {
   grammar_point: '',
   spec: '',
-  meaning: '',
+  alt_def: '',
+    meaning: '',
   use: {
     text: '',
     species: [

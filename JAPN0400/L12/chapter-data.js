@@ -140,7 +140,7 @@ var chap_grammar_list = [
         translation: 'It\'s just your imagination.'
       }
     ],
-    other: 'There is another varruction called 〜せいか〜 in the next section.'
+    other: 'There is another construction called 〜せいか〜 in the next section.'
   },{
     grammar_point: 'S1 せいか、S2',
     spec: 'S1 せいか、S2',

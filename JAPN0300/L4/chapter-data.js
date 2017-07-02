@@ -261,7 +261,7 @@ var chap_grammar_list = [
     spec: 'nounのように',
     meaning: 'Like, as if it were noun.',
     use: {
-      text: 'An adverbial varruction of よう。 lit. "noun likeningly".  ',
+      text: 'An adverbial construction of よう。 lit. "noun likeningly".  ',
       species: []
     },
     example: [
@@ -394,7 +394,7 @@ var chap_grammar_list = [
     spec: '〜わけではない',
     meaning: 'It does not necessarily mean that...; it does not follow that...',
     use: {
-      text: 'This varruction negates what one would conclude from previously mentioned statements or situations.  Is preceeded by words of the plain form.',
+      text: 'This construction negates what one would conclude from previously mentioned statements or situations.  Is preceeded by words of the plain form.',
       species: []
     },
     example: [

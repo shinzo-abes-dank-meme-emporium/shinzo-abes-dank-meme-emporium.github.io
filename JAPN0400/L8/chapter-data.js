@@ -101,7 +101,7 @@ var chap_grammar_list = [
     spec: '〜さえ〜ば（result)',
     meaning: 'If only you 〜、then (result) will/would be.',
     use: {
-      text: 'A better way to think of this varruction is as (condition)->(result), where (condition) is the 〜さえ〜ば varruction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  さえ means "even", "if only", "if just", "as long as".  Possible species as follows: ',
+      text: 'A better way to think of this construction is as (condition)->(result), where (condition) is the 〜さえ〜ば construction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  さえ means "even", "if only", "if just", "as long as".  Possible species as follows: ',
       species: [
         {
           jap: 'nounさえ + verb(ば)',
@@ -252,7 +252,7 @@ var chap_grammar_list = [
     spec: '(noun)として',
     meaning: '"As a 〜".',
     use: {
-      text: 'Describes another noun, which noun is "as" the noun used in this varruction.',
+      text: 'Describes another noun, which noun is "as" the noun used in this construction.',
       species: [],
     },
     example: [

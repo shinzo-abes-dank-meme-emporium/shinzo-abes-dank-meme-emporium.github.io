@@ -164,7 +164,7 @@ var chap_grammar_list = [
         translation: 'I came to have an interest in Japan.'
       }
     ],
-    other: 'It is useful to use this varruction with verb(potential) ("I became able").  Note that verb(pot.) does not take を (rather, が).  Further, verb(potential)なりたい ("I want to become able").'
+    other: 'It is useful to use this construction with verb(potential) ("I became able").  Note that verb(pot.) does not take を (rather, が).  Further, verb(potential)なりたい ("I want to become able").'
   },
   {
     grammar_point: '(sentence)なあ',
@@ -228,7 +228,7 @@ var chap_grammar_list = [
       species: [
         {
           jap: 'verb(plain)ことになっている：',
-          eng: 'Such decision has been made (outside of one\'s control).  This varruction is also used to convey rules, regulations, and social customs.'
+          eng: 'Such decision has been made (outside of one\'s control).  This construction is also used to convey rules, regulations, and social customs.'
         },
         {
           jap: 'verb(plain)ことになった：',
@@ -473,7 +473,7 @@ var chap_grammar_list = [
         translation: 'When I arrived in America, I ate a hamburger for the first time.'
       },
     ],
-    other: 'This varruction seems to imply "first time ever" or "first time in my life".'
+    other: 'This construction seems to imply "first time ever" or "first time in my life".'
   }
 ];
 

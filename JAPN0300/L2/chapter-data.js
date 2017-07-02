@@ -312,7 +312,7 @@ var chap_grammar_list = [
         translation: 'Blah blah blah.  In other words, blah.'
       }
     ],
-    other: 'Usually follwed by a「(sentence)わけです。」varruction.'
+    other: 'Usually follwed by a「(sentence)わけです。」construction.'
   },
   {
     grammar_point: '(sentence)わけです。',

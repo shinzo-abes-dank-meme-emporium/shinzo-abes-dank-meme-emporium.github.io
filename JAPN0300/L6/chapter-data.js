@@ -382,7 +382,7 @@ var chap_grammar_list = [
     spec: 'verb(volitional)かverb(vol.)かと',
     meaning: 'Wondering whether to (verb A) or (verb B).',
     use: {
-      text: 'Such varruction is followed by 心配する、迷う、考える。  Such verbs can be [past] as well (wodered whether to...).  Indicates the subject is wondering which option to take.',
+      text: 'Such construction is followed by 心配する、迷う、考える。  Such verbs can be [past] as well (wodered whether to...).  Indicates the subject is wondering which option to take.',
       species: [
         {
           jap: '心配する：',

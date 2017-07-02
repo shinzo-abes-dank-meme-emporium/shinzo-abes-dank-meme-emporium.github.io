@@ -27,7 +27,7 @@ var chap_note_list = [
           '　貸す：か（す）　to lend'
         ]
       },{
-        subtopic: 'Instead, use the「(て or caus.て)いただけないでしょうか。」varruction (etc: もらう、くれる）',
+        subtopic: 'Instead, use the「(て or caus.て)いただけないでしょうか。」construction (etc: もらう、くれる）',
         desc: ['Also, don\'t do 借りて, that means "please let me lend"...']
       },{
         subtopic: '',
@@ -155,7 +155,7 @@ var chap_grammar_list = [
           eng: 'Could you do verb?'
         },{
           jap: '',
-          eng: 'This kind of varruction (て + verb of giving/receiving) also works with くれる、あげる、もらう with expected results:'
+          eng: 'This kind of construction (て + verb of giving/receiving) also works with くれる、あげる、もらう with expected results:'
         }
       ]
     },
@@ -214,7 +214,7 @@ var chap_grammar_list = [
     spec: '(〜ば)〜ほど',
     meaning: '"The more/less 〜 is so, the more/less ＿＿ is."',
     use: {
-      text: 'The same verb/adj/noun is used for both 〜, first in 〜ば form and then in plain form + ぼど。For nouns and なadj., であれば／ある will be suffixed.  Pos. varructions give the "more" meaning, neg. varructions give the "less" meaning.  The 〜 may be positive and the ＿＿ may be negative, in which case the translation would be "the more, the less", and vice versa, etc.  For nouns/adjな、ある will be negated and not the noun/adj.  I kind of like the literal translations, as un-English as they are.',
+      text: 'The same verb/adj/noun is used for both 〜, first in 〜ば form and then in plain form + ぼど。For nouns and なadj., であれば／ある will be suffixed.  Pos. constructions give the "more" meaning, neg. constructions give the "less" meaning.  The 〜 may be positive and the ＿＿ may be negative, in which case the translation would be "the more, the less", and vice versa, etc.  For nouns/adjな、ある will be negated and not the noun/adj.  I kind of like the literal translations, as un-English as they are.',
       species: [
         {
           jap: 'verb[pos.]ばverb[pos.]ほど＿[pos.]＿：',
@@ -353,7 +353,7 @@ var chap_grammar_list = [
           highlight: '教科書以外に',
           post: 'いろいろ買うものがある。』'
         },
-        translation: 'At the beginning of the semester, there are varous things to buy "besides textbooks" (lit. textbook-exceptingly).'
+        translation: 'At the beginning of the semester, there are various things to buy "besides textbooks" (lit. textbook-exceptingly).'
       },{
         sentence: {
           ante: '『',
@@ -363,7 +363,7 @@ var chap_grammar_list = [
         translation: 'There are scholarships other than those from the Ministry of Eduction, Culture, Sports, Science, and Technology. (lit. "Other than MECSST"のscholarhsips exist)'
       }
     ],
-    other: 'I quite like literal translations.  Overthrow Western grammatical varructs!'
+    other: 'I quite like literal translations.  Overthrow Western grammatical constructs!'
   },{
     grammar_point: '必ずしも（clause）というわけではない',
     spec: '必ずしも〜というわけではない',

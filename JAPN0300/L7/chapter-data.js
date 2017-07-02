@@ -200,7 +200,7 @@ var chap_grammar_list = [
         translation: 'Is there a konbini in front of the post-office (I don\'t recall seeing it). (The "don\'t recall seeing it" carries the implication that you knew about it before but are now having trouble remembering)'
       }
     ],
-    other: 'The usage of っけ to ask questions about the non-past (eg: Is there a konbini around here?; when is the test?) can be difficult to wrap your head around because a past form of the verb is used.  But, more precisely, when you use っけ you are asking about something that was known or mentioned in the past (eg: Was there a konbini around here?; When was the test, again?) as opposed to knowing about it for the first time.  If you really wanted to keep the past varruction in translation, adding ", again?" makes it sound more natural and gets the "I heard it before but can\'t seem to remember it now" implication.'
+    other: 'The usage of っけ to ask questions about the non-past (eg: Is there a konbini around here?; when is the test?) can be difficult to wrap your head around because a past form of the verb is used.  But, more precisely, when you use っけ you are asking about something that was known or mentioned in the past (eg: Was there a konbini around here?; When was the test, again?) as opposed to knowing about it for the first time.  If you really wanted to keep the past construction in translation, adding ", again?" makes it sound more natural and gets the "I heard it before but can\'t seem to remember it now" implication.'
   },{
     grammar_point: 'verb(plain)ようにする',
     spec: 'verb(plain)ようにする',
@@ -311,7 +311,7 @@ var chap_grammar_list = [
     spec: 'Q word + で（ある）も',
     meaning: '"Every/any - one, thing, time, where, etc."',
     use: {
-      text: 'であるも is usually contracted to でも。 This varruction can also be used as 「どのnounでも」to mean "every noun" or "any noun".  For example:',
+      text: 'であるも is usually contracted to でも。 This construction can also be used as 「どのnounでも」to mean "every noun" or "any noun".  For example:',
       species: [
         {
           jap: '何でも：',

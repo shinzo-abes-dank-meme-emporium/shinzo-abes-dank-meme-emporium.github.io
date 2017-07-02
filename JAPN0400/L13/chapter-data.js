@@ -307,7 +307,7 @@ var chap_grammar_list = [
     spec: '一方で（は〜、他方では〜）',
     meaning: '（「一方」いっぽう）;（「他方」たほう）"On one hand"; "On the other hand"',
     use: {
-      text: 'Often used in the phrase「一方では〜、他方では」, but one of the two phrases is often omitted.  The は〜 is optional.  Either 一方で or 他方で can mean "On the one hand" or "On the other hand".  When only one is used, it usually means, "On the other hand".  Usually used to show contrast, and as such, it\'s useful to use this varruction after a conjunction that indicates contradiction (ie: が、けど、etc.)',
+      text: 'Often used in the phrase「一方では〜、他方では」, but one of the two phrases is often omitted.  The は〜 is optional.  Either 一方で or 他方で can mean "On the one hand" or "On the other hand".  When only one is used, it usually means, "On the other hand".  Usually used to show contrast, and as such, it\'s useful to use this construction after a conjunction that indicates contradiction (ie: が、けど、etc.)',
       species: []
     },
     example: [

@@ -3,16 +3,26 @@
 const dataFilename = 'chapter-data.js'
 const initURL = 'https://shinzo-abes-dank-meme-emporium.github.io'
 
-const search_results_ID = "#content-search-results";
+const grammar_results_ID = "#grammar-search-results";
+const kanji_results_ID = "#kanji-search-results";
 
 
 /*
-{
-  entry: {},
-  path: ''
-}
+[
+  {
+    entry: {},
+    path: ''
+  }
+]
 */
-const total_grammar = []
+let total_grammar = [];
+
+/*
+[
+  {kanji}
+]
+*/
+let total_kanji = [];
 
 const database = [
   {
@@ -77,7 +87,7 @@ function buildGrammarEntry(entry, path) {
 
   var grammar_entry = [ 
   '<div class="grammar-entry anchor">',
-  '  <section class="grammar-point">' + gl_grammar_point + '　<a href="' + path + '">{>>>Go to Entry}</a>' + '</section>',
+  '  <section class="grammar-point">' + gl_grammar_point + ' <a href="' + path + '">{>>>Go to Entry}</a>' + '</section>',
   '  <section class="grammar-meaning bg-grey-light"><grammar class="prepend">Meaning: </grammar><grammar>' + gl_meaning + '</grammar></section>',
   '  <section class="grammar-use bg-grey-dark"><grammar class="prepend">Use: </grammar><grammar>' + gl_use + '</grammar></section>',
   '  <section class="grammar-example bg-grey-light"><grammar class="prepend">Example: </grammar><grammar>' + gl_example + '</grammar></section>',
@@ -86,11 +96,34 @@ function buildGrammarEntry(entry, path) {
   ].join('\n');
 
   // console.log(grammar_entry);
-  $(search_results_ID).append(grammar_entry);
+  $(grammar_results_ID).append(grammar_entry);
+}
+
+function buildKanjiEntry(entry) {
+  var kl_kanji = entry.kanji;
+  var kl_reading = entry.reading;
+  var kl_meaning = entry.meaning;
+  var kl_class = '';
+  if(entry.kaku == 'hai') { 
+    kl_class =  '"kanji-entry kaku"'; 
+  }
+  else { 
+    kl_class =  '"kanji-entry"'; 
+  }
+  
+  var kanji_entry = [
+  '<div class=' + kl_class + '">',
+  '  <kanji class="kanji">' + kl_kanji + '</kanji>',
+  '  <kanji class="reading">' + kl_reading + '</kanji>',
+  '  <kanji class="meaning">' + kl_meaning + '</kanji>',
+  '</div>'
+  ].join('\n');
+
+  $(kanji_results_ID).append(kanji_entry);
 }
 
 function searchGrammar(query, callback) {
-  $(search_results_ID).empty();
+  $(grammar_results_ID).empty();
   callback = callback || noop
   for (var i=0; i<total_grammar.length; i++) {
     let grammar_entry = total_grammar[i].entry;
@@ -98,6 +131,27 @@ function searchGrammar(query, callback) {
     let grammar_point = grammar_entry.grammar_point;
     if (grammar_point.includes(query)) {
       buildGrammarEntry(grammar_entry, grammar_path)
+    }
+  }
+}
+
+function searchKanji(query, callback) {
+  $(kanji_results_ID).empty();
+  callback = callback || noop
+
+  for (var i=0; i<total_kanji.length; i++) {
+    let kanji_entry = total_kanji[i];
+    // let kanji_path = total_kanji[i].path;
+
+    let kanji = kanji_entry.kanji;
+    let reading = kanji_entry.reading;
+    let clean_reading = reading.replace(/[（）]/g,'')
+
+    // console.log(kanji_entry)
+    // console.log(clean_reading)
+
+    if (kanji.includes(query) || clean_reading.includes(query)) {
+      buildKanjiEntry(kanji_entry)
     }
   }
 }
@@ -123,21 +177,36 @@ $(window).on('load', function() {
               path: grammar_entry_path
             })
           }
+
+          let kanji_list = $.csv.toObjects(chap_kanji_str);
+          total_kanji = total_kanji.concat(kanji_list);
         }
       });
     }
   }
 });
 
-$("#submit").click(function() {
-  var input = $('#search').val();
+$("#grammar-submit-button").click(function() {
+  var input = $('#grammar-search-input').val();
   searchGrammar(input)
 });
 
-$(document).keypress(function(e) {
+$('#grammar-search-input').keyup(function(e) {
   if(e.which == 13) {
-    var input = $('#search').val();
+    var input = $('#grammar-search-input').val();
     searchGrammar(input)
+  }
+});
+
+$("#kanji-submit-button").click(function() {
+  var input = $('#kanji-search-input').val();
+  searchKanji(input)
+});
+
+$('#kanji-search-input').keyup(function(e) {
+  if(e.keyCode == 13) {
+    var input = $('#kanji-search-input').val();
+    searchKanji(input)
   }
 });
 

@@ -129,8 +129,10 @@ function buildKanjiEntry(entry) {
 }
 
 function searchGrammar(query, callback) {
+  $(".grammar-loading-text").css("display", "block");
   $(grammar_results_ID).empty();
   callback = callback || noop
+
   for (var i=0; i<total_grammar.length; i++) {
     let grammar_entry = total_grammar[i].entry;
     let grammar_path = total_grammar[i].path
@@ -139,9 +141,12 @@ function searchGrammar(query, callback) {
       buildGrammarEntry(grammar_entry, grammar_path)
     }
   }
+
+  $(".grammar-loading-text").css("display", "none");
 }
 
 function searchKanji(query, callback) {
+  $(".kanji-loading-text").css("display", "block");
   $(kanji_results_ID).empty();
   callback = callback || noop
 
@@ -158,6 +163,8 @@ function searchKanji(query, callback) {
       buildKanjiEntry(kanji_entry)
     }
   }
+
+  $(".kanji-loading-text").css("display", "none");
 }
 
 $(window).on('load', function() {
@@ -189,7 +196,8 @@ $(window).on('load', function() {
     }
   }
 
-  $(".loading-text").css("display", "none");
+  $(".kanji-loading-text").css("display", "none");
+  $(".grammar-loading-text").css("display", "none");
   $(".search-bar").css("display", "initial");
 });
 

@@ -148,24 +148,33 @@ var chap_grammar_list = [
     other: 'cf. そうだ、といっていました、らしい'
   },
   {
-    grammar_point: '(verb/adj)ことは(verb/adj)（が、〜）',
-    spec: '〜ことは（〜が）',
+    grammar_point: '〜ことは〜（が、〜）',
+    spec: '〜ことは〜（が、〜）',
     alt_def: '',
-    meaning: 'It is[present] indeed the case that (verb/adj)(, but...); It was[past] indeed the case that (verb/adj)(, but...)',
+    meaning: '"It is indeed the case that 〜(, but...)" [pres.]; "It was indeed the case that 〜(, but...)" [past]',
     use: {
-      text: 'This is another way to qualify one\'s statements.  The verb or adjective is repeated before and after ことは。 Both sides should match in tense.  〜が is optional (ie: You don\'t need to say "Indeed ___, but", you can just say "Indeed ___."',
+      text: 'This is another way to qualify one\'s statements.  〜 may be a verb or adjective in the [present] or [past].  The verb or adjective is repeated before and after ことは。 Both sides of adj/verb should match in tense.  The conjunction 〜が is optional (ie: You don\'t need to say "Indeed ___, BUT", you can just say "Indeed ___."',
       species: [
         {
-          jap: '（adjい）い・ことは（adjい）〜',
+          jap: '(adjい)(い・かった) ことは (adjい)(い・かった)（が、〜）',
           eng: ''
         },
         {
-          jap: '（adjな）な・ことは（adjな）〜',
+          jap: '(adjな)(な・だった) ことは (adjな)(だ・だった)（が、〜）',
           eng: ''
         },
         {
-          jap: 'verb(plain)・ことはverb(plain)〜',
+          jap: 'verb(plain)([pres.]/[past]) ことは verb(plain)([pres.]/[past])（が、〜）',
           eng: ''
+        },{
+          jap: 'ie: [present] ことは [present（が、〜）',
+          eng: ''
+        },{
+          jap: '',
+          eng: '[present] ことは [present]（が、〜）'
+        },{
+          jap: '',
+          eng: '[past] ことは [past]（が、〜）'
         }
       ]
     },
@@ -186,15 +195,15 @@ var chap_grammar_list = [
         translation: 'This sushi is indeed delicious.'
       }
     ],
-    other: '([present]ことは[present])・([past]ことは[past]) note that the tense on either side of ことは should match.'
+    other: 'It should be either ([present]ことは[present]) or ([past]ことは[past]); note that the tense on either side of ことは should match.'
   },
   {
-    grammar_point: '(noun)でいいです／(noun)でけっこうです',
-    spec: 'nounでいいです／nounでけっこうです',
-    alt_def: '',
-    meaning: '(noun) will do; (noun) will suffice',
+    grammar_point: '(noun)で（いい・けっこう）です',
+    spec: '(noun)で（いい・けっこう）です',
+    alt_def: '(noun)でいいです、(noun)でけっこうです',
+    meaning: '"(noun) will do"; "(noun) will suffice"',
     use: {
-      text: 'けっこう means "sufficient, enough".',
+      text: 'けっこう means "sufficient", "enough".',
       species: []
     },
     example: [
@@ -207,25 +216,16 @@ var chap_grammar_list = [
         translation: 'Green tea is fine.'
       }
     ],
-    other: '...'
+    other: 'NOTE: けっこう is conversational and probably used only in certain contexts.  To express a broader sense of sufficiency in writing or otherwise, perhaps consider「足りる」た(りる)：To be sufficient.'
   },
   {
     grammar_point: '〜とは限る[neg]',
     spec: '〜とは限る[neg]',
-    alt_def: '',
-    meaning: '（漢字：「かぎ」る）It is not necessarily the case that ~(sentence).  It does not mean that ~(sentence).',
+    alt_def: '〜とはかぎる[neg]、〜とはかぎらない',
+    meaning: '（「限る」かぎ(る)：To limit; To restrict) "It is not necessarily the case that 〜"; "It does not mean that 〜',
     use: {
       text: '限る[neg] is 限らない／限りません。 The preceeding statement should end in plain form.  The expression is often used with 必ずしも（also expresses "not always; not necessarily").',
-      species: [
-        {
-          jap: '〜とは（限らない・限りません）',
-          eng: ''
-        },
-        {
-          jap: '〜必ずしも〜とは限らない',
-          eng: ''
-        }
-      ]
+      species: []
     },
     example: [
       {
@@ -240,28 +240,28 @@ var chap_grammar_list = [
     other: '...'
   },
   {
-    grammar_point: 'verb(plain)（前に・〜後（で）・〜時（に））',
-    spec: 'verb(plain)（前に・〜後（で）・〜時（に））',
-    alt_def: '',
-    meaning: 'Before 〜; After 〜; When(present/past) 〜',
+    grammar_point: 'verb(plain)（[pres]前に・[past]後(で)・[pres/past]時(に))',
+    spec: 'verb(plain)（前に・後(で)・時(に))',
+    alt_def: 'まえに、後で、あとで、時に、ときに',
+    meaning: '"Before 〜" [pres]前に（「前」まえ); "After 〜" [past]後(で)（「後」あと); "When (present/past) 〜" [pres/past]時(に)（「時」とき)',
     use: {
-      text: 'Time particles indicate the temporal situation of the preceeding action to the following clause.  There are rules which govern whether to use [present] or [past] in the preceeding action, however, the main verb always governs the embeded verb\'s tense in translation.  It\'s quite fun to think about the sequence of actions.  For 後 and 時 their particles are optional.',
+      text: 'Time particles indicate the temporal situation of the preceeding action with respect to the following clause.  There are rules which govern whether to use [present] or [past] in the preceeding action, HOWEVER, the main verb always governs the embeded verb\'s tense in translation.  It\'s quite fun to think about the sequence of actions.  For 後 and 時 their particles are optional.',
       species: [
         {
-          jap: '「verb[present]前に(clause[present/past])」　　 ',
-          eng: '"Before verb, clause.".  The verb which preceeds 前に must be [present].  前 is read as 「まえ」。'
+          jap: 'verb(plain)[present] 前に (main sentence[present/past])',
+          eng: '："Before verb, clause.".  The verb which preceeds 前に must be [present].  前 is read as 「まえ」。'
         },
         {
-          jap: '「verb[past]後（で）(clause[present/past])」　 ',
-          eng: '"After verb, clause".  The verb which preceeds 後 must be [past].  で is optional.  後 is read as 「あと」。'
+          jap: 'verb(plain)[past] 後(で) (main sentence[present/past])',
+          eng: '："After verb, clause".  The verb which preceeds 後 must be [past].  で is optional.  後 is read as 「あと」。'
         },
         {
-          jap: '「verb[present]時（に）(clause[present/past])」',
-          eng: '"When verb, clause".  "When" here implies that the the preceeding action occurs DURING/BEFORE the main verb.  に is optional.  時 is read as 「とき」。'
+          jap: 'verb(plain)[present] 時(に) (main sentence[present/past])',
+          eng: '："When verb, clause".  "When" here implies that the the preceeding action occurs DURING/BEFORE the main verb.  に is optional.  時 is read as 「とき」。'
         },
         {
-          jap: '「verb[past]時（に）(clause[present/past])」　  ',
-          eng: '"When verb, clause".  "When" here implies that the the preceeding action occured AFTER the main verb.'
+          jap: 'verb(plain)[past] 時(に) (main sentence[present/past])',
+          eng: '："When verb, clause".  "When" here implies that the the preceeding action occured AFTER the main verb.'
         }
       ]
     },
@@ -339,27 +339,27 @@ var chap_grammar_list = [
         translation: 'I ate when I took the test [after].  (ie: When I took the test, I ate afterwards)'
       }
     ],
-    other: 'In "After/before verb, (clause[present])" is useful to use verb(volitional) in the clause.  Such as, "Before/after verb, let\'s _____."  (eg: "After the test, let\'s party!")'
+    other: 'In "After/before verb, (main sentence[present])" constructions, it is useful to use verb(volitional) as the main verb.  Such as, "Before/after verb, let\'s _____."  (eg: "After the test, let\'s party!")'
   },
   {
     grammar_point: '何(counter)も',
     spec: '何(counter)も',
     alt_def: '',
-    meaning: '何(counter)も is a phrase which means "many of that which is counted by (counter)".',
+    meaning: '"Many of that which is counted by (counter)"',
     use: {
-      text: '何(counter)も also has a negative analogue 「一(counter)も[neg]」',
+      text: '何(counter)も also has a negative analogue 「一(counter)も (phrase)[neg]」which means "Not even one of that which is counted by (counter)".  Both formations take no particles.',
       species: [
         {
-          jap: '「何(counter)も」',
-          eng: 'Many (counter)s (esp. 「何度も」 many times)'
+          jap: '何(counter)も',
+          eng: '：Many (counter)s (esp.「何度も」many times)'
         },
         {
-          jap: '「何十(counter)も」',
-          eng: 'Dozens of (counter)s (lit. "tens of (counter)s")'
+          jap: '何十(counter)も',
+          eng: '：Dozens of (counter)s (lit. "tens of (counter)s")'
         },
         {
-          jap: '「一(counter)も[neg]」　 ',
-          eng: 'Not even one (counter)'
+          jap: '一(counter)も (phrase)[neg]',
+          eng: '：Not even one (counter)'
         }
       ]
     },
@@ -384,24 +384,27 @@ var chap_grammar_list = [
     other: '何(counter)も and it\'s negative analogue take no particles.'
   },
   {
-    grammar_point: '(verb A (volitional)）か（verb B (vol.)）かと（心配する・迷う・考える）',
+    grammar_point: '(verb A (volitional)）か（verb B (vol.)）かと（思う・心配する・迷う・考える）',
     spec: 'verb(volitional)かverb(vol.)かと',
-    alt_def: '',
-    meaning: 'Wondering whether to (verb A) or (verb B).',
+    alt_def: 'おもう、しんぱいする、まよう、かんがえる',
+    meaning: '"Wondering whether to (verb A) or (verb B)"',
     use: {
-      text: 'Such construction is followed by 心配する、迷う、考える。  Such verbs can be [past] as well (wodered whether to...).  Indicates the subject is wondering which option to take.',
+      text: 'Such construction is followed by 心配する、迷う、考える。  Such verbs can be [past], as well (ie: wondered whether to...).  Indicates the subject is wondering which option to take.  Note that each verb conjugates as (vol.) and is followed by か ("or"), and preceeds a と verb (思う、心配する、迷う、考える、etc.)',
       species: [
         {
-          jap: '心配する：',
-          eng: '（しんぱい（する））：Worried whether to A or B.'
+          jap: '思う',
+          eng: '：おも(う)：Wondering whether to A or B.'
+        },{
+          jap: '心配する',
+          eng: '：しんぱい（する))：Worried whether to A or B.'
         },
         {
-          jap: '迷う　　：',
-          eng: '（まよ（う））：Lost, hesitating, puzzled whether to A or B.'
+          jap: '迷う　　',
+          eng: '：まよ(う))：Lost, hesitating, puzzled whether to A or B.'
         },
         {
-          jap: '考える　：',
-          eng: '（かんが（える））：Considering whether to A or B.'
+          jap: '考える　',
+          eng: '：かんが(える))：Considering whether to A or B.'
         }
       ]
     },
@@ -420,34 +423,37 @@ var chap_grammar_list = [
   {
     grammar_point: '〜のではない（でしょうか・だろうか・か）',
     spec: '〜のではない（でしょうか・だろうか・か）',
-    alt_def: '',
-    meaning: 'Might it not be the case that 〜。  Perhaps 〜。 (I kind of like just inserting "perhaps", it softens the claim without adding too much extra wording)',
+    alt_def: 'のではないでしょうか、のではないだろうか、のではないか、んじゃないでしょうか、んじゃないだろうか、のではないかと思う、のではないかとおもう、んじゃないかと思う、んじゃないかとおもう',
+    meaning: '"Might it not be the case that 〜"; "Perhaps 〜" (I kind of like just inserting "perhaps", it softens the claim without adding too much extra wording)',
     use: {
       text: 'Yet another indirect way to express one\'s opinon.  「〜」is usually a sentence ending in plain form.  「〜ではないだろうか」can be followed by と plus verbs like 思う、心配する、etc.  There are several contractions and rules as follows:',
       species: [
         {
-          jap: 'verb(plain)のではない〜',
+          jap: 'verb(plain) のではない〜',
           eng: ''
         },
         {
-          jap: '(adjい)い・のではない〜',
+          jap: '(adjい)い のではない〜',
           eng: ''
         },
         {
-          jap: '(adjな)な・のではない〜',
-          eng: '　Note that な is used.'
+          jap: '(adjな)な のではない〜',
+          eng: ' (Note that な is used)'
         },
         {
-          jap: '(noun)な・のではない〜',
-          eng: '　Note that な is used.'
+          jap: '(noun)な のではない〜',
+          eng: '　(Note that な is used)'
         },
         {
-          jap: '〜んじゃない（でしょうか・だろうか）',
-          eng: 'Contraction of 〜のではない in colloquial speech.'
+          jap: '〜んじゃない（でしょうか・だろうか)',
+          eng: ' (Contraction of 〜のではない in colloquial speech)'
         },
         {
-          jap: '〜のではないかと（思う・etc）',
-          eng: 'Contraction of 〜のではないだろうか when followed by と plus verbs like 思う、心配する、etc.'
+          jap: '〜のではない か と（思う／etc.)',
+          eng: ' (Contraction of 〜のではないだろうか when followed by と plus verbs like 思う、心配する、etc.) "I think that perhaps 〜"'
+        },{
+          jap: '〜んじゃない か と（思う／etc.)',
+          eng: ' (Similar to above, but with 〜んじゃない) "I think that perhaps 〜"'
         }
       ]
     },
@@ -469,13 +475,13 @@ var chap_grammar_list = [
         translation: 'Recently, I think (that I think it might be the case that) (the number of) foreigners who can speak Japanese has increased.'
       }
     ],
-    other: '...'
+    other: 'Note that ではない is the [neg] of である which itself is a formal version of だ。 Adding の to ではない has the same effect as のだ／のです and んだ／んです。'
   },
   {
     grammar_point: 'むしろ',
     spec: 'むしろ',
     alt_def: '',
-    meaning: 'Rather (than); more ___ than the other (more preferable, fits the description more, etc)',
+    meaning: '"Rather (than)"; "More ＿＿" (ie: more preferable, fits the description more, etc.)',
     use: {
       text: 'むしろ is used when comparing two alternatives to say that one is more ___ than the other.  Usually preceeded by a より clause which describes what is lesser.  Translation is very contextual; think of むしろ as a "leaning towards" or describing preference.',
       species: [
@@ -502,16 +508,16 @@ var chap_grammar_list = [
     other: 'Often, when むしろ is used there is a certain general or contextual expectation that the opposite is true.  (ie: "You may think that ..., but ____ is rather more _____")'
   },
   {
-    grammar_point: '意外に',
-    spec: '意外に',
-    alt_def: '',
-    meaning: 'More/less than expected; contrary to one\'s expectation.',
+    grammar_point: '意外に(adj[past])',
+    spec: '意外に(adj[past])',
+    alt_def: 'いがいに',
+    meaning: '（「意外」いがい：Unexpected; Surprising）"More/less than expected"; "Contrary to one\'s expectation"',
     use: {
-      text: '意外に（漢字：いがい（に））is a phrase.  意外と is a more colloquial form.  What comes after (ie: adj) is what was contrary to expectation.  The adjectives are in plain form (the examples only use [past], but I\'m sure [present] also occurs?), but are comparative in translation thanks to 意外に。',
+      text: '意外に is an adverb.  意外と is a more colloquial form.  What comes after (ie: adj) is what was contrary to expectation.  The adjectives are in plain form (the examples only use [past], but I\'m sure [present] also occurs?), but are comparative in translation thanks to 意外に。',
       species: [
         {
-          jap: '〜は「意外に」adj[past]：',
-          eng: 'As for 〜、it was adj(er) than expected'
+          jap: '〜は 意外に (adj[past])',
+          eng: '：As for 〜、it was adj(er) than expected'
         }
       ]
     },

@@ -89,8 +89,8 @@ var chap_grammar_list = [
   {
     grammar_point: '別に（〜ない）',
     spec: '別に（〜ない）',
-    alt_def: '',
-    meaning: '（漢字：べつ（に））Not particularly.',
+    alt_def: 'べつに〜ない',
+    meaning: '（「別」べつ：A distinction, difference）"Not particularly"',
     use: {
       text: 'Adverb.  Usually followed by a negative form of a verb.  Means that something is not particularly the case.',
       species: []
@@ -117,22 +117,22 @@ var chap_grammar_list = [
     grammar_point: '〜かな',
     spec: '〜かな',
     alt_def: '',
-    meaning: '"I wonder."  Emphatic.',
+    meaning: '"I wonder..." (Emphatic)',
     use: {
       text: '〜かな is the colloquial form of 〜でしょうか meaning "I wonder".  Also used as 〜かなと思う to provide more emphasis.',
       species: [
         {
-          jap: '〜かな：',
-          eng: 'I wonder'
+          jap: '〜かな',
+          eng: '：I wonder'
         },{
-          jap: '〜かなぁぁ：',
-          eng: 'I wonder...'
+          jap: '〜かなぁぁ',
+          eng: '：I wonder...'
         },{
-          jap: '〜かなと思う：',
-          eng: 'I WONDER'
+          jap: '〜かなと思う',
+          eng: '：I WONDER'
         },{
-          jap: '〜かなと思っていた：',
-          eng: 'I\'ve been ＷＯＮＤＥＲＩＮＧ'
+          jap: '〜かなと思っていた',
+          eng: '：I\'ve been ＷＯＮＤＥＲＩＮＧ'
         }
       ]
     },
@@ -158,16 +158,16 @@ var chap_grammar_list = [
     grammar_point: 'たしか',
     spec: 'たしか',
     alt_def: '',
-    meaning: 'If I remember correctly, if I am not mistaken.',
+    meaning: '"If I remember correctly"; "If I am not mistaken"',
     use: {
       text: 'Usually put at the beginning of the clause that is unsure.  Injects the implication of uncertainty that the speaker has.  NOT to be confused with たしかに：certainly.',
       species: [
         {
-          jap: 'たしか：　',
-          eng: 'If I remember correctly,'
+          jap: 'たしか',
+          eng: '：If I remember correctly,'
         },{
-          jap: 'たしかに：',
-          eng: 'Certainly,'
+          jap: 'たしかに',
+          eng: '：Certainly,'
         }
       ]
     },
@@ -185,10 +185,10 @@ var chap_grammar_list = [
   },{
     grammar_point: '（X）は（Y）で有名だ',
     spec: '（X）は（Y）で有名だ',
-    alt_def: '',
-    meaning: 'X is famous for Y.',
+    alt_def: 'XはYでゆうめいだ',
+    meaning: '"X is famous for Y"',
     use: {
-      text: 'Y can be a noun or noun phrase (ie: sentence（の・こと）',
+      text: 'Y can be a noun or verb phrase (ie: sentence（の・こと）',
       species: []
     },
     example: [
@@ -210,10 +210,10 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: 'nounにする',
-    spec: 'nounにする',
+    grammar_point: '(noun)にする',
+    spec: '(noun)にする',
     alt_def: '',
-    meaning: 'To decide on noun.  To have/take noun.',
+    meaning: '"To decide on noun"; "To have/take noun"',
     use: {
       text: 'Used when one decides on one choice of many.  Like an item on a menu, or date for an event.',
       species: []
@@ -233,21 +233,21 @@ var chap_grammar_list = [
     grammar_point: '〜ようだ',
     spec: '〜ようだ',
     alt_def: '',
-    meaning: 'It seems like 〜。 It looks like 〜。 (Based on physical evidence)',
+    meaning: '"It seems like 〜"; "It looks like 〜" (Based on physical evidence)',
     use: {
       text: 'Used when there is good evidence to support what seems.  Can be used with noun/adj/verb',
       species: [
         {
-          jap: 'nounのようだ',
+          jap: '(noun)の ようだ',
           eng: ''
         },{
-          jap: '（adjい）いようだ',
+          jap: '(adjい)い ようだ',
           eng: ''
         },{
-          jap: '（adjな）なようだ',
+          jap: '(adjな)な ようだ',
           eng: ''
         },{
-          jap: 'verb(plain)ようだ',
+          jap: 'verb(plain) ようだ',
           eng: ''
         }
       ]
@@ -264,12 +264,12 @@ var chap_grammar_list = [
     ],
     other: 'よう is a noun, this helps with knowing how to conjugate preceeding words.  ようだ differs from そうだ in that そう is based on one\'s own conjecture, while よう is based on physical or more concrete evidence.'
   },{
-    grammar_point: 'nounのように',
-    spec: 'nounのように',
+    grammar_point: '(noun)のように',
+    spec: '(noun)のように',
     alt_def: '',
-    meaning: 'Like, as if it were noun.',
+    meaning: '"Like"; "As if it were noun"',
     use: {
-      text: 'An adverbial construction of よう。 lit. "noun likeningly".  ',
+      text: 'An adverbial construction of よう。 (lit. "noun-likeningly")',
       species: []
     },
     example: [
@@ -287,7 +287,7 @@ var chap_grammar_list = [
     grammar_point: '（nounA）のような（nounB）',
     spec: '（nounA）のような（nounB）',
     alt_def: '',
-    meaning: 'Noun B looks/is like noun A.',
+    meaning: '"(noun B) looks/is like (noun A)"',
     use: {
       text: 'In this way, よう connects two nouns.  This is like らしい connecting two nouns.',
       species: []
@@ -307,16 +307,16 @@ var chap_grammar_list = [
     grammar_point: 'さえ',
     spec: 'さえ',
     alt_def: '',
-    meaning: 'Even',
+    meaning: '"Even" (Unexpected)',
     use: {
       text: 'Is a particle which emphasizes the case which is unexpected.  Acts with mostly the same meaning as in English.  Usually replaces the particle, but particles can remain as ＿さえ。  Conjugation as such:',
       species: [
         {
-          jap: 'nounさえ：',
-          eng: 'even noun'
+          jap: '(noun) さえ',
+          eng: '：even noun'
         },{
-          jap: 'verb（の・こと）さえ：',
-          eng: 'even nominalized-verb'
+          jap: 'verb(の・こと) さえ',
+          eng: '：even nominalized-verb'
         }
       ]
     },
@@ -330,12 +330,12 @@ var chap_grammar_list = [
         translation: 'I don\'t even have time to sleep.'
       }
     ],
-    other: 'Similar to nounでも which also means "even noun".  The difference is unclear, but it seems that merely でも highlights an example.'
+    other: 'Similar to (noun)でも which also means "even noun".  The difference is unclear, but it seems that merely でも highlights an example.'
   },{
     grammar_point: 'いつのまにか',
     spec: 'いつのまにか',
     alt_def: '',
-    meaning: 'Before one knows/realizes it',
+    meaning: '"Before one knows/realizes it"',
     use: {
       text: 'A saying/phrasing.  Used before the phrase which is what is before one realizes.',
       species: []
@@ -355,7 +355,7 @@ var chap_grammar_list = [
     grammar_point: '〜になれる',
     spec: '〜になれる',
     alt_def: '',
-    meaning: 'to be used to; to be accustomed to',
+    meaning: '"To be used to"; "To be accustomed to"',
     use: {
       text: 'Follows a noun directly or a sentenceの。',
       species: []
@@ -372,22 +372,22 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '（verbて）くる／いく',
-    spec: '（verbて）くる／いく',
+    grammar_point: 'verb(て)(くる・いく)',
+    spec: 'verb(て)(くる・いく)',
     alt_def: '',
-    meaning: 'A change/process/transition has been taking place up until now (くる）。  A change/process/transition will take place from now own （いく）。',
+    meaning: '"A change/process/transition has been taking place up until now" (くる); "A change/process/transition will take place from now own" (いく)',
     use: {
       text: 'くる and いく are kana forms of 来る and 行く respectively.  In this form, the verbs are usually written with kana alone.  くる is usually conjugated in the past (to convey the meaning of "has come to be").',
       species: [
         {
-          jap: 'verbてくる：',
-          eng: 'a change has been taking place up until now.'
+          jap: 'verbて くる',
+          eng: '：a change has been taking place up until now.'
         },{
-          jap: 'verbていく：',
-          eng: 'a change will take place from now on.'
+          jap: 'verbて いく',
+          eng: '：a change will take place from now on.'
         },{
-          jap: 'verbてきた：',
-          eng: 'a change has taken place (has come).'
+          jap: 'verbて きた',
+          eng: '：a change has taken place (has come).'
         }
       ]
     },
@@ -406,7 +406,7 @@ var chap_grammar_list = [
     grammar_point: '〜わけではない',
     spec: '〜わけではない',
     alt_def: '',
-    meaning: 'It does not necessarily mean that...; it does not follow that...',
+    meaning: '"It does not necessarily mean that 〜"; "It does not follow that 〜"',
     use: {
       text: 'This construction negates what one would conclude from previously mentioned statements or situations.  Is preceeded by words of the plain form.',
       species: []
@@ -423,10 +423,10 @@ var chap_grammar_list = [
     ],
     other: 'Similar in meaning and use as 必ずしも〜というわけではない of the previous chapter.'
   },{
-    grammar_point: 'verbないで済む',
-    spec: 'verbないで済む',
-    alt_def: '',
-    meaning: '（漢字：す（む）：to finish）One manages to get by without doing verb.  One "doesn\'t even have to verb.',
+    grammar_point: 'verb[neg.]で済む',
+    spec: 'verb[neg.]で済む',
+    alt_def: 'verb[neg.]ですむ、ないですむ',
+    meaning: '（「済む」す(む)：To finish）"One manages to get by without doing verb"; "One doesn\'t even have to verb"',
     use: {
       text: 'verbないで is the negative て form.',
       species: []
@@ -446,7 +446,7 @@ var chap_grammar_list = [
     grammar_point: '〜ずつ',
     spec: '〜ずつ',
     alt_def: '',
-    meaning: 'Each; at a time.',
+    meaning: '"Each"; "At a time"',
     use: {
       text: 'Follows a number or number + counter or limited quanitity (like 少し).  Indicates that a quanitity is equally distributed among two or more objects, time, etc.',
       species: []
@@ -470,25 +470,25 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '（verb/adj)（stem）すぎる',
-    spec: '（verb/adj)（stem）すぎる',
-    alt_def: '',
-    meaning: 'Too adj.  Do verb too much.',
+    grammar_point: '（verb/adj)(stem）すぎる',
+    spec: '（verb/adj)(stem）すぎる',
+    alt_def: 'verb(stem)すぎる、adj(stem)すぎる',
+    meaning: '"Too adj"; "Do verb too much"',
     use: {
       text: 'Conjugation as such:',
       species: [
         {
-          jap: 'verb(stem)すぎる',
-          eng: '（eg: 食べすぎる)'
+          jap: 'verb(stem) すぎる',
+          eng: '：(eg: 食べすぎる)'
         },{
-          jap: '（adjい）すぎる',
-          eng: '（eg: 高すぎる)'
+          jap: '(adjい) すぎる',
+          eng: '：(eg: 高すぎる)'
         },{
-          jap: '（adjな）有名すぎる',
-          eng: '（eg: 有名すぎる)'
+          jap: '(adjな) すぎる',
+          eng: '：(eg: 有名すぎる)'
         },{
           jap: 'しすぎる',
-          eng: '　from する'
+          eng: '：(from する)'
         }
       ]
     },
@@ -504,10 +504,10 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '〜以上',
-    spec: '〜以上',
-    alt_def: '',
-    meaning: '（漢字：いじょう）More than 〜。(some quanitity)',
+    grammar_point: '(# + counter)以上',
+    spec: '(# + counter)以上',
+    alt_def: '〜いじょう',
+    meaning: '（「以上」いじょう：Not less than; More than）"More than (some quanitity)"',
     use: {
       text: 'Preceeded by some number and counter.  If the counter is generic (ie: つ、本、枚), a noun can follow to further specify what is "more than".  As a whole, the phrase indicates some quanitity of which there is more than.  Sort of like a particle?  Specifically, 以上 means "more than and including #" meaning there could be some number of things or more.',
       species: []
@@ -522,7 +522,7 @@ var chap_grammar_list = [
         translation: 'I think it will be difficult to eat 100 slices of cheese in an hour.'
       }
     ],
-    other: '以下（漢字：いか）means "Less than 〜。" as in "up to and including #".'
+    other: '「以下」（いか）means "Less than 〜" as in "up to and including #".'
   }
 ];
 

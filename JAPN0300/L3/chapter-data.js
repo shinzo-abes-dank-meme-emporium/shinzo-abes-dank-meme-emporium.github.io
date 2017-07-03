@@ -121,13 +121,13 @@ var chap_grammar_list = [
     grammar_point: 'verb[neg]で',
     spec: 'verb[neg]で',
     alt_def: 'ないで',
-    meaning: 'Don\'t (verb).',
+    meaning: '"Don\'t (verb)."',
     use: {
       text: 'A contraction of a request using the negative て form of verbs: verb[neg]でください。',
       species: [
         {
-          jap: 'verbないで：',
-          eng: 'don\'t verb'
+          jap: 'verbないで',
+          eng: '：don\'t verb'
         }
       ]
     },
@@ -146,19 +146,28 @@ var chap_grammar_list = [
     grammar_point: 'verb(causative, て)いただけないでしょうか',
     spec: 'verb(causative, て)いただけないでしょうか',
     alt_def: 'せていただけないでしょうか',
-    meaning: 'May I do ___?  Lit. "Could I not receive the favor of your letting me do 〜?".',
+    meaning: '"May I do ___?" (lit. "Could I not receive the favor of your letting me do 〜?")',
     use: {
-      text: 'A very indirect way of asking for permission to do something.  Not to be confused with verb(て)いただけないでしょうか which means "Could you do ___?".',
+      text: 'A very indirect way of asking for permission to do something.  NOT to be confused with verb(て)いただけないでしょうか which means "Could you do ___?".',
       species: [
         {
-          jap: 'verb(causative, て)いただけないでしょうか：',
-          eng: 'May I do verb?'
+          jap: 'verb(causative, て) いただけないでしょうか',
+          eng: '：May I do verb?'
         },{
-          jap: 'verb(て)いただけないでしょうか：　　　　　',
-          eng: 'Could you do verb?'
+          jap: 'verb(て) いただけないでしょうか',
+          eng: '：Could you do verb?'
         },{
-          jap: '',
-          eng: 'This kind of construction (て + verb of giving/receiving) also works with くれる、あげる、もらう with expected results:'
+          jap: '<b>This kind of construction (て + verb of giving/receiving) also works with くれる、あげる、もらう with expected results.</b>',
+          eng: ''
+        },{
+          jap: 'verb(て) くれる',
+          eng: '：Someone did something for me (ie: Someone gave me the favor of 〜) (theyが meに)'
+        },{
+          jap: 'verb(て) あげる',
+          eng: '：I did something for someone (ie: I gave the favor of 〜) (meが theyに)'
+        },{
+          jap: 'verb(て) もらう',
+          eng: '：Someone did something for me (ie: I received the favor of 〜) (meが theyに)'
         }
       ]
     },
@@ -172,18 +181,18 @@ var chap_grammar_list = [
         translation: 'May I take the test one day early?'
       }
     ],
-    other: 'Formed from 「verb(caus.) + いただく(pot.)[neg.] + でしょうか」。  でしょう is a more indirect form of です、thus making the question more polite.'
+    other: 'Formed from 「verb(caus.) + いただく(pot.)[neg.] + でしょうか」。  でしょう is a more indirect form of です、thus making the question more polite.  ALSO: notice the difference in subject marker for 〜てくれる and 〜てもらう'
   },{
     grammar_point: '〜中に',
     spec: '〜中に',
     alt_def: 'ちゅうに',
-    meaning: 'Sometime during 〜。  By the end of 〜。',
+    meaning: '"Sometime during 〜"; "By the end of 〜"',
     use: {
       text: 'Decribes a time frame (eg: by the end of this week, by the end of today, etc.).  The reading of 「中」 will be 「ちゅう」 or 「じゅう」 depending on the preceeding word.',
       species: [
         {
-          jap: '(time-frame)中に：',
-          eng: 'By the end of (time-frame).'
+          jap: '(time-frame)中に',
+          eng: '：By the end of (time-frame).'
         },{
           jap: '今週中に reading: ',
           eng: 'こんしゅう<b>ちゅう</b>に'
@@ -222,29 +231,29 @@ var chap_grammar_list = [
       text: 'The same verb/adj/noun is used for both 〜, first in 〜ば form and then in plain form + ぼど。For nouns and なadj., であれば／ある will be suffixed.  Pos. constructions give the "more" meaning, neg. constructions give the "less" meaning.  The 〜 may be positive and the ＿＿ may be negative, in which case the translation would be "the more, the less", and vice versa, etc.  For nouns/adjな、ある will be negated and not the noun/adj.  I kind of like the literal translations, as un-English as they are.',
       species: [
         {
-          jap: 'verb[pos.]ばverb[pos.]ほど＿[pos.]＿：',
-          eng: 'The more verb, the more ＿＿。'
+          jap: 'verb[pos.]ばverb[pos.]ほど＿[pos.]＿',
+          eng: '：The more verb, the more ＿＿。'
         },{
-          jap: 'verb[neg.]ばverb[neg.]ほど＿[neg.]＿：',
-          eng: 'The less verb, the less ＿＿。'
+          jap: 'verb[neg.]ばverb[neg.]ほど＿[neg.]＿',
+          eng: '：The less verb, the less ＿＿。'
         },{
-          jap: '（adjい）[pos.]ば（adjい）[pos.]ほど＿[pos.]＿：',
-          eng: 'The more adj, the more ＿＿。'
+          jap: '（adjい）[pos.]ば（adjい）[pos.]ほど＿[pos.]＿',
+          eng: '：The more adj, the more ＿＿。'
         },{
-          jap: '（adjい）[neg.]ば（adjい）[neg.]ほど＿[neg.]＿：',
-          eng: 'The less adj, the less ＿＿。'
+          jap: '（adjい）[neg.]ば（adjい）[neg.]ほど＿[neg.]＿',
+          eng: '：The less adj, the less ＿＿。'
         },{
-          jap: '（adjな）であればあるほど＿[pos.]＿：',
-          eng: 'The more adj, the more ＿＿。'
+          jap: '（adjな）であればあるほど＿[pos.]＿',
+          eng: '：The more adj, the more ＿＿。'
         },{
-          jap: '（adjな）でなければないほど＿[neg.]＿：',
-          eng: 'The less adj, the less ＿＿。'
+          jap: '（adjな）でなければないほど＿[neg.]＿',
+          eng: '：The less adj, the less ＿＿。'
         },{
-          jap: 'nounであればあるほど＿[pos.]＿：',
-          eng: 'The more noun, the more ＿＿。'
+          jap: 'nounであればあるほど＿[pos.]＿',
+          eng: '：The more noun, the more ＿＿。'
         },{
-          jap: 'nounでなければないほど＿[neg.]＿：',
-          eng: 'The less noun, the less ＿＿。'
+          jap: 'nounでなければないほど＿[neg.]＿',
+          eng: '：The less noun, the less ＿＿。'
         }
       ]
     },
@@ -344,13 +353,21 @@ var chap_grammar_list = [
     ],
     other: 'ほど means "degree, extent of".  The literal translation might be "If there is 〜, then to the extent of 〜 there is ＿＿。" like the literal examples.  Think of it like a linear relationship, where "as much as there is 〜, there is ＿＿".  Meaning, "as 〜 increases, ＿＿ also increases to that extent", which is where the "the more, the more" meaning comes from.'
   },{
-    grammar_point: 'noun以外（に・の）',
-    spec: 'noun以外（の・に）',
-    alt_def: '',
-    meaning: '（漢字：いがい）Other than noun; besides noun.',
+    grammar_point: '(noun)以外（に・の）',
+    spec: '(noun)以外（の・に）',
+    alt_def: 'いじょう',
+    meaning: '（「以上」いがい：With the exception of）"Other than noun"; "Besides noun"',
     use: {
       text: '以外 literally just means "besides" or "excepting".  Using 以外に creates an adverbial phrase (try using noun-exceptingly, it\'s fun!), 以外の will preceed another noun and modify it.',
-      species: []
+      species: [
+        {
+          jap: '(noun)以外 に',
+          eng: '：noun-exceptingly'
+        },{
+          jap: '(noun A)以外 の(noun B)',
+          eng: '：a (noun A)-excepting (noun B)'
+        }
+      ]
     },
     example: [
       {
@@ -373,16 +390,11 @@ var chap_grammar_list = [
   },{
     grammar_point: '必ずしも（clause）というわけではない',
     spec: '必ずしも〜というわけではない',
-    alt_def: '',
-    meaning: '（漢字：かなら（ずしも））It does not necessarily mean that 〜。',
+    alt_def: 'かならずしも〜というわけではない',
+    meaning: '（「必ずしも」かなら(ずしも)：Not necessarily）"It does not necessarily mean that 〜"',
     use: {
-      text: 'What comes before という is a clause which gives detail to わけ。必ず means "always, without exception, invariably".  必ずしも is the negation of that: "not always, not necessarily" and acts adverbially.  わけ means "conclusion from reasoning".  The ではない is a double-negative in the sense of an intesifier, not in the sense of "not-not".',
-      species: [
-        {
-          jap: '',
-          eng: ''
-        }
-      ]
+      text: 'What comes before という is a clause which gives detail to わけ。必ず means "always, without exception, invariably".  必ずしも is the NEGATION of that: "not always, not necessarily" and acts adverbially.  わけ means "conclusion from reasoning".  The ではない is a double-negative in the sense of an intesifier, not in the sense of "not-not".',
+      species: []
     },
     example: [
       {
@@ -399,16 +411,16 @@ var chap_grammar_list = [
     grammar_point: '(noun/verbて)ばかり（だ）',
     spec: '(noun/verbて)ばかり（だ）',
     alt_def: '',
-    meaning: 'Nothing but noun.  Do nothing but verb.',
+    meaning: '"Nothing but noun"; "Do nothing but verb"',
     use: {
-      text: 'Conveys a sense that there is so much X that it appears as if there is only X',
+      text: 'Conveys a sense that there is so much 〜 that it appears as if there is only 〜',
       species: [
         {
-          jap: 'nounばかり：',
-          eng: 'nothing but noun'
+          jap: '(noun) ばかり(だ)',
+          eng: '：nothing but noun'
         },{
-          jap: 'verbてばかりいる：',
-          eng: 'do nothing but verb.  NOTE: that ばかり is sandwiched between verbて and いる。'
+          jap: 'verb(て) ばかりいる',
+          eng: '：do nothing but verb.  NOTE: that ばかり is sandwiched between verbて and いる。'
         }
       ]
     },
@@ -434,9 +446,9 @@ var chap_grammar_list = [
     grammar_point: 'なるべく',
     spec: 'なるべく',
     alt_def: '',
-    meaning: 'as (much, fast, ＿＿) as possible; if at all possible',
+    meaning: '"As (much, fast, etc.) as possible"; "If at all possible"',
     use: {
-      text: 'Usually followed by a phrase or action which should be "___ as much as possible".',
+      text: 'Usually followed by a phrase or action which should be "as 〜 as possible".',
       species: []
     },
     example: [
@@ -461,16 +473,16 @@ var chap_grammar_list = [
     grammar_point: 'verb(plain)べき',
     spec: 'verb(plain)べき',
     alt_def: '',
-    meaning: 'One should/ought to verb.  I should verb.',
+    meaning: '"One should/ought to verb"; "I should verb"',
     use: {
       text: 'べき is conjugated like a noun (followed by だ・です・etc).  Negation of べき is べきではない。  するべき may be contracted to すべき、but both are used.  Is a strong suggestion, maybe too strong to use casually directly to others; keep it to "I should" or "one should".',
       species: [
         {
-          jap: 'verb(plain)べきだ：',
-          eng: 'One should verb'
+          jap: 'verb(plain)べき だ：',
+          eng: '：[pos.] One should verb'
         },{
-          jap: 'verb(plain)べきではない：',
-          eng: 'One should not verb'
+          jap: 'verb(plain)べき ではない：',
+          eng: '：[neg.] One should not verb (note: that it is べき and not the verb which is negated)'
         }
       ]
     },

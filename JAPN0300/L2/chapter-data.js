@@ -107,10 +107,10 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb[neg]で',
     spec: 'verb[neg]で',
-    alt_def: '',
-    meaning: 'Without verb(ing)...; Instead of verb(ing)...',
+    alt_def: 'ないで',
+    meaning: '"Without doing verb"; "Instead of doing verb"',
     use: {
-      text: '(ie: verbないで).  A negative verb(て) form.  Usually followed by another verb and indicates a manner in which the action is carried out.  Often carries the connotation that one was expected to do the verb but did not.',
+      text: 'A negative verb(て) form.  Usually followed by another verb and indicates a manner in which the action is carried out.  Often carries the connotation that one was expected to do the verb but did not.',
       species: []
     },
     example: [
@@ -129,7 +129,7 @@ var chap_grammar_list = [
     grammar_point: 'verb(ば)いいのに',
     spec: 'verb(ば)いいのに',
     alt_def: '',
-    meaning: 'You should verb.  (lit. It would be good if you verb)',
+    meaning: '"You should verb" (lit. It would be good if you verb)',
     use: {
       text: 'Casual.  Usually ends the sentence.  Usually used to suggest the opposite of what the other person is doing or not doing.',
       species: []
@@ -149,26 +149,26 @@ var chap_grammar_list = [
   {
     grammar_point: 'それに（and other conjunctions)',
     spec: 'それに',
-    alt_def: '',
-    meaning: 'moreover; besides',
+    alt_def: 'そして、それから、それで',
+    meaning: '"Moreover"; "Besides"',
     use: {
       text: 'A carnival of conjunctions: ',
       species: [
         {
-          jap: '『それに』　',
-          eng: 'Moreover; besides.'
+          jap: 'それに',
+          eng: '："Moreover"; "Besides"'
         },
         {
-          jap: '『そして』　',
-          eng: 'And.  Used in general, does not necessarily imply a sequence of events'
+          jap: 'そして',
+          eng: '："And" (Used in general, does not necessarily imply a sequence of events)'
         },
         {
-          jap: '『それから』',
-          eng: 'And.  Specifically implies a sequence of events, so some sequences are ungrammatical.'
+          jap: 'それか',
+          eng: '："And" (Specifically implies a sequence of events, so some sequences are ungrammatical)'
         },
         {
-          jap: '『それで』　',
-          eng: 'Therefore; so.  Implies a causal relationship between two sentences.'
+          jap: 'それで',
+          eng: '："Therefore"; "So" (Implies a causal relationship between two sentences)'
         }
       ]
     },
@@ -195,8 +195,8 @@ var chap_grammar_list = [
   {
     grammar_point: 'なかなかverb[neg]',
     spec: 'なかなかverb[neg]',
-    alt_def: '',
-    meaning: 'Not easily (verb).  Verb is not easily done.',
+    alt_def: 'なかなか〜ない',
+    meaning: '"Not easily verb-ed"; "Verb is not easily done"',
     use: {
       text: 'なかなか、when used with a verb[neg] means something is not easly done or it takes time to do verb.',
       species: []
@@ -216,18 +216,18 @@ var chap_grammar_list = [
   {
     grammar_point: '(Q word)(sentence plain)か分かる[neg]',
     spec: '(Q word)(sentence)か分かる[neg]',
-    alt_def: '',
-    meaning: 'I don\'t know when/what/where/who/etc. (sentence).',
+    alt_def: 'かどうか分からない、か分からない、かどうかわからない、かわからない',
+    meaning: '"I don\'t know (when/what/where/who/etc.) 〜.',
     use: {
-      text: 'Used to embed a wh-question in another sentence.  End the embedded question in plain form plus か.  だ is optional.  かどうか embeds a yes-no question.',
+      text: 'Used to embed a question in another sentence.  End the embedded question in plain form plus か.  For nouns and adjな、だ is optional.  かどうか without a Q-word embeds a yes-no question.',
       species: [
         {
-          jap: '(Q word)(sentence plain)かわからない',
-          eng: 'I don\'t know who/when/what/where/etc. (embedded question)'
+          jap: '(Q word)(sentence plain)か わからない',
+          eng: '：I don\'t know (who/when/what/where/etc.) (embedded question)'
         },
         {
-          jap: '(sentence plain)かどうかわからない',
-          eng: 'I don\'t know whether (embedded question)'
+          jap: '(sentence plain)かどうか わからない',
+          eng: '：I don\'t know whether (embedded question)'
         }
       ]
     },
@@ -254,22 +254,22 @@ var chap_grammar_list = [
   {
     grammar_point: 'しかverb[neg]',
     spec: 'しかverb[neg]',
-    alt_def: '',
-    meaning: 'Only; no more than',
+    alt_def: 'しか〜ない',
+    meaning: '"Only"; "No more than"',
     use: {
-      text: 'Implies that the aforementioned amount/item is not enough or less than expected.  しか replaces は、が、を (like も), but other particles are retained as ＿しか (eg: nounにしか).',
+      text: 'Implies that the aforementioned amount/item is not enough or less than expected.  しか replaces は、が、を (like も), but other particles are retained as ＿しか (eg: (noun)にしか).  Can follow objects, numbers, and their counters to say that there is not enough of such object.',
       species: [
         {
-          jap: '(#, counter)しか（ない・ありません）',
-          eng: 'Only have # of counter (such that it is not enough).'
+          jap: '(#, counter) しか ない',
+          eng: '：Only have # of counter (such that it is not enough).'
         },
         {
-          jap: '(#, counter)しかverb[neg]',
-          eng: 'Only verb(ed) # of counter.'
+          jap: '(#, counter) しか verb[neg]',
+          eng: '：Only verb(ed) # of counter.'
         },
         {
-          jap: 'noun(を)しかverb[neg]',
-          eng: 'Only verb noun.'
+          jap: 'noun(を) しか verb[neg]',
+          eng: '：Only verb-ed noun.'
         }
       ]
     },
@@ -328,18 +328,18 @@ var chap_grammar_list = [
     alt_def: '',
     meaning: 'That is to say; it follows that; that means (sentence)',
     use: {
-      text: 'States a logical conclusion which can be drawn from previous statements.  The sentence ends in plain form, can be past or present.',
+      text: 'States a logical conclusion which can be drawn from previous statements.  The sentence ends in plain form which can be past or present.',
       species: [
         {
-          jap: '〜（adjな）（な・だった）わけです。',
+          jap: '〜(adjな)(な、だった) わけです。',
           eng: ''
         },
         {
-          jap: '〜（adjい）（い・かった）わけです。',
+          jap: '〜(adjい)(い、かった) わけです。',
           eng: ''
         },
         {
-          jap: '〜（verb）わけです。',
+          jap: '〜verb(plain)[pres., past] わけです。',
           eng: ''
         }
       ]
@@ -362,7 +362,7 @@ var chap_grammar_list = [
     alt_def: '',
     meaning: 'Depending on (noun).',
     use: {
-      text: 'nounによって can be followed by a noun or verb and describes the noun or verb.  ',
+      text: 'nounによって can be followed by a noun or verb.   It describes that noun or verb.',
       species: []
     },
     example: [
@@ -386,12 +386,12 @@ var chap_grammar_list = [
     other: 'よる means "to depend on".  Therefore, よって is the て form of よる。'
   },
   {
-    grammar_point: 'nounに当たる',
-    spec: 'nounに当たる',
-    alt_def: '',
-    meaning: '（漢字：あ（たる））To correspond to; to be equal to (noun)',
+    grammar_point: '(noun)に当たる',
+    spec: '(noun)に当たる',
+    alt_def: 'にあたる',
+    meaning: '（「当たる」：あ(たる)：(intrans.) To hit, to touch, to be equivalent to）"To correspond to 〜"; "To be equal to 〜"',
     use: {
-      text: 'Compares an aforementioned noun to the nounに and states (or asks a question about) the equality of the two.',
+      text: 'Compares an aforementioned noun to the nounに and states (or asks a question about) the equality of the two.  The object of comparison is marked with 〜に',
       species: []
     },
     example: [
@@ -412,16 +412,24 @@ var chap_grammar_list = [
         translation: 'How much yen is (equal to) a dollar?'
       }
     ],
-    other: '当たる is an intransitive verb.  The object of comparison is marked with 〜に。'
+    other: '...'
   },
   {
-    grammar_point: '（nounの・verb phrase）ような(noun)',
-    spec: '〜（のnoun・verb）ような(noun)',
+    grammar_point: '(nounの／〜verb(plain)）ような(noun)',
+    spec: '(nounの／〜verb(plain)）ような(noun)',
     alt_def: '',
-    meaning: 'A (noun) like/such as 〜。',
+    meaning: '"A (noun) like/such as 〜"',
     use: {
-      text: 'Compares a noun to another noun or verb phrase.  Cannot be used with adjectives.  Verbような(noun) means "A noun which is like verb-phrase(noun)", I think, wherein (noun) is an unwritten but implied repetition of noun to which the verb-phrase is related, such as eg2.',
-      species: []
+      text: 'Compares a noun to another noun or verb phrase.  CANNOT be used with adjectives.',
+      species: [
+        {
+          jap: '(noun A)の ような(noun B)',
+          eng: '：A (noun B) that is like (noun A)'
+        },{
+          jap: '〜verb(plain) ような(noun)',
+          eng: '：A (noun) that is like (verb phrase)'
+        }
+      ]
     },
     example: [
       {
@@ -441,7 +449,7 @@ var chap_grammar_list = [
         translation: 'Kanji for names, because there are ways of reading such as those that Japanese people are not able to read, are difficult.'
       }
     ],
-    other: 'Yeah it\'s kind of wierd to try and translate.'
+    other: 'Yeah it\'s kind of wierd to try and translate the verb one.'
   }
 ];
 

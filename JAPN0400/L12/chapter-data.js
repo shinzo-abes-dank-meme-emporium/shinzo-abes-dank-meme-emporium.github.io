@@ -53,9 +53,9 @@ var chap_note_list = [
 
 var chap_grammar_list = [
   {
-    grammar_point: 'ろくに ～ない',
-    spec: 'ろくに ～ない',
-    alt_def: '',
+    grammar_point: 'ろくに～[neg.]',
+    spec: 'ろくに〜[neg.]',
+    alt_def: 'ろくに〜ない',
     meaning: '"Not much ～"; "Not enough ～"',
     use: {
       text: 'The adverb ろくに means "enough" or "sufficient", but is always followed by a negative predicate.  Thus, the meaning always implies a lack of sufficiency.  Maybe translate the whole thing as "Not sufficiently ～".  Can be used with nouns using ろくな。',
@@ -145,8 +145,8 @@ var chap_grammar_list = [
     ],
     other: 'There is another construction called 〜せいか〜 in the next section.'
   },{
-    grammar_point: 'S1 せいか、S2',
-    spec: 'S1 せいか、S2',
+    grammar_point: '(S1)せいか、(S2)',
+    spec: '(S1)せいか、(S2)',
     alt_def: '',
     meaning: '"Perhaps because S1, S2 holds".',
     use: {
@@ -186,24 +186,24 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '〜おかげ（で、S2)',
-    spec: '〜おかげ（で、S2)',
+    grammar_point: '〜おかげ(で、S2)',
+    spec: '〜おかげ(で、S2)',
     alt_def: '',
     meaning: '"Thanks to 〜".',
     use: {
       text: '(cf. 〜せい because of (blame)) 〜おかげで is used when responsibility for a desireable situation is to be recognized.  It is used much like 〜せいか except for positive situations.  おかげ is a noun.',
       species: [
         {
-          jap: '(noun)の おかげ（で、〜）',
+          jap: '(noun)の おかげ(で、〜）',
           eng:''
         },{
-          jap: '(adjい)い おかげ（で、〜）',
+          jap: '(adjい)い おかげ(で、〜）',
           eng:''
         },{
-          jap: '(adjな)な おかげ（で、〜）',
+          jap: '(adjな)な おかげ(で、〜）',
           eng:''
         },{
-          jap: 'verb(plain)おかげ（で、〜）',
+          jap: 'verb(plain) おかげ(で、〜）',
           eng:''
         }
       ]
@@ -222,7 +222,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(て)ごらんなさい',
     spec: 'verb(て)ごらんなさい',
-    alt_def: '',
+    alt_def: 'てごらんなさい',
     meaning: '"Try verbing" (NOT TO USE to superiors)',
     use: {
       text: 'Polite form of verb(て)みなさい  〜なさい is used by superiors to give commands to those in lower status, and so 〜ごらんなさい cannot be used by a person of lower status to their superior.  verb(て)ごらん is a more informal version (eg: used by mothers to their children).',
@@ -269,7 +269,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜に越したことはない',
     spec: '〜に越したことはない',
-    alt_def: '',
+    alt_def: '〜にこしたことはない',
     meaning: '（「越す」こ（す）：to surpass, to exceed) "Nothing can be better than 〜"; "The best thing to do is 〜".',
     use: {
       text: 'Usually used with verb(plain)[pres.].  ie:',
@@ -301,7 +301,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '思うように',
     spec: '思うように',
-    alt_def: '',
+    alt_def: 'おもうように',
     meaning: '"As one wishes"; "According to one\'s will".',
     use: {
       text: 'Is an adverbial phrase.  Thankfully, it literally means "As one wishes" or "like-one\'s-wish-ingly.  In the book, it\'s preceeded by なかなか followed by a [neg.] to mean "By no means 〜 as one wishes".',

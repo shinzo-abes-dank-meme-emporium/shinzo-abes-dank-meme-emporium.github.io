@@ -506,7 +506,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(# + counter)以上',
     spec: '(# + counter)以上',
-    alt_def: '〜いじょう',
+    alt_def: '〜いじょう、以下、いか',
     meaning: '（「以上」いじょう：Not less than; More than）"More than (some quanitity)"',
     use: {
       text: 'Preceeded by some number and counter.  If the counter is generic (ie: つ、本、枚), a noun can follow to further specify what is "more than".  As a whole, the phrase indicates some quanitity of which there is more than.  Sort of like a particle?  Specifically, 以上 means "more than and including #" meaning there could be some number of things or more.',

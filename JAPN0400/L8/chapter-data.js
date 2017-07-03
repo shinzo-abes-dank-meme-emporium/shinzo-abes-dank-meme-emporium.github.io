@@ -54,13 +54,21 @@ var chap_note_list = [
 
 var chap_grammar_list = [
   {
-    grammar_point: 'ＸはＹくらいです',
-    spec: 'ＸはＹくらいです',
-    alt_def: '',
-    meaning: '"Y is about the only X"',
+    grammar_point: '(X)は(Y)くらいです',
+    spec: '(X)は(Y)くらいです',
+    alt_def: 'ぐらいです',
+    meaning: '"Y is about the only X"; "As for X, there\'s pretty much only Y',
     use: {
       text: 'This expression is used when Y is about the only case where X holds true.  X and Y can be nouns or noun phrases (ie: verbの・こと）.  です may be substituted for an appropriate sentence ending verb (like かもしれない、でしょう、etc.).  くらい or ぐらい may be used.',
-      species: []
+      species: [
+        {
+          jap: '(noun)は (Y)くらいです',
+          eng: ''
+        },{
+          jap: '(phraseの／こと)は (Y)くらいです',
+          eng: ''
+        }
+      ]
     },
     example: [
       {
@@ -83,8 +91,8 @@ var chap_grammar_list = [
   },{
     grammar_point: 'やっぱり',
     spec: 'やっぱり',
-    alt_def: '',
-    meaning: 'As expected; Also; Again',
+    alt_def: 'やはり',
+    meaning: '"As expected"; "Also"; "Again"',
     use: {
       text: 'Conversational form of やはり。  Adverb which indicates that what is being said is what was expected from general or specific knowledge.',
       species: []
@@ -104,9 +112,9 @@ var chap_grammar_list = [
     grammar_point: '〜さえ〜ば（result)',
     spec: '〜さえ〜ば（result)',
     alt_def: '',
-    meaning: 'If only you 〜、then (result) will/would be.',
+    meaning: '"If only you 〜、then (result) will/would be"',
     use: {
-      text: 'A better way to think of this construction is as (condition)->(result), where (condition) is the 〜さえ〜ば construction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  さえ means "even", "if only", "if just", "as long as".  Possible species as follows: ',
+      text: 'A better way to think of this construction is as (condition)>(result), where (condition) is the 〜さえ〜ば construction and the (result) is the result which is conditioned on (condition).  さえ replaces particles が、を、は、も and other particles are inserted as 〜＿さえ (eg: 〜にさえ), as usual.  さえ means "even", "if only", "if just", "as long as".  Possible species as follows: ',
       species: [
         {
           jap: 'nounさえ + verb(ば)',
@@ -154,32 +162,38 @@ var chap_grammar_list = [
         translation: 'It is not the case that knowing kanji guarantees that you will be able to read newspapers.  (Just knowing kanji does not mean that you will be able to read newspapers.)'
       }
     ],
-    other: 'Translating it as "If only, then" seems to be a literal but poor translation.  The super literal (and IMO more clear) translation might be: "Conditioned on just/only verb/noun, thus result/statement".'
+    other: 'Translating it as "If only, then" seems to be a literal but poor translation.  The super literal (and IMO more clear) translation might be: "Conditioned on just/only verb/noun, thus result/statement".  さえ means: "even", "if only", "if just", "as long as", the only thing needed".'
   },{
     grammar_point: '〜はず',
     spec: '〜はず',
     alt_def: '',
     meaning: '"Supposed to 〜"; "Expected to 〜"',
     use: {
-      text: 'Expresses one\'s conjecture with some certainty that some thing is expected/suposed to be.  Can be used with nounの、(adjな）な、verp(plain), (adjい）い。Is usually followed by だ・です。Can also be used with plain negations of the above options.',
+      text: 'Expresses one\'s conjecture with some certainty that some thing is expected/suposed to be.  Can be used with nounの、(adjな）な、verp(plain), (adjい）い。Is usually followed by だ or です。 Can also be used with plain negations of the above options.',
       species: [
         {
-          jap: 'nounの + はず：',
-          eng: 'supposed to be noun'
+          jap: 'nounの はず',
+          eng: '：supposed to be noun'
         },{
-          jap: '(adjな）な + はず：',
-          eng: 'supposed to be adj'
+          jap: '(adjな)な はず',
+          eng: '：supposed to be adj'
         },{
-          jap: '(adjい）い + はず：',
-          eng: 'supposed to be adj'
+          jap: '(adjい)い はず',
+          eng: '：supposed to be adj'
         },{
-          jap: 'verb(plain) + はず：',
-          eng: 'supposed to verb'
+          jap: 'verb(plain) はず',
+          eng: '：supposed to verb'
         },{
-          jap: 'verb(pot.)(plain) + はず：',
+          jap: '<b>Extra Examples:</b>',
+          eng: ''
+        },{
+          jap: 'verb(pot.)(plain) はず：',
           eng: 'supposed to be able to verb'
+        },{
+          jap: '〜[neg.] はず：',
+          eng: 'NOT supposed to be 〜'
         }
-      ],
+      ]
     },
     example: [
       {
@@ -217,22 +231,22 @@ var chap_grammar_list = [
     grammar_point: '〜みたい',
     spec: '〜みたい',
     alt_def: '',
-    meaning: '"Seems", "Appears to be", "Looks like", "Is like".  Colloquial form of ようだ。(ie: seems to be, based on specific evidence)',
+    meaning: '"Seems", "Appears to be", "Looks like", "Is like"',
     use: {
-      text: 'Unlike ようだ、みたい follows bare nouns and (adjな) stem.  However!, it does follow plain forms of (adjい) and verbs.  Can follow negations, in which case the 〜ない retains the い as with (adjい).',
+      text: 'Colloquial form of ようだ (ie: seems to be, based on specific evidence).  Unlike ようだ、みたい follows bare nouns and (adjな) stem.  However!, it does follow plain forms of (adjい) and verbs.  Can follow negations, in which case the 〜ない retains the い as with (adjい).',
       species: [
         {
-          jap: 'noun + みたい：',
-          eng: 'appears to be noun'
+          jap: 'noun みたい',
+          eng: '：appears to be noun'
         },{
-          jap: '(adjな）+ みたい：',
-          eng: 'appears to be adj'
+          jap: '(adjな）みたい',
+          eng: '：appears to be adj'
         },{
-          jap: '(adjい）い + みたい：',
-          eng: 'appears to be adj'
+          jap: '(adjい)い みたい',
+          eng: '：appears to be adj'
         },{
-          jap: 'verb(plain) + みたい：',
-          eng: 'appears to verb'
+          jap: 'verb(plain) みたい',
+          eng: '：appears to verb'
         }
       ],
     },
@@ -282,36 +296,36 @@ var chap_grammar_list = [
     ],
     other: 'In example sentence 1, it seems like in Japanese that 増える "to increase" does not need to refer specifically to a number, as it does in English.  Instead, can it refer to "people" in general and one can infer that one means "number of people" from context?  SAT questions come back to haunt me...'
   },{
-    grammar_point: '(noun）ため（に）',
-    spec: '(noun）ため（に）',
+    grammar_point: '(noun)ため（に）',
+    spec: '(noun)ため（に）',
     alt_def: '',
-    meaning: '"Because (of) [noun]"; "Due to [noun]".',
+    meaning: '"Because (of) 〜"; "Due to 〜".',
     use: {
       text: 'Indicates the reason or cause for the following clause.  Follows nounの、(adjな）な、(adjい）い、and verb(plain).  に is an optional particle and usually omitted.  Can be used with negations.  Is a formal expression and usually used in writting or formal situations.',
       species: [
         {
-          jap: 'nounの + ため（に）：',
-          eng: 'because of noun'
+          jap: 'nounの ため（に）',
+          eng: '：because of noun'
         },{
-          jap: '(adjな）な + ため（に）：',
-          eng: 'due to being adj'
+          jap: '(adjな)な ため（に）',
+          eng: '：due to being adj'
         },{
-          jap: '(adjい）い + ため（に）：',
-          eng: 'due to being adj'
+          jap: '(adjい)い ため（に）',
+          eng: '：due to being adj'
         },{
-          jap: 'verb(plain) + ため（に）：',
-          eng: 'because of doing verb'
+          jap: 'verb(plain) ため（に）',
+          eng: '：because of doing verb'
         },{
-          jap: '(cf. Chapter 5)',
+          jap: '<b>(cf. Chapter 5)</b>',
           eng: ''
         },{
           jap: '',
           eng: '〜ため（に）also indicates a purpose for an action.  Usually, the correct translation partly depends on context.  However, if the verb follows an adjective,a verb which indicates state such as 分かる、できる、ある、etc., or verb(past) it ALWAYS indicates a reason.'
         },{
-          jap: '日本語を<u>勉強する</u><b>ため</b>、日本行った。：',
+          jap: '『日本語を<u>勉強する</u><b>ため</b>、日本行った。』',
           eng: 'He went to Japan in order to study Japanese.'
         },{
-          jap: '日本語を<u>勉強した</u><b>ため</b>、日本行った。：',
+          jap: '『日本語を<u>勉強した</u><b>ため</b>、日本行った。』',
           eng: 'He went to Japan because he studied Japanese.'
         }
       ],

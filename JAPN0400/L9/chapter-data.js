@@ -56,7 +56,7 @@ var chap_grammar_list = [
     grammar_point: 'わざわざ',
     spec: 'わざわざ',
     alt_def: '',
-    meaning: 'To go out of one\'s way to do something',
+    meaning: '"To go out of one\'s way to do something"',
     use: {
       text: 'Denotes doing something in a way that takes more time and effor thtan necessary or purposely doing something that is not necessary.  Ie: there are two options and you chose the one that takes more.  Is not used in the same way as せっかく。',
       species: []
@@ -82,11 +82,16 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜より仕方がない',
     spec: '〜より仕方がない',
-    alt_def: '',
-    meaning: '"To have no choice but to 〜"',
+    alt_def: '〜よりしかたがない',
+    meaning: '（「仕方」しかた）"To have no choice but to 〜"',
     use: {
-      text: '（仕方：しかた）Denotes that "〜" is NOT what one normally wants to do, but one has no choice but to do it.  〜 is usually a verb.',
-      species: []
+      text: 'Denotes that "〜" is NOT what one normally wants to do, but one has no choice but to do it.  〜 is usually a verb.',
+      species: [
+        {
+          jap: 'verb(plain)より仕方がない',
+          eng: ''
+        }
+      ]
     },
     example: [
       {
@@ -175,8 +180,8 @@ var chap_grammar_list = [
     ],
     other: 'せめて can also mean "at most" as in the phrase 『せめてつまらないものですが。』"At most, it\'s an uninteresting thing, but...".'
   },{
-    grammar_point: 'X ように Y',
-    spec: 'X ように Y',
+    grammar_point: '(X)ように(Y)',
+    spec: '(X)ように(Y)',
     alt_def: '',
     meaning: '"Y, so that X"; "In order to X, Y"; "For the purpose of X, Y".',
     use: {
@@ -223,19 +228,19 @@ var chap_grammar_list = [
     ],
     other: '〜ように implies that a certain consequence will hold as the result of an action whereas 〜ために merely indicates the purpose of an action.  Normally, action verbs precede ために while verbs that precede ように indicate a state, event, or consequence that is beyond one\'s control.  Compare the last two example sentences.'
   },{
-    grammar_point: '(adjな）に／(adjい）く・見える',
+    grammar_point: '((adjな)に・(adjい)く)見える',
     spec: '〜に／く・見える',
-    alt_def: '',
-    meaning: '"Seems [adj]"; "Appears [adj]".',
+    alt_def: 'に見える、く見える、にみえる、くみえる',
+    meaning: '（「見える」み(える)) "Seems 〜"; "Appears 〜".',
     use: {
       text: '(adjな) and (adjい）are used adverbially.',
       species: [
         {
-          jap: '(adjい）く見える：',
-          eng: 'Seems adj'
+          jap: '(adjい)く 見える',
+          eng: '：Seems adj'
         },{
-          jap: '(adjに）に見える：',
-          eng: 'Seems adj'
+          jap: '(adjに)に 見える',
+          eng: '：Seems adj'
         }
       ]
     },
@@ -258,7 +263,7 @@ var chap_grammar_list = [
     ],
     other: 'Not sure how this differs from みたい or compares to そう・らしい・よう。Probably more formal than みたい、and can be combined with そう・らしい・よう。'
   },{
-    grammar_point: '(noun, phrase)〜こそ',
+    grammar_point: '(noun/phrase)こそ',
     spec: 'こそ',
     alt_def: '',
     meaning: 'Emphatic particle.',
@@ -266,17 +271,17 @@ var chap_grammar_list = [
       text: 'こそ emphasizes the preciding noun or phrase.  There should be some reason WHY one has to emphasize a particular noun or phrase (eg: providing a counterargument, making a stronger statement).  Generally replaces subject particles (が／を／も／は）but can be attached to other particles as 〜＿こそ (eg: 〜にこそ）。The book doesn\'t have much info on this, but below are some formation examples I found online.',
       species: [
         {
-          jap: '(temporal noun)こそ：',
-          eng: 'Emphasizes the time period.  eg: when expressing determination to do something in the time period or show strong desire for something that hasn\'t been happening up to now.'
+          jap: '(temporal noun) こそ',
+          eng: '：Emphasizes the time period.  eg: when expressing determination to do something in the time period or show strong desire for something that hasn\'t been happening up to now.'
         },{
-          jap: '(noun)こそ：',
-          eng: '"That very noun", "Precisely that noun".  Usually positive.  Indicates that the highlighted noun is some very such thing.  Often used with demonstrative nouns (それ／これ・あれ／etc.).  With demonstrative nouns, can be used to emphasize another party (as with accusations, blame, or with shifting compliments) (eg: こちらこそ no no I am to blame、あんたこそ no no you are the one looking good today)'
+          jap: '(noun) こそ',
+          eng: '："That very noun", "Precisely that noun".  Usually positive.  Indicates that the highlighted noun is some very such thing.  Often used with demonstrative nouns (それ／これ・あれ／etc.).  With demonstrative nouns, can be used to emphasize another party (as with accusations, blame, or with shifting compliments) (eg: こちらこそ no no I am to blame、あんたこそ no no you are the one looking good today)'
         },{
-          jap: '(verbて）こそ：',
-          eng: 'Emphasizes condition or reason.  eg: "Only when you do verb, etc..."'
+          jap: 'verb(て) こそ',
+          eng: '：Emphasizes condition or reason.  eg: "Only when you do verb, etc..."'
         },{
-          jap: '（〜から）こそ：',
-          eng: 'Using 〜から as usual and appending こそ, the emphasis shifts to "the reason why".  eg: "Preciesly because 〜、etc..."'
+          jap: '(〜から) こそ',
+          eng: '：Using 〜から as usual and appending こそ, the emphasis shifts to "the reason why".  eg: "Preciesly because 〜、etc..."'
         }
       ]
     },
@@ -320,9 +325,9 @@ var chap_grammar_list = [
     ],
     other: 'ｎｏｔ　ｔｏ　ｂｅ　ｃｏｎｆｕｓｅｄ　ｗｉｔｈ　クソ。Sort of like Latin "temet nosce", "know thyself", where "-met" acts as an emphatic particle to "te".  Also, I just remembered that Latin has another emphatic particle "-ne", which is used almost exactly like the Japanese sentence ending particle 〜ね。すごいね。'
   },{
-    grammar_point: 'X と言っても Y',
-    spec: 'X と言っても Y',
-    alt_def: '',
+    grammar_point: '(X)と言っても(Y)',
+    spec: '(X)と言っても(Y)',
+    alt_def: 'といっても',
     meaning: '"Even though I said X, Y"; "It\'s true that X, but Y."',
     use: {
       text: 'X usually ends with plain forms, but だ is generally omitted.  Y is given to qualify X.',
@@ -367,13 +372,21 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '(noun, phrase)に限らない',
-    spec: '(noun, phrase)に限らない',
-    alt_def: '',
+    grammar_point: '(noun/phrase)に限る[neg.]',
+    spec: '(noun/phrase)に限る[neg.]',
+    alt_def: 'に限らない、にかぎる[neg]、にかぎらない、に限られている、にかぎられている',
     meaning: '"Not limited to 〜"',
     use: {
-      text: '限る：かぎ（る）。Can also be used in the positive, if one uses 〜に限られている (the passive of 限る), to mean "Is limited to 〜".',
-      species: []
+      text: '（「限る」かぎ(る)) Can also be used in the positive, if one uses 〜に限られている (the passive, progressive of 限る), to mean "Is limited to 〜".',
+      species: [
+        {
+          jap: '〜に限らない',
+          eng: '：It is not limited to 〜 [NEG]'
+        },{
+          jap: '〜に限られている',
+          eng: '：It IS limited to 〜 [PASS., ている]'
+        }
+      ]
     },
     example: [
       {
@@ -396,7 +409,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'どんな(noun(+particle))でも',
     spec: 'どんな(noun(+particle))でも',
-    alt_def: '',
+    alt_def: 'どんな〜でも',
     meaning: '"Any 〜"',
     use: {
       text: 'Generally, が and を are omitted when followed by でも。Other particles (eg: と／から／に／etc.) remain as どんな〜にでも。',

@@ -82,7 +82,7 @@ var chap_grammar_list = [
   },{
     grammar_point: 'よっぽど',
     spec: 'よっぽど',
-    alt_def: '',
+    alt_def: 'よほど',
     meaning: '"Considerably / really / to a great extent (more than normal)"',
     use: {
       text: 'Colloquial form of よほど。 Indicates that something is of a degree considerably greater than usual.',
@@ -109,7 +109,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜に違いない',
     spec: '〜に違いない',
-    alt_def: '',
+    alt_def: '〜にまちがいない',
     meaning: '"It must be 〜"; "There is no mistaking 〜"',
     use: {
       text: 'Can be formed as such:',
@@ -218,7 +218,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)なんか／(noun)なんて',
     spec: '(noun)なんか／(noun)なんて',
-    alt_def: '',
+    alt_def: 'さっぱり',
     meaning: '"Something/somebody like 〜".',
     use: {
       text: 'Follows nouns and is used much like "like" in English.  Both なんか and なんて can follow a noun, but only なんて can follow a sentence.  なんて is a contraction of many forms (eg:)',
@@ -228,13 +228,13 @@ var chap_grammar_list = [
           eng: ''
         },{
           jap: '',
-          eng: 'などは'
+          eng: ' = などは'
         },{
           jap: '',
-          eng: 'などと'
+          eng: ' = などと'
         },{
           jap: '',
-          eng: 'などというのは'
+          eng: ' = などというのは'
         },{
           jap: '',
           eng: 'etc.'
@@ -272,7 +272,7 @@ var chap_grammar_list = [
         translation: 'Since I was told things like it being impolite not to use keigo, I worried.'
       }
     ],
-    other: 'さっぱり + [neg.]: "Not at all".'
+    other: 'さっぱり〜[neg.]: "Not at all".'
   },{
     grammar_point: '〜ものの',
     spec: '〜ものの',
@@ -291,7 +291,7 @@ var chap_grammar_list = [
           jap: '(adjな)な ものの',
           eng: ''
         },{
-          jap: '(adjな)である ものの)',
+          jap: '(adjな)である ものの',
           eng: '（an alternative formation for adjな)'
         },{
           jap: 'verb(plain) ものの',
@@ -313,7 +313,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '一方で（は〜、他方では〜）',
     spec: '一方で（は〜、他方では〜）',
-    alt_def: '',
+    alt_def: 'いっぽうでは、たほうでは',
     meaning: '（「一方」いっぽう）;（「他方」たほう）"On one hand"; "On the other hand"',
     use: {
       text: 'Often used in the phrase「一方では〜、他方では」, but one of the two phrases is often omitted.  The は〜 is optional.  Either 一方で or 他方で can mean "On the one hand" or "On the other hand".  When only one is used, it usually means, "On the other hand".  Usually used to show contrast, and as such, it\'s useful to use this construction after a conjunction that indicates contradiction (ie: が、けど、etc.)',
@@ -340,7 +340,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '毎(temporal noun)のように',
     spec: '毎(temporal noun)のように',
-    alt_def: '',
+    alt_def: 'まい〜のように',
     meaning: '"Almost every (temporal noun)"',
     use: {
       text: 'Indicates that the frequency of something is such that it seems like it happens almost every (temporal noun).  Can be used with any number of temporal nouns (eg: 週、月、年、回、時間、etc.).  (eg: 毎日のように：Specifically means that it APPEARS like every day, not that it is literally every day.)',
@@ -414,7 +414,7 @@ var chap_grammar_list = [
     alt_def: '',
     meaning: '"Although 〜"; "Despite 〜"',
     use: {
-      text: 'Compared to the 〜ながら learned previously, for「S1 ながら S2」, when S1 ends in a noun, adjective, or a stative verb (verbている), then it expresses the idea of "Although".  However, when S1 ends in an action verb, it expresses the idea of simultaneity.',
+      text: 'Compared to the 〜ながら learned previously, for「S1 ながら S2」, when S1 ends in a noun, adjective, or a stative verb (verbている), then it expresses the idea of "Although".  However, when S1 ends in an action verb, it expresses the idea of simultaneity.  The book doesn\'t give 〜も as a particle, but from what I\'ve seen, it can be an optional particle.  Probably not usually used.',
       species: [
         {
           jap: '(noun) ながら',

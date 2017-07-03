@@ -152,9 +152,11 @@ function searchGrammar(query, callback) {
   $(grammar_results_ID).empty();
   callback = callback || noop
 
+  let queryLowercase = query.toLowerCase();
+
   // does not split on space (ie: whole search with space is considered)
   // splits on '　＋' (ie: include things that have this AND this)
-  let splitQuery = query.split('　＋');
+  let splitQuery = queryLowercase.split('　＋');
 
   for (var i=0; i<total_grammar.length; i++) {
     let grammar_entry = total_grammar[i].entry;

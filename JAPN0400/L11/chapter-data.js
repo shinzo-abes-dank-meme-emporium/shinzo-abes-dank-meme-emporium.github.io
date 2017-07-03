@@ -55,17 +55,17 @@ var chap_grammar_list = [
   {
     grammar_point: 'verb(plain)（もん／もの）ですから',
     spec: 'verb(plain)（もん／もの）ですから',
-    alt_def: '',
+    alt_def: 'もんですから、ものですから',
     meaning: '"Because of 〜"; "〜 happened, regretably"',
     use: {
-      text: 'When verb is verb(plain)[past], there is a semblance of apology in the statment.  When the verb is verb(plain)[present], the speaker is just giving a reason or stating something that happened.  In both cases, the speaker feels bad for what happened and in both cases the situation could not be avoided.  The past form of verbs is used for apologies.',
+      text: 'When verb is verb(plain)[PAST], there is a semblance of apology in the statment.  When the verb is verb(plain)[PRESENT], the speaker is just giving a reason or stating something that happened.  In both cases, the speaker feels bad for what happened and in both cases the situation could not be avoided.  The past form of verbs is used for apologies.',
       species: [
         {
-          jap: 'verb(plain)[past]もんですから：',
-          eng: 'Such verb happened, I appologize.'
+          jap: 'verb(plain)[past]もんですから',
+          eng: '：Such verb happened, I appologize.'
         },{
-          jap: 'verb(plain)[present]もんですから：',
-          eng: 'Such verb happened, regretably.'
+          jap: 'verb(plain)[present]もんですから',
+          eng: '：Such verb happened, regretably.'
         }
       ]
     },
@@ -97,26 +97,26 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜うちに',
     spec: '〜うちに',
-    alt_def: '',
+    alt_def: '内に',
     meaning: '"While 〜"; "While 〜 situation holds"',
     use: {
       text: 'There are two versions of 〜うちに。 The second is explained below.  〜うちに is preceded by nouns, adjectives, and verbs in simple (る・／う／) or progressive/stative (〜ている) forms.  You should not use with past forms.  It expresses a sense of "while a certain situation holds".  うち means "inside", "within", and "while", among other things.',
       species: [
         {
-          jap: '(noun)のうちに：',
-          eng: 'While being a noun'
+          jap: '(noun)の うちに',
+          eng: '：While being a noun'
         },{
-          jap: '(adjい)いうちに：',
-          eng: 'While being adjい'
+          jap: '(adjい)い うちに',
+          eng: '：While being adjい'
         },{
-          jap: '(adjな)なうちに：',
-          eng: 'While being adjな'
+          jap: '(adjな)な うちに',
+          eng: '：While being adjな'
         },{
-          jap: '(verb)(plain)うちに：',
-          eng: 'While verb is the case'
+          jap: 'verb(plain) うちに',
+          eng: '：While verb is the case'
         },{
-          jap: '(verb)(ている)(plain)うちに：',
-          eng: 'While verb state is the case'
+          jap: 'verb[ている](plain) うちに',
+          eng: '：While verb state is the case'
         }
       ]
     },
@@ -162,17 +162,17 @@ var chap_grammar_list = [
   },{
     grammar_point: 'verb(plain)[neg.]うちに',
     spec: 'verb(plain)[neg.]うちに',
-    alt_def: '',
+    alt_def: '内に',
     meaning: '"Before 〜"; "Before 〜 happens"',
     use: {
-      text: 'When 〜うちに is preceded by negative verbs, it means "before 〜 happens".  This only applies to verbs in the negative case.  Usually, adjectives are followed by なる[neg.] (ならない) which is used to convey "before something becomes adj".',
+      text: 'When 〜うちに is preceded by negative verbs, it means "before 〜 happens".  This only applies to verbs in the negative case.  In particular, adjectives can be followed by なる[neg.] (ie: ならない) which is used to convey "before something becomes adj".',
       species: [
         {
-          jap: '(verb)[neg.]うちに：',
-          eng: 'Before verb happens'
+          jap: 'verb(plain)[neg.] うちに',
+          eng: '：Before verb happens'
         },{
-          jap: '(adjい／な)（く／に）ならないうちに：',
-          eng: 'Before something becomes adj'
+          jap: '(adjい／な)（く／に）ならないうちに',
+          eng: '：Before something becomes adj'
         }
       ]
     },
@@ -197,17 +197,17 @@ var chap_grammar_list = [
   },{
     grammar_point: '〜が気になる',
     spec: '〜が気になる',
-    alt_def: '',
+    alt_def: '〜がきがなる',
     meaning: '"〜 weighs on one\'s mind"; "To be concerned about 〜"',
     use: {
-      text: '〜 can be a noun or a phrase ending in a nominalized verb (verbの）。',
+      text: '〜 can be a noun or a phrase ending in a nominalized verb (ie: verbの／こと）。',
       species: [
         {
-          jap: '(noun)が気になる：',
-          eng: 'To be concerned about noun'
+          jap: '(noun)が気になる',
+          eng: '：To be concerned about noun'
         },{
-          jap: '(verb)(の)が気になる',
-          eng: 'To be concerned about verb phrase'
+          jap: '(nominalized verb)が気になる',
+          eng: '：To be concerned about verb phrase'
         }
       ]
     },
@@ -233,16 +233,16 @@ var chap_grammar_list = [
     grammar_point: 'どうしても～([pos.]/[neg.])',
     spec: 'どうしても～([pos.]/[neg.])',
     alt_def: '',
-    meaning: '(w/ [positive]): "By all means", "No matter what"; (w/ [negative]): "Can\'t, no matter how hard one tries"',
+    meaning: '"By all means", "No matter what" [pos.]; "Can\'t, no matter how hard one tries" [neg.]',
     use: {
       text: 'Can be used with positive or negative predicate (ie: verbs, adj, nounだ, etc.)',
       species: [
         {
-          jap: 'どうしても～[pos.]：',
-          eng: 'By all means, ～'
+          jap: 'どうしても～[pos.]',
+          eng: '：By all means, ～'
         },{
-          jap: 'どうしても～[neg.]：',
-          eng: 'Can\'t do ～ no matter how hard one tries'
+          jap: 'どうしても～[neg.]',
+          eng: '：Can\'t do ～ no matter how hard one tries'
         }
       ]
     },
@@ -294,7 +294,7 @@ var chap_grammar_list = [
   },{
     grammar_point: '(noun)に気をつける',
     spec: '(noun)に気をつける',
-    alt_def: '',
+    alt_def: 'にきをつける、に気をつけて、にきをつけて',
     meaning: '"To pay attention to ～"; "To be careful/mindful of ～"',
     use: {
       text: 'Also used as a forewarning:「（～に）気をつけてください！」',
@@ -315,24 +315,24 @@ var chap_grammar_list = [
     grammar_point: '（～に）verb(plain)ように（お願いする／言う／頼む／注意する）',
     spec: '（～に）verb(plain)ように（お願いする／言う／頼む／注意する）',
     alt_def: '',
-    meaning: '"To request/tell/ask (someone (～に)) (to do something)"',
+    meaning: '"To request/tell/ask (someone(に)) (to do something(を))"',
     use: {
-      text: 'An indirect quote of a command or request.  The person to whom the request is directed is marked with ～に。 Can also be used with passive forms of the "asking" verbs to mean that someone was asked to do something by someone else.',
+      text: 'An indirect quote of a command or request.  The person to whom the request is directed is marked with ～に。 Transitive verbs in the embedded request are marked with 〜を as usual.  Can also be used with passive forms of the "asking" verbs to mean that someone was asked to do something by someone else.',
       species: [
         {
-          jap: '（～に）verb(plain)ようにお願いする',
+          jap: '（～に）verb(plain)ように お願いする',
           eng: '：to request someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように言う',
+          jap: '（～に）verb(plain)ように 言う',
           eng: '：to tell someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように頼む',
+          jap: '（～に）verb(plain)ように 頼む',
           eng: '：to ask someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように注意する',
+          jap: '（～に）verb(plain)ように 注意する',
           eng: '：to advise someone to do verb'
         },{
-          jap: '（～に）verb(plain)ように言われる',
+          jap: '（～に）verb(plain)ように 言われる',
           eng: '：to be told to do verb (works with passives of the other verbs, too)'
         }
       ]
@@ -371,16 +371,16 @@ var chap_grammar_list = [
       text: 'Remember, verb(vol.)とする means "to try to do verb".  Also, verb[past.]ら (ie: ～たら) means "when" or "if".  Volitional formation:',
       species: [
         {
-          jap: '「～る」　 > 　「～よう」',
+          jap: '「～る」>「～よう」',
           eng: '：verb(vol.) (る verbs)'
         },{
-          jap: '「～／う／」　 > 　「～／お／う」',
+          jap: '「～／う／」>「～／お／う」',
           eng: '：verb(vol.) (う verbs)'
         },{
-          jap: '「くる」　 > 　「こよう」',
+          jap: '「くる」>「こよう」',
           eng: ''
         },{
-          jap: '「する」　 > 　「しよう」',
+          jap: '「する」>「しよう」',
           eng: ''
         }
       ]
@@ -404,21 +404,21 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '（Xて、）Yくらいだ',
-    spec: '（Xて、）Yくらいだ',
+    grammar_point: '（Xて、)[Y]くらいだ',
+    spec: '（Xて、)[Y]くらいだ',
     alt_def: '',
     meaning: '"X, to the extent that (it\'s like/almost) Y."',
     use: {
-      text: 'くらい in this instance indicate the degree or extent of a situation (like ほど).  X is just a phrase that ends in て (or also で、so the book says... I think the important part is that it\'s a phrase that will be connected to Y).  Y may be an adjective or verb.',
+      text: 'くらい in this instance indicate the degree or extent of a situation (like ほど).  X is just a phrase that ends with its respective て (or also で、so the book says... I think the important part is that it\'s a phrase that will be connected to Y), so X can be a noun, adj, verb, etc.  Y may be an adjective or verb.',
       species: [
         {
-          jap: '（Xて、）（adjい）いくらいだ',
+          jap: '（Xて、)(adjい)い くらいだ',
           eng: '：X, to the extent that it\'s (like/almost) adj'
         },{
-          jap: '（Xて、）（adjな）なくらいだ',
+          jap: '（Xて、)(adjな)な くらいだ',
           eng: '：X, to the extent that it\'s (like/almost) adj'
         },{
-          jap: '（Xて、）（verb(plain))くらいだ',
+          jap: '（Xて、)(verb(plain)) くらいだ',
           eng: '：X, to the extent that it\'s (like/almost) verb'
         }
       ]
@@ -456,9 +456,9 @@ var chap_grammar_list = [
     ],
     other: 'Just like ほど、くらい will act as an indiator for the extent of its preceding phrase.  Yくらい can also precede the phrase it qualifies, just as in 「YくらいX」'
   },{
-    grammar_point: 'verb(plain)[past.]ものだ',
-    spec: 'verb(plain)[past.]ものだ',
-    alt_def: '',
+    grammar_point: 'verb(plain)[past]ものだ',
+    spec: 'verb(plain)[past]ものだ',
+    alt_def: 'たものだ、[past]ものです、たものです',
     meaning: '"Used to verb"',
     use: {
       text: 'Expresses something one used to do in the past or to reminisce about the past.',

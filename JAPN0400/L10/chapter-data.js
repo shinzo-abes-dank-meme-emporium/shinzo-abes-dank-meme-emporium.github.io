@@ -53,12 +53,12 @@ var chap_note_list = [
 
 var chap_grammar_list = [
   {
-    grammar_point: '分数 (fractions)',
+    grammar_point: '(分数 (fractions))',
     spec: '分数 (fractions)',
-    alt_def: '',
-    meaning: '分数：ぶんすう',
+    alt_def: 'ぶんすう、ぶんの',
+    meaning: '「分数」ぶんすう',
     use: {
-      text: 'A fraction is expressed in Japanese as「＃分の＃」.  However, in Japanese, the denominator becomes before the numerator, as in「denominator 分の numerator」',
+      text: 'A fraction is expressed in Japanese as「＃ 分の ＃」。「分」is read as ぶん。 In Japanese, the denominator becomes before the numerator, as in「denominator 分の numerator」or (X / Y) =「Y 分の X」',
       species: [
         {
           jap: '二分の一',
@@ -81,19 +81,19 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: 'S1 ほど S2',
-    spec: 'S1 ほど S2',
+    grammar_point: '(S1)ほど(S2)',
+    spec: '(S1)ほど(S2)',
     alt_def: '',
     meaning: '"It is S2, to the extent that S1"; "It is so very S2 that S1".',
     use: {
       text: 'ほど is a sentence connecter that uses S2 to describe S1.  S1 is generally ends in a verb(plain)[pres.].  Can also be rearranged to「S2て、S1ほどです。」。ほど means "extent", "approximately", "degree".',
       species: [
         {
-          jap: 'S1 ほど S2：',
-          eng: 'To the extent that S1, such is S2.'
+          jap: 'S1 ほど S2',
+          eng: '：To the extent that S1, such is S2.'
         },{
-          jap: 'S2て、S1 ほど です：',
-          eng: 'It is S2, to the extent that S1.'
+          jap: 'S2て、S1 ほどです',
+          eng: '：It is S2, to the extent that S1.'
         }
       ]
     },
@@ -122,7 +122,12 @@ var chap_grammar_list = [
     meaning: '"More than any(Q word)".',
     use: {
       text: '(Q word) can be something like 何、どこ、etc.  何 can be pronounced as「なに」or「なん」',
-      species: []
+      species: [
+        {
+          jap: '(eg) 何よりも',
+          eng: '：More than anything'
+        }
+      ]
     },
     example: [
       {
@@ -143,18 +148,18 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
-    grammar_point: '（Xは）Yに限る',
-    spec: '（Xは）Yに限る',
-    alt_def: '',
-    meaning: '"As for X, Y is the best thing to do"; "As for X, there is nothing better than Y".',
+    grammar_point: '（Xは）(Y)に限る',
+    spec: '（Xは）(Y)に限る',
+    alt_def: 'にかぎる',
+    meaning: '（「限る」かぎ(る)）"As for X, Y is the best thing to do"; "As for X, there is nothing better than Y".',
     use: {
-      text: '「限る：かぎ（る）」Y can be a noun or verb(plain)[pres.].  ',
+      text: 'Y can be a noun or verb(plain)[pres.].  X marks the thing for which nothing is better than Y, and is optional.',
       species: [
         {
-          jap: '(noun)に限る',
+          jap: '(noun)に 限る',
           eng: ''
         },{
-          jap: 'verb(plain)[pres.]に限る',
+          jap: 'verb(plain)[pres.]に 限る',
           eng: ''
         }
       ]
@@ -186,20 +191,20 @@ var chap_grammar_list = [
       text: '〜まま indicates that some condition/state is unchanged.  It can be attached to nouns, adjectives, and verbs.  When 〜まま modifies a noun, の follows 〜まま (ie: 〜ままの(noun)).  Can also be used with negative forms (〜ないまま).  Can also be used with demonstrative nouns (この、その、あの).  Usage of 〜まま seems to imply that there is a state that was acheived previously and that such state was/is maintained.  As such, the progressive form of verbs (〜ている) is not used since because it would be awkward (I think...)',
       species: [
         {
-          jap: '(noun)のまま：',
-          eng: 'As noun is'
+          jap: '(noun)のまま',
+          eng: '：As noun is'
         },{
-          jap: '(adjい)いまま：',
-          eng: 'As adj is (NOTE: adjい MUST be in plain, present tense)'
+          jap: '(adjい)いまま',
+          eng: '：As adj is (NOTE: adjい MUST be in plain, present tense)'
         },{
-          jap: '〜ないまま：',
-          eng: 'As 〜 is not (NOTE: the negation 〜ない MUST be in plain, present tense)'
+          jap: '〜ないまま',
+          eng: '：As 〜 is not (NOTE: the negation 〜ない MUST be in plain, present tense)'
         },{
-          jap: '(adjな)なまま：',
-          eng: 'As adj is'
+          jap: '(adjな)なまま',
+          eng: '：As adj is'
         },{
-          jap: 'verb(plain)[past]まま：',
-          eng: 'As verb is (NOTE: verb MUST be in plain, past tense.  Verb should NOT be progressive/stative 〜て form)'
+          jap: 'verb(plain)[past]まま',
+          eng: '：As verb is (NOTE: verb MUST be in plain, past tense.  Verb should NOT be progressive/stative 〜て form)'
         }
       ]
     },

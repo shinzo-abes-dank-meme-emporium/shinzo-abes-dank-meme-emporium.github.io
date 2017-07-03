@@ -399,11 +399,11 @@ var chap_grammar_list = [
           eng: '：しんぱい（する))：Worried whether to A or B.'
         },
         {
-          jap: '迷う　　',
+          jap: '迷う',
           eng: '：まよ(う))：Lost, hesitating, puzzled whether to A or B.'
         },
         {
-          jap: '考える　',
+          jap: '考える',
           eng: '：かんが(える))：Considering whether to A or B.'
         }
       ]
@@ -442,7 +442,7 @@ var chap_grammar_list = [
         },
         {
           jap: '(noun)な のではない〜',
-          eng: '　(Note that な is used)'
+          eng: ' (Note that な is used)'
         },
         {
           jap: '〜んじゃない（でしょうか・だろうか)',

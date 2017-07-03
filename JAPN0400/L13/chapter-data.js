@@ -496,6 +496,111 @@ var chap_grammar_list = [
       }
     ],
     other: '(cf. として："As 〜")'
+  },{
+    grammar_point: 'それにしても',
+    spec: 'それにしても',
+    alt_def: '',
+    meaning: '"Even so"',
+    use: {
+      text: 'yeah',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『東京は物価が高いと思っていたが、',
+          highlight: 'それにしても',
+          post: '高いのには驚いた（おどろ(く)）。』'
+        },
+        translation: 'I had expected that prices in Tōkyō would be high, but even so, I was surprised at how expenxive everything was.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: '〜限る(stem)（の）',
+    spec: '〜限る(stem)（の）',
+    alt_def: 'かぎる(stem)、限り、かぎり',
+    meaning: '（「限る」かぎ(る)：To limit; To restrict）"As far as 〜"; "As long as 〜"',
+    use: {
+      text: '(ie: 〜限り）Used to set limits within something holds true.  Generally follows plain forms of verbs and (adjい).  Nouns can are in である form, (adjな) can be in な or である form.  Can also follow negations of the below.  Remember that the negation of である is ではない。 Since 限る(stem) is a noun, if it precedes a noun 〜の is appended.  限る(stem) can also connect sentences, as usual.',
+      species: [
+        {
+          jap: 'verb(plain) 限り（の）',
+          eng: '：As far as verb; To the limit of verb'
+        },{
+          jap: '(adjい)い 限り（の）',
+          eng: '：As far as adj; To the adj limit'
+        },{
+          jap: '(adjい)な 限り（の）',
+          eng: '：As far as adj; To the limit of adj'
+        },{
+          jap: '(also:) (adjい)である 限り（の）',
+          eng: '：As far as adj; To the limit of adj'
+        },{
+          jap: '(noun)である 限り（の）',
+          eng: '：As far as noun; To the limit of noun'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『できる',
+          highlight: '限りの',
+          post: 'ことはするつもりです。』'
+        },
+        translation: 'I intend to do whatever I can. (lit. I intend to do everything to the limit of my ability)'
+      },{
+        sentence: {
+          ante: '『病気ではない',
+          highlight: '限り',
+          post: '、学校は休まない方がいい。』'
+        },
+        translation: 'As long as you are not sick, you shouldn\'t be absent from school.'
+      },{
+        sentence: {
+          ante: '『私の知っている',
+          highlight: '限り',
+          post: 'ではチーズがおいしい。』'
+        },
+        translation: 'As far as I know, cheese is delicious.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: 'かえって〜',
+    spec: 'かえって〜',
+    alt_def: '',
+    meaning: '"Contrary to expectation, 〜"',
+    use: {
+      text: 'Adverb.  Indicates that the result or consequence which follows is contrary to expectation.  Sometimes, you don\'t really need to translate かえって explicitly as the situtaions given will show contrary expectation implicity.',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『白いセーターを洗濯（せんたく）したら、',
+          highlight: 'かえって',
+          post: 'きたなくなった。』'
+        },
+        translation: 'I washed a white sweater, and (contrary to expectation) now it looks dirtier than before!'
+      },{
+        sentence: {
+          ante: '『機械（きかい）の使い方を読むと、',
+          highlight: 'かえって',
+          post: 'つまらない間違いをすることがる。』'
+        },
+        translation: 'When you read instructions for a machine, (contrary to expectation) sometimes you get more confused.'
+      },{
+        sentence: {
+          ante: '『試験の前の晩に勉強しすぎると、',
+          highlight: 'かえって',
+          post: 'まらない間違いをすることがある。』'
+        },
+        translation: 'If you study too much the night before an exam, (contrary to expectation) sometimes you end up making silly mistakes.'
+      }
+    ],
+    other: '...'
   }
 ];
 

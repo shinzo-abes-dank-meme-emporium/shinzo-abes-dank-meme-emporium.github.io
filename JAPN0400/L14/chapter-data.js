@@ -53,32 +53,122 @@ var chap_note_list = [
 
 var chap_grammar_list = [
   {
-    grammar_point: '無',
-    spec: '無',
+    grammar_point: '(noun)には(noun)の〜がある',
+    spec: '(noun)には(noun)の〜がある',
     alt_def: '',
-    meaning: '無',
+    meaning: '"Nouns have their own 〜"',
     use: {
-      text: '無',
+      text: '〜 can be whatever, as long as it\'s nominalized',
       species: []
     },
     example: [
       {
         sentence: {
-          ante: '無',
-          highlight: '無',
+          ante: '『',
+          highlight: '親には親の生活がある',
           post: '。』'
         },
-        translation: '無'
+        translation: 'Parents have their own lives (to live).'
       },{
         sentence: {
-          ante: '『無',
-          highlight: '無',
-          post: '。』'
+          ante: '『',
+          highlight: '子供には子供の考えがある',
+          post: 'んだから、まず聞いてやることが重要だ。』'
         },
-        translation: '無'
+        translation: 'Children have their own ways of thinking, so we should first listen to them.'
       }
     ],
-    other: '無'
+    other: '...'
+  },{
+    grammar_point: '(noun A)は(noun A)なり（に(verb)／の(noun))',
+    spec: '(noun A)は(noun A)なり（に(verb)／の(noun))',
+    alt_def: 'なりに、なりの',
+    meaning: '"Noun does things in its own way" [〜に(verb)]; "(noun A) has it\'s own (noun B)" [〜の(noun)]',
+    use: {
+      text: 'Pretty similary to the above.  なり is the kana of 形 meaning "shape", "style", "way".  That makes remembering translations a little easier (I think...).',
+      species: [
+        {
+          jap: '(noun)は(noun)なりに(verb)',
+          eng: '：(noun) does things in its own way'
+        },{
+          jap: '(noun A)は(nounA)なりの(noun B)',
+          eng: '：(noun A) has it\'s own (noun B)'
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『',
+          highlight: '私は私なりにがんばっている',
+          post: 'つもりですけど。』'
+        },
+        translation: 'I plan to do my best in my own way.'
+      },{
+        sentence: {
+          ante: '『<b>アメリカにはアメリカなりのよさ</b>があり、',
+          highlight: '日本には日本なりのよさ',
+          post: 'があるから、どちらがいいとも言えない。』'
+        },
+        translation: 'Both Japan and Amerika have their own good points, so we can\'t say one is better than the other.'
+      }
+    ],
+    other: '...'
+  },{
+    grammar_point: '〜くせに',
+    spec: '〜くせに',
+    alt_def: '',
+    meaning: '"Although"; "But"; "Bad-habit-ually" (expresses displeasure, disgust, contempt)',
+    use: {
+      text: 'Adverb.  Like 〜のに (despite) except it also expresses displeasure, disgust, or contempt.  Can follow nouns, adjectives, and verbs.  くせ（癖）means "habit" (in the case of bad habit), or "mannerism".  Usually the kana is used',
+      species: [
+        {
+          jap: '(noun)の くせに',
+          eng: ''
+        },{
+          jap: '(adjい)い くせに',
+          eng: ''
+        },{
+          jap: '(adjな)な くせに',
+          eng: ''
+        },{
+          jap: 'verb(plain) くせに',
+          eng: ''
+        }
+      ]
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『子供の',
+          highlight: 'くせに',
+          post: '外で遊びたがらないのは、困る。』'
+        },
+        translation: 'Although being a child, it not playing outside is troublesome.'
+      },{
+        sentence: {
+          ante: '『下手（したて）な',
+          highlight: 'くせに',
+          post: 'すぐやりたがる人はいやだ。』'
+        },
+        translation: 'Being bad at it and liking doing it people are an big pain.'
+      },{
+        sentence: {
+          ante: '『お金もない',
+          highlight: 'くせに',
+          post: '高い物ばかり買う人は困ります。』'
+        },
+        translation: 'Despite lacking money, people who buy nothing but expensive things are 困.'
+      },{
+        sentence: {
+          ante: '『知っている',
+          highlight: 'くせに',
+          post: '教えてくれない。』'
+        },
+        translation: 'Despite that he knows it, he won\'t tell me.'
+      }
+    ],
+    other: '...'
   }
 ];
 

@@ -53,32 +53,73 @@ var chap_note_list = [
 
 var chap_grammar_list = [
   {
-    grammar_point: '無',
-    spec: '無',
-    alt_def: '',
-    meaning: '無',
+    grammar_point: '〜（って／と）いうか',
+    spec: '〜（って／と）いうか',
+    alt_def: 'っていうか、というか、って言うか、と言うか',
+    meaning: '"〜、Or rather"; "More appropriately"; "Rather than 〜、...',
     use: {
-      text: '無',
+      text: 'The kanji of いう is 言う.  Usually the kana is used.  The thing that is rathered precedes っていうか and the thing that is a better fit follows.  Can follow a noun, phrase, or a sentence and is used to give a more appropriate expression.',
       species: []
     },
     example: [
       {
         sentence: {
-          ante: '無',
-          highlight: '無',
-          post: '。』'
+          ante: '『昨日パイを作った、',
+          highlight: 'ていうか',
+          post: '作るのを手伝った（手伝う：てつだ(う)）だけなんだけど。』'
         },
-        translation: '無'
+        translation: 'Yesterday, I made a pie; or rather, I helped make a pie...'
       },{
         sentence: {
-          ante: '『無',
-          highlight: '無',
-          post: '。』'
+          ante: '『乗馬（じょうば）',
+          highlight: 'っていうか',
+          post: '、馬にさわっただけ。』'
         },
-        translation: '無'
+        translation: 'It wasn\'t really horseback riding – it was more like just touching a horse.'
+      },{
+        sentence: {
+          ante: '『兄弟',
+          highlight: 'っていうか',
+          post: '、ふたごですけど。』'
+        },
+        translation: 'More precisely, they were twins rather than brothers.'
       }
     ],
-    other: '無'
+    other: 'It can be thought of as a combination of（って／と）+ 言う + か'
+  },{
+    grammar_point: '（どっち／どちら）かと言うと',
+    spec: '（どっち／どちら）かと言うと',
+    alt_def: 'どっちかと言うと、どちらかと言うと、どっちかというと、とちらかというと',
+    meaning: '"Rather (than)"; "If anything"; "If we\'re talking about the two",'
+    use: {
+      text: 'Used to imply "If we have to choose between two alternatives, X is Y".  It\'s easier to understand if we break up the parts into「どっち」「か」「と」「言う」「と」= "Which of the two" + "?" + "(quotation)" + "speaking" + "if".',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『彼女は',
+          highlight: 'どっちかと言うと',
+          post: '母親（ははおや）に似ている。』'
+        },
+        translation: 'She looks more like her mother [than her father].'
+      },{
+        sentence: {
+          ante: '『日本人は',
+          highlight: 'どっちかと言うと',
+          post: '対立を好まない（好む：この(む))。』'
+        },
+        translation: 'Japanese people, if anything, do not like confrontation.'
+      },{
+        sentence: {
+          ante: '『私は、日本語は、',
+          highlight: 'どっちかと言うと',
+          post: '話す方が得意だ。』'
+        },
+        translation: 'If I had to choose, I am better at speaking Japanese [than reading it].'
+      }
+    ],
+    other: 'Note that どっち and どちら ("which way / direction (of two)") are similar to こっち and こちら (etc.) which mean "this way / direction".  (cf. ここ／どこ、これ／どれ、こう／どう）'
   }
 ];
 

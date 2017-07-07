@@ -468,7 +468,7 @@ var chap_grammar_list = [
         translation: 'If possible, please hand in homework the next day.'
       }
     ],
-    other: 'I\'ve seen なるべく described as "preferably".  Like, "be as quiet as possible" = "be quiet, preferably".  なるべく + adverb conveys the meaning "as adverbially as possible".'
+    other: 'I\'ve seen なるべく described as "preferably".  Like, "be as quiet as possible" = "be quiet, preferably".  なるべく + adverb conveys the meaning "as adverbially as possible".  Also, for those who care, the dictionary gives kanji for「なるべく」as「成る可く」。 「成る」"To become" is the なる that we know and love.  I\'m not sure「可く」means exactly, but the kanji「可」means "can", "passable"; "mustn\'t", "should not".  It is related to べき／べし。'
   },{
     grammar_point: 'verb(plain)べき',
     spec: 'verb(plain)べき',

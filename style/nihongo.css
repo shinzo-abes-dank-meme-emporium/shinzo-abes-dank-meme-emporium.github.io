@@ -26,3 +26,7 @@ button {
   font-size: 1.5em;
   border: 2px solid black
 }
+
+.nav-disclaimer {
+  font-size: 0.8em;
+}

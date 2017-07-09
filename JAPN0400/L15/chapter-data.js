@@ -90,7 +90,7 @@ var chap_grammar_list = [
     grammar_point: '（どっち／どちら）かと言うと',
     spec: '（どっち／どちら）かと言うと',
     alt_def: 'どっちかと言うと、どちらかと言うと、どっちかというと、とちらかというと',
-    meaning: '"Rather (than)"; "If anything"; "If we\'re talking about the two",'
+    meaning: '"Rather (than)"; "If anything"; "If we\'re talking about the two"',
     use: {
       text: 'Used to imply "If we have to choose between two alternatives, X is Y".  It\'s easier to understand if we break up the parts into「どっち」「か」「と」「言う」「と」= "Which of the two" + "?" + "(quotation)" + "speaking" + "if".',
       species: []

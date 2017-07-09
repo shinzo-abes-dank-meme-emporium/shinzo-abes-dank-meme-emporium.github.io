@@ -69,23 +69,27 @@ button.search-button {
 
 .jisho-card-container {
   border-bottom: 1px solid black;
-  padding: 5px 10px;
-  display: inline-block;
   width: 100%;
   overflow: auto;
+  display: table;
 }
 
 .jisho-card {
-  float: left;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .jisho-card.query {
   font-size: 2.2em;
-  width: 5em;
+  width: 6em;
+  padding: 2px 10px;
+  background-color: azure;
 }
 
 .jisho-card.japanese {
   width: 8em;
+  background-color: beige;
+  padding: 0 3px;
 }
 
 .jisho-card.reading {
@@ -96,15 +100,17 @@ button.search-button {
   float: none;
   overflow: hidden;
   font-size: 1.5em;
+  padding: 5px 10px;
 }
 
 .jisho-results-loading-text {
   padding-left: 10px;
-  font-size: 1.5em
+  font-size: 1.5em;
+  display: none;
 }
 
 .remove-button {
-  margin-top: 5px;
+  margin: 5px;
   font-size: 1.5em;
   float: right;
   font-weight: bold;

@@ -45,10 +45,10 @@ let results = {};
 
 function noop() {};
 
-function buildReadings(kanjiList) {
+function buildReadings(kanjiList, query) {
   let stack = [];
-  kanjiList.forEach(function(kanji) {
-    stack.push('<div class="jisho-card reading">【' + kanji.word + '】' + kanji.reading + '</div>');
+  kanjiList.forEach(function(japanese) {
+    stack.push('<div class="jisho-card reading">【' + getOther(japanese, query) + '】</div>');
   });
 
   return stack.join('\n');
@@ -57,18 +57,32 @@ function buildReadings(kanjiList) {
 function buildEntry(meaning) {
   let query = meaning.query;
   let eng_def = meaning.eng_def;
-  let readings = buildReadings(meaning.japanese);
+  let readings = buildReadings(meaning.japanese, query);
 
   let jisho_card = [
   '<div class="jisho-card-container">',
-  '  <div class="remove-button">Ｘ</div>',
   '  <div class="jisho-card query">' + query + '</div>',
-  // '  <div class="jisho-card japanese">' + readings + '</div>',
-  '  <div class="jisho-card eng_def">' + eng_def + '</div>',,
+  '  <div class="jisho-card japanese">' + readings + '</div>',
+  '  <div class="jisho-card eng_def">' + eng_def + '</div>',
+  '  <div class="remove-button">Ｘ</div>',
   '</div>'
   ].join('\n');
 
   $(jisho_deck_ID).prepend(jisho_card);
+}
+
+function getOther(japanese, query) {
+  let kanji = japanese.word;
+  let reading = japanese.reading;
+  if (!kanji || !reading) {
+    return '';
+  }
+  if (kanji === query) {
+    return reading;
+  }
+  if (reading === query) {
+    return kanji;
+  }
 }
 
 function buildResult(entry, resultIndex) {
@@ -78,10 +92,13 @@ function buildResult(entry, resultIndex) {
 
   let kanjiList = entry.japanese;
   let sensesList = entry.senses;
+  let query = entry.query;
+
+  built_japanese.push('【' + query + '】');
 
   for (var kanjiIndex=0; kanjiIndex<kanjiList.length; kanjiIndex++) {
-    built_japanese.push('【' + kanjiList[kanjiIndex].word + '】' + kanjiList[kanjiIndex].reading);
-    // built_reading.push('「' + kanjiList[kanjiIndex].reading + '」');
+    // built_japanese.push('【' + query + '】');
+    built_reading.push('「' + getOther(kanjiList[kanjiIndex], query) + '」');
     for (var sensesIndex=0; sensesIndex<sensesList.length; sensesIndex++) {
       let eng_def = sensesList[sensesIndex].english_definitions.join('; ');
       let pos = sensesList[sensesIndex].parts_of_speech.join('; ');
@@ -97,12 +114,10 @@ function buildResult(entry, resultIndex) {
       }
 
       if (pos) {
-        meaning.push('  <div class="jisho-pos">' + pos + "</div>");
-      }
+        meaning.push('  <div class="jisho-pos">' + pos + "</div>"); }
       meaning.push('  <div class="jisho-eng_def">' + eng_def + "</div>");
       if (info) {
-        meaning.push('  <div class="jisho-info">(' + info + ")</div>");
-      }
+        meaning.push('  <div class="jisho-info">(' + info + ")</div>"); }
 
       results[meaning_id] = {
         'japanese': kanjiList,
@@ -121,12 +136,13 @@ function buildResult(entry, resultIndex) {
   var jisho_result = [
   '<div class="search-result">',
   '  <section class="jisho-kanji">' + built_japanese.join('\n') + '</section>',
-  // '  <section class="jisho-reading">' + built_reading.join('') + '</section>',
+  '  <section class="jisho-reading">' + built_reading.join('') + '</section>',
   '  <section class="jisho-meaning">' + built_meaning.join('') + '</section>',
   '</div>'
   ].join('\n');
 
   $(".jisho-results-loading-text").css("display", "none");
+  $(".jisho-results-no-results").css("display", "none");
   $(jisho_results_ID).append(jisho_result);
 }
 
@@ -187,7 +203,8 @@ function isExactMatch(datapoint) {
     return (first.word === query || first.reading === query) || isExactMatch(next_check);
   }
   else {
-    false
+    $(".jisho-results-loading-text").css("display", "none");
+    return false
   }
 }
 

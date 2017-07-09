@@ -1,0 +1,115 @@
+.content {
+  float: none;
+  display: inline-block;
+  width: 100%;
+  border: none;
+}
+
+.content-deck {
+  padding-left: 20em;
+  width: 100%;
+}
+
+.result-deck {
+  border-left: solid black;
+}
+
+input[type="text"] {
+  font-size: 1.5em;
+  width: 7.5em
+}
+
+button.search-button {
+  font-size: 1.5em;
+  border: 2px solid black;
+}
+
+.search {
+  width: 20em;
+}
+
+.search-result {
+  padding: 0 0 10px 10px;
+  border-bottom: 1px solid black;
+}
+
+.jisho-kanji {
+  font-size: 2em;
+}
+
+.jisho-reading {
+  font-size: 1.2em;
+}
+
+.jisho-meaning {
+  font-size: 1em;
+}
+
+.meaning-entry {
+  padding: 10px;
+}
+
+.jisho-pos {
+  font-style: italic;
+}
+
+.jisho-eng_def {
+  font-size: 1.2;
+  font-weight: bold;
+}
+
+.jisho-info {
+  font-style: italic;
+}
+
+.add-result:hover {
+  background-color: #ffbaba;
+  cursor: pointer;
+}
+
+.jisho-card-container {
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+}
+
+.jisho-card {
+  float: left;
+}
+
+.jisho-card.query {
+  font-size: 2.2em;
+  width: 5em;
+}
+
+.jisho-card.japanese {
+  width: 8em;
+}
+
+.jisho-card.reading {
+  display: block;
+}
+
+.jisho-card.eng_def {
+  float: none;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+.remove-button {
+  margin-top: 5px;
+  font-size: 1.5em;
+  float: right;
+  font-weight: bold;
+  overflow: auto;
+  color: red;
+  border: 1px dashed;
+}
+
+.jisho-end {
+  font-size: 2em;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}

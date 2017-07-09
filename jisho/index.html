@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="./style/page.css">
+    <link rel="stylesheet" href="./style/jisho.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>日本語</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav id="page-header-nav">／<a href="/">日本語</a>／Jisho Search</nav>
+    </header>
+    
+    <section class="sidebar search">
+      <nav>
+        <div class="search-bar">
+          <input id="jisho-search-input" type="text">
+          <button class="search-button" id="jisho-submit-button">Search</button>
+        </div>
+        <section class="jisho-search" id="jisho-search-results"></section>
+        <section class="jisho-end">End of Results</section>
+      </nav>
+    </section>
+    
+    <section class="content">
+      <section class="content-deck">
+        <section class="result-deck" id="jisho-deck"></section>
+      </section>
+    </section>
+    
+    <script src="jisho-build.js"></script>
+    <script src="./js/jisho.js"></script>
+    
+  </body>
+</html>

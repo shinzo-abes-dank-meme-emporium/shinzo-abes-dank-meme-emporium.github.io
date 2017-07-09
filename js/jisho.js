@@ -72,7 +72,7 @@ function buildEntry(meaning) {
   let query = meaning.query;
   let eng_def = meaning.eng_def;
   let readings = buildReadings(meaning.japanese, query);
-  let pos = meaning.pos
+  let pos = meaning.pos;
 
   let jisho_card = [
   '<div class="jisho-card-container">',

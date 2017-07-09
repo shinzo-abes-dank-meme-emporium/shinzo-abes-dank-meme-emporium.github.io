@@ -12,9 +12,15 @@ course {
   display: none
 }
 
-.grammar-loading-text, .kanji-loading-text {
+.loading-text {
   padding-left: 10px;
   font-size: 1.5em
+}
+
+.no-results-text {
+  padding-left: 10px;
+  font-size: 1.5em;
+  display: none;
 }
 
 input[type="text"] {
@@ -28,5 +34,5 @@ button {
 }
 
 .nav-disclaimer {
-  font-size: 0.8em;
+  font-size: 0.5em;
 }

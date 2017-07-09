@@ -150,6 +150,8 @@ function isMatch(splitQuery, grammar_entry) {
 
 function searchGrammar(query, callback) {
   $(grammar_results_ID).empty();
+  $("#grammar-no-results").css("display", "none");
+
   callback = callback || noop
 
   let queryLowercase = query.toLowerCase();
@@ -158,20 +160,29 @@ function searchGrammar(query, callback) {
   // splits on '　＋' (ie: include things that have this AND this)
   let splitQuery = queryLowercase.split('　＋');
 
+  let noResults = true;
   for (var i=0; i<total_grammar.length; i++) {
     let grammar_entry = total_grammar[i].entry;
     let grammar_path = total_grammar[i].path
 
     if (isMatch(splitQuery, grammar_entry)) {
-      buildGrammarEntry(grammar_entry, grammar_path)
+      noResults = false;
+      buildGrammarEntry(grammar_entry, grammar_path);
     } // and the next query, too
+  }
+
+  if (noResults) {
+    $("#grammar-no-results").css("display", "block");
   }
 }
 
 function searchKanji(query, callback) {
   $(kanji_results_ID).empty();
+  $("#kanji-no-results").css("display", "none");
+
   callback = callback || noop
 
+  let noResults = true;
   for (var i=0; i<total_kanji.length; i++) {
     let kanji_entry = total_kanji[i];
     // let kanji_path = total_kanji[i].path;
@@ -182,8 +193,13 @@ function searchKanji(query, callback) {
     let clean_reading = reading.replace(/[（）]/g,'')
 
     if (kanji.includes(query) || clean_reading.includes(query)) {
-      buildKanjiEntry(kanji_entry)
+      noResults = false;
+      buildKanjiEntry(kanji_entry);
     }
+  }
+
+  if (noResults) {
+    $("#kanji-no-results").css("display", "block");
   }
 }
 
@@ -216,8 +232,8 @@ $(window).on('load', function() {
     }
   }
 
-  $(".kanji-loading-text").css("display", "none");
-  $(".grammar-loading-text").css("display", "none");
+  $("#kanji-loading-text").css("display", "none");
+  $("#grammar-loading-text").css("display", "none");
   $(".search-bar").css("display", "initial");
 });
 

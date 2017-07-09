@@ -24,7 +24,7 @@
           <li class="sidebar-topic">
             <a href="#grammar-search">文法 Search</a>
             <div class="nav-disclaimer">
-              Searches grammar in all courses.  Valid search terms, where applicable, includes: kanji and hiragana readings, hiragana, and english grammar terms (eg: noun, verb, stem, plain, pres., past, potential, causative).  Searches for exact match, so if you get no results try a more general search term.  Not all grammar entries match what are in the textbook.
+              Searches grammar in all courses.  Valid search terms, where applicable, include: kanji and hiragana readings, hiragana, and english grammar terms (eg: noun, verb, stem, plain, pres., past, potential, causative).  Searches for exact match, so if you get no results try a more general search term.  Not all grammar entries match what are in the textbook.
             </div>
           </li>
           <li class="sidebar-topic">
@@ -49,7 +49,8 @@
           <button id="grammar-submit-button">Search</button>
           <button id="grammar-clear-button">Clear</button>
         </div>
-        <div class="grammar-loading-text">Loading...</div>
+        <div class="loading-text" id="grammar-loading-text">Loading...</div>
+        <div class="no-results-text" id="grammar-no-results">No Results</div>
         <section id="grammar-search-results"></section>
       </section>
       <section id="content-course">
@@ -59,7 +60,8 @@
           <button id="kanji-submit-button">Search</button>
           <button id="kanji-clear-button">Clear</button>
         </div>
-        <div class="kanji-loading-text">Loading...</div>
+        <div class="loading-text" id="kanji-loading-text">Loading...</div>
+        <div class="no-results-text" id="kanji-no-results">No Results</div>
         <section id="kanji-search-results"></section>
       </section>
     </section>

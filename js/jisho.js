@@ -54,16 +54,31 @@ function buildReadings(kanjiList, query) {
   return stack.join('\n');
 }
 
+/*
+{
+  eng_def: '',
+  info: '',
+  japanese: [
+    {
+      word: '',
+      reading: ''
+    }
+  ],
+  pos: '',
+  query: ''
+}
+*/
 function buildEntry(meaning) {
   let query = meaning.query;
   let eng_def = meaning.eng_def;
   let readings = buildReadings(meaning.japanese, query);
+  let pos = meaning.pos
 
   let jisho_card = [
   '<div class="jisho-card-container">',
   '  <div class="jisho-card query">' + query + '</div>',
   '  <div class="jisho-card japanese">' + readings + '</div>',
-  '  <div class="jisho-card eng_def">' + eng_def + '</div>',
+  '  <div class="jisho-card eng_def">' + eng_def + ' <div class="jisho-card pos">' + pos + '</div></div>',
   '  <div class="remove-button">Ｘ</div>',
   '</div>'
   ].join('\n');

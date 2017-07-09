@@ -97,10 +97,15 @@ button.search-button {
 }
 
 .jisho-card.eng_def {
-  float: none;
   overflow: hidden;
   font-size: 1.5em;
   padding: 5px 10px;
+}
+
+.jisho-card.pos {
+  overflow: hidden;
+  font-size: 0.5em;
+  padding: 2px 0;
 }
 
 .jisho-results-loading-text {

@@ -124,3 +124,7 @@ button.search-button {
   padding: 30px 0 30px 0;
   text-align: center;
 }
+
+.jisho-disclaimer {
+  font-size: 0.8em;
+}

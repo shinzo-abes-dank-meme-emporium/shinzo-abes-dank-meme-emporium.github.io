@@ -98,6 +98,11 @@ button.search-button {
   font-size: 1.5em;
 }
 
+.jisho-results-loading-text {
+  padding-left: 10px;
+  font-size: 1.5em
+}
+
 .remove-button {
   margin-top: 5px;
   font-size: 1.5em;

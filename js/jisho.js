@@ -126,6 +126,7 @@ function buildResult(entry, resultIndex) {
   '</div>'
   ].join('\n');
 
+  $(".jisho-results-loading-text").css("display", "none");
   $(jisho_results_ID).append(jisho_result);
 }
 
@@ -201,6 +202,7 @@ function processData(datapoint, index) {
 
 function searchJisho(input) {
   $(jisho_results_ID).empty();
+  $(".jisho-results-loading-text").css("display", "block");
   let opts = {
     query: input
   }

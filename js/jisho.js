@@ -63,7 +63,7 @@ function buildEntry(meaning) {
   '<div class="jisho-card-container">',
   '  <div class="remove-button">Ｘ</div>',
   '  <div class="jisho-card query">' + query + '</div>',
-  '  <div class="jisho-card japanese">' + readings + '</div>',
+  // '  <div class="jisho-card japanese">' + readings + '</div>',
   '  <div class="jisho-card eng_def">' + eng_def + '</div>',,
   '</div>'
   ].join('\n');

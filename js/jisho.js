@@ -120,7 +120,7 @@ function buildResult(entry, resultIndex) {
 
   var jisho_result = [
   '<div class="search-result">',
-  '  <section class="jisho-kanji">' + built_japanese.join('') + '</section>',
+  '  <section class="jisho-kanji">' + built_japanese.join('\n') + '</section>',
   // '  <section class="jisho-reading">' + built_reading.join('') + '</section>',
   '  <section class="jisho-meaning">' + built_meaning.join('') + '</section>',
   '</div>'

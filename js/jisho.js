@@ -72,7 +72,7 @@ function buildEntry(meaning) {
 }
 
 function buildResult(entry, resultIndex) {
-  let built_kanji = [];
+  let built_japanese = [];
   let built_reading = [];
   let built_meaning = [];
 
@@ -80,8 +80,8 @@ function buildResult(entry, resultIndex) {
   let sensesList = entry.senses;
 
   for (var kanjiIndex=0; kanjiIndex<kanjiList.length; kanjiIndex++) {
-    built_kanji.push('【' + kanjiList[kanjiIndex].word + '】');
-    built_reading.push('「' + kanjiList[kanjiIndex].reading + '」');
+    built_japanese.push('【' + kanjiList[kanjiIndex].word + '】' + kanjiList[kanjiIndex].reading);
+    // built_reading.push('「' + kanjiList[kanjiIndex].reading + '」');
     for (var sensesIndex=0; sensesIndex<sensesList.length; sensesIndex++) {
       let eng_def = sensesList[sensesIndex].english_definitions.join('; ');
       let pos = sensesList[sensesIndex].parts_of_speech.join('; ');
@@ -120,8 +120,8 @@ function buildResult(entry, resultIndex) {
 
   var jisho_result = [
   '<div class="search-result">',
-  '  <section class="jisho-kanji">' + built_kanji.join('') + '</section>',
-  '  <section class="jisho-reading">' + built_reading.join('') + '</section>',
+  '  <section class="jisho-kanji">' + built_japanese.join('') + '</section>',
+  // '  <section class="jisho-reading">' + built_reading.join('') + '</section>',
   '  <section class="jisho-meaning">' + built_meaning.join('') + '</section>',
   '</div>'
   ].join('\n');

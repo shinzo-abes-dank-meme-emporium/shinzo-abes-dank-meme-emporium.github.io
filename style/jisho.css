@@ -117,6 +117,7 @@ button.search-button {
   overflow: auto;
   color: red;
   border: 1px dashed;
+  cursor: pointer;
 }
 
 .jisho-end {

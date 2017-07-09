@@ -8,21 +8,23 @@
 }
 
 kanji {
-  display: inline-block;
+  display: table-cell;
   word-wrap: break-word;
+  vertical-align: middle;
+  padding: 0 10px;
 }
 
 kanji.kanji {
   font-size: 2em;
-  width: 30%;
+  width: 10em;
 }
 
 kanji.reading { 
-  width: 25%;
+  width: 20em;
 }
 
 kanji.meaning {
-  width: 45%;
+  width: auto;
 }
 
 .grammar-entry {

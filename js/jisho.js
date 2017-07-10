@@ -230,6 +230,7 @@ function processData(datapoint, index) {
       buildResult(datapoint, index)
     })
   }
+  $(".jisho-results-loading-text").css("display", "none");
 }
 
 function searchJisho(input) {

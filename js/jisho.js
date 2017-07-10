@@ -234,7 +234,7 @@ function processData(datapoint, index) {
 }
 
 function searchJisho(input) {
-  if (intput == '') {
+  if (input == '') {
     $(".jisho-results-loading-text").css("display", "none");
   }
   else {

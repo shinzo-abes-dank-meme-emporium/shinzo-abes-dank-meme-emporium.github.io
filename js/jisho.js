@@ -234,19 +234,24 @@ function processData(datapoint, index) {
 }
 
 function searchJisho(input) {
-  $(jisho_results_ID).empty();
-  $(".jisho-results-loading-text").css("display", "block");
-  let opts = {
-    query: input
+  if (intput == '') {
+    $(".jisho-results-loading-text").css("display", "none");
   }
-  $.get("https://still-stream-49882.herokuapp.com/jisho", opts, function(response) {
-    response = JSON.parse(response);
-    let data = response.data; // data = [{}]
-    data.forEach(function(datapoint, index) {
-      datapoint.query = input;
-      processData(datapoint, index);
+  else {
+    $(jisho_results_ID).empty();
+    $(".jisho-results-loading-text").css("display", "block");
+    let opts = {
+      query: input
+    }
+    $.get("https://still-stream-49882.herokuapp.com/jisho", opts, function(response) {
+      response = JSON.parse(response);
+      let data = response.data; // data = [{}]
+      data.forEach(function(datapoint, index) {
+        datapoint.query = input;
+        processData(datapoint, index);
+      })
     })
-  })
+  }
 
   // request("https://still-stream-49882.herokuapp.com/jisho", opts, function(error, response, body) {
   //   body = JSON.parse(body);

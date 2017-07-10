@@ -225,7 +225,8 @@ function isExactMatch(datapoint) {
 
 function processData(datapoint, index) {
   // console.log(JSON.stringify(datapoint))
-  if (datapoint.is_common == true && isExactMatch(datapoint)) {
+  // if (datapoint.is_common == true && isExactMatch(datapoint)) {
+  if (isExactMatch(datapoint)) {
     prune(datapoint, function(datapoint) {
       buildResult(datapoint, index)
     })

@@ -247,10 +247,14 @@ function searchJisho(input) {
     $.get("https://still-stream-49882.herokuapp.com/jisho", opts, function(response) {
       response = JSON.parse(response);
       let data = response.data; // data = [{}]
+      console.log(response)
       data.forEach(function(datapoint, index) {
         datapoint.query = input;
         processData(datapoint, index);
       })
+      if (data.length == 0) {
+        $(".jisho-results-loading-text").css("display", "none");
+      }
     })
   }
 

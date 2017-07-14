@@ -141,12 +141,12 @@ var chap_grammar_list = [
       text: 'In other words, how to use なる with verbs.  Conjugate なる in the [past] for verbing that has become.  Conjugate なる in the [present] for verbing that will become.',
       species: [
         {
-          jap: 'verb(plain)ように なる：',
-          eng: 'Such verb will become (or will be) (or take place, etc.)'
+          jap: 'verb(plain)ように なる',
+          eng: '：Such verb will become (or will be) (or take place, etc.)'
         },
         {
-          jap: 'verb(plain)ように なった：',
-          eng: 'Such verb has become (or came to be) (or took place, etc.)'
+          jap: 'verb(plain)ように なった',
+          eng: '：Such verb has become (or came to be) (or took place, etc.)'
         }
       ]
     },
@@ -195,21 +195,21 @@ var chap_grammar_list = [
     grammar_point: 'verb(plain)[pres., prog., past]ところ',
     spec: 'verb(plain)[pres., prog., past]ところ',
     alt_def: 'ているところ、たところ、ったところ',
-    meaning: '"Is about to verb" [pres.]ところ; "Is currently verb-ing [ている]ところ; "Has just verb-ed" [past]ところ.',
+    meaning: '"Is about to verb" [pres.]ところ; "Is currently verb-ing" [ている]ところ; "Has just verb-ed" [past]ところ.',
     use: {
       text: 'The meaning changes based on tense of verb(plain).  ところ usually written with kana alone.  ところ declines as a noun.',
       species: [
         {
-          jap: 'verb(present) ところ：',
-          eng: 'Just about to verb.'
+          jap: 'verb(present) ところ',
+          eng: '：Just about to verb.'
         },
         {
-          jap: 'verb(ている) ところ：',
-          eng: 'Currently/in the middle of verb(ing).'
+          jap: 'verb(ている) ところ',
+          eng: '：Currently/in the middle of verb(ing).'
         },
         {
-          jap: 'verb(past) ところ：',
-          eng: 'Just finished verb(ing).'
+          jap: 'verb(past) ところ',
+          eng: '：Just finished verb(ing).'
         }
       ]
     },
@@ -234,12 +234,12 @@ var chap_grammar_list = [
       text: 'Expresses that a decision has been made for the speaker outside of their control.  Using なる[past] implies that such decisions have been made.  Using なる[ている] reports that future plans have been decided.',
       species: [
         {
-          jap: 'verb(plain)ことに なっている：',
-          eng: 'Such decision has been made (outside of one\'s control).  This construction is also used to convey rules, regulations, and social customs.'
+          jap: 'verb(plain)ことに なっている',
+          eng: '：Such decision has been made (outside of one\'s control).  This construction is also used to convey rules, regulations, and social customs.'
         },
         {
-          jap: 'verb(plain)こと になった：',
-          eng: 'Such future plans have been decided (outside of one\'s control).'
+          jap: 'verb(plain)こと になった',
+          eng: '：Such future plans have been decided (outside of one\'s control).'
         }
       ]
     },
@@ -285,12 +285,12 @@ var chap_grammar_list = [
       text: 'にくい and やすい are い auxilliary adjectives attached to verb(stem)s.  These conjugate as い adjectives.  Usually, the "something" is marked with ~は。',
       species: [
         {
-          jap: 'verb(stem) にくい：',
-          eng: '~ is difficult to do'
+          jap: 'verb(stem) にくい',
+          eng: '：〜 is difficult to do'
         },
         {
-          jap: 'verb(stem) やすい：',
-          eng: '~ is easy to do'
+          jap: 'verb(stem) やすい',
+          eng: '：〜 is easy to do'
         }
       ]
     },

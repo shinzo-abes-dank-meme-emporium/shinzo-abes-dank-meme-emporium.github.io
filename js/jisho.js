@@ -3,6 +3,8 @@
 const jisho_results_ID = "#jisho-search-results"
 const jisho_deck_ID = "#jisho-deck"
 
+let isLoading = false;
+
 /*
   only if Word || Reading === exactly
   senses:
@@ -156,6 +158,7 @@ function buildResult(entry, resultIndex) {
   '</div>'
   ].join('\n');
 
+  isLoading = false;
   $(".jisho-results-loading-text").css("display", "none");
   $(".jisho-results-no-results").css("display", "none");
   $(jisho_results_ID).append(jisho_result);
@@ -218,6 +221,7 @@ function isExactMatch(datapoint) {
     return (first.word === query || first.reading === query) || isExactMatch(next_check);
   }
   else {
+    isLoading = false;
     $(".jisho-results-loading-text").css("display", "none");
     return false
   }
@@ -231,15 +235,18 @@ function processData(datapoint, index) {
       buildResult(datapoint, index)
     })
   }
+  isLoading = false;
   $(".jisho-results-loading-text").css("display", "none");
 }
 
 function searchJisho(input) {
   if (input == '') {
+    isLoading = false;
     $(".jisho-results-loading-text").css("display", "none");
   }
   else {
     $(jisho_results_ID).empty();
+    isLoading = true;
     $(".jisho-results-loading-text").css("display", "block");
     let opts = {
       query: input
@@ -253,19 +260,11 @@ function searchJisho(input) {
         processData(datapoint, index);
       })
       if (data.length == 0) {
+        isLoading = false;
         $(".jisho-results-loading-text").css("display", "none");
       }
     })
   }
-
-  // request("https://still-stream-49882.herokuapp.com/jisho", opts, function(error, response, body) {
-  //   body = JSON.parse(body);
-  //   let data = body.data; // data = [{}]
-  //   data.forEach(function(datapoint) {
-  //     datapoint.query = input;
-  //     processData(datapoint)  ;
-  //   })
-  // })
 }
 
 $(window).on('load', function() {
@@ -274,12 +273,14 @@ $(window).on('load', function() {
 
 
 $("#jisho-submit-button").click(function() {
-  var input = $('#jisho-search-input').val();
-  searchJisho(input)
+  if (!isLoading) {
+    var input = $('#jisho-search-input').val();
+    searchJisho(input)
+  }
 });
 
 $('#jisho-search-input').keyup(function(e) {
-  if(e.which == 13) {
+  if(e.which == 13 && !isLoading) {
     var input = $('#jisho-search-input').val();
     searchJisho(input)
   }

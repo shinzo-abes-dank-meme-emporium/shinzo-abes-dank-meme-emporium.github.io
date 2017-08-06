@@ -128,6 +128,17 @@ function buildKanjiEntry(entry) {
   $(kanji_results_ID).append(kanji_entry);
 }
 
+function polyIncluded(test, ...argList) {
+  if (argList.length == 0) {
+    return true;
+  }
+  else {
+    let firstEl = argList[0];
+    let rest = argList.slice(1);
+    return firstEl.includes(test) && polyIncluded(test, rest);
+  }
+}
+
 function isMatch(splitQuery, grammar_entry) {
   if (splitQuery.length == 0) {
     return true;
@@ -138,12 +149,13 @@ function isMatch(splitQuery, grammar_entry) {
 
     let grammar_point = grammar_entry.grammar_point;
     let grammar_alt_def = grammar_entry.alt_def;
+    let grammar_meaning = grammar_entry.meaning;
 
-    if (grammar_point.includes(firstEl) || grammar_alt_def.includes(firstEl)) {
-      return true && isMatch(rest, grammar_entry)
+    if (polyIncluded(firstEl, [grammar_point, grammar_alt_def, grammar_meaning])) {
+      return true && isMatch(rest, grammar_entry);
     }
     else {
-      return false && isMatch(rest, grammar_entry)
+      return false && isMatch(rest, grammar_entry);
     }
   }
 }

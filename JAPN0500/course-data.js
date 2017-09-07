@@ -4,4 +4,5 @@ const local_chap_list = [
 {
   name: 'L１',
   path: 'L1'
+}
 ];

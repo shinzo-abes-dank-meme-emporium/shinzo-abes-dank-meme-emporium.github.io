@@ -78,9 +78,12 @@ $(window).on('load', function() {
     var kl_kanji = kanji_list[i].kanji;
     var kl_reading = kanji_list[i].reading;
     var kl_meaning = kanji_list[i].meaning;
-    var kl_class = '';
-    if(kanji_list[i].kaku == 'hai') { kl_class =  '"kanji-entry kaku"'; }
-    else { kl_class =  '"kanji-entry"'; }
+    var kl_suru = (kanji_list[i].suru == 'hai');
+    var kl_kaku = (kanji_list[i].kaku == 'hai');
+    
+    var kl_class = '"kanji-entry';
+    if(kl_kaku) { kl_class +=  ' kaku"'; }
+
     var kanji_entry = [
     '<div class=' + kl_class + ' id="kanji-entry-' + i + '">',
     '  <kanji class="kanji">' + kl_kanji + '</kanji>',

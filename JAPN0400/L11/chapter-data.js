@@ -58,14 +58,14 @@ var chap_grammar_list = [
     alt_def: 'もんですから、ものですから',
     meaning: '"Because of 〜"; "〜 happened, regretably"',
     use: {
-      text: 'When verb is verb(plain)[PAST], there is a semblance of apology in the statment.  When the verb is verb(plain)[PRESENT], the speaker is just giving a reason or stating something that happened.  In both cases, the speaker feels bad for what happened and in both cases the situation could not be avoided.  The past form of verbs is used for apologies.',
+      text: 'When verb is verb(plain)[PAST], there is a semblance of apology in the statment.  When the verb is verb(plain)[PRESENT], the speaker is giving a reason or stating something that happened with a hint of dissatisfaction, resentment, or regret.  In both cases, the speaker feels bad for what happened and in both cases the situation could not be avoided.  The past form of verbs is used for apologies.',
       species: [
         {
           jap: 'verb(plain)[past]もんですから',
           eng: '：Such verb happened, I appologize.'
         },{
           jap: 'verb(plain)[present]もんですから',
-          eng: '：Such verb happened, regretably.'
+          eng: '：Such verb happened, to my dismay.'
         }
       ]
     },
@@ -90,7 +90,7 @@ var chap_grammar_list = [
           highlight: '言われるもんだから',
           post: '。』'
         },
-        translation: '(In response to an observation that one looks down) This morning, I was scolded by my hostfamily mom. (Regretable)'
+        translation: '(In response to an observation that one looks sad) This morning, I was scolded by my hostfamily mom. (feels bad man)'
       }
     ],
     other: '...'

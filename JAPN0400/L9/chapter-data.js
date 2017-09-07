@@ -412,7 +412,7 @@ var chap_grammar_list = [
     alt_def: 'どんな〜でも',
     meaning: '"Any 〜"',
     use: {
-      text: 'Generally, が and を are omitted when followed by でも。Other particles (eg: と／から／に／etc.) remain as どんな〜にでも。',
+      text: 'Generally, が and を are omitted when followed by でも。Other particles (eg: と／から／に／etc.) remain as どんな(noun＿)でも (eg: どんな noun に でも).',
       species: []
     },
     example: [

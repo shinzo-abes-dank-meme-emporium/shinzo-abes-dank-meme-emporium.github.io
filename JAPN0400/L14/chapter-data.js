@@ -274,7 +274,7 @@ var chap_grammar_list = [
     alt_def: '度に',
     meaning: '"Every time something happens, 〜 also happens."',
     use: {
-      text: '',
+      text: '...',
       species: []
     },
     example: [
@@ -301,7 +301,7 @@ var chap_grammar_list = [
     alt_def: 'てくれたらと思う、てくれたらとおもう、verb(て)くれたらとおもう',
     meaning: '"I wish someone would do 〜"; "I hope someone does 〜"; "I wish that I would receive the favor of someone doing 〜"; "I wish for the subjunctive/possible/conditional receiving of an action"',
     use: {
-      text: '',
+      text: '...',
       species: []
     },
     example: [

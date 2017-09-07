@@ -191,7 +191,7 @@ var chap_grammar_list = [
     alt_def: '',
     meaning: '"Thanks to 〜".',
     use: {
-      text: '(cf. 〜せい because of (blame)) 〜おかげで is used when responsibility for a desireable situation is to be recognized.  It is used much like 〜せいか except for positive situations.  おかげ is a noun.',
+      text: '(cf. 〜せい because of (blame)) 〜おかげで is used when responsibility for a desireable situation is to be recognized.  It is used much like 〜せい except for positive situations.  おかげ is a noun.',
       species: [
         {
           jap: '(noun)の おかげ(で、〜）',
@@ -225,7 +225,7 @@ var chap_grammar_list = [
     alt_def: 'てごらんなさい',
     meaning: '"Try verbing" (NOT TO USE to superiors)',
     use: {
-      text: 'Polite form of verb(て)みなさい  〜なさい is used by superiors to give commands to those in lower status, and so 〜ごらんなさい cannot be used by a person of lower status to their superior.  verb(て)ごらん is a more informal version (eg: used by mothers to their children).',
+      text: 'Polite form of verb(て)みなさい。  〜なさい is used by superiors to give commands to those in lower status, and so 〜ごらんなさい cannot be used by a person of lower status to their superior.  verb(て)ごらん is a more informal version (eg: used by mothers to their children).',
       species: []
     },
     example: [
@@ -245,7 +245,7 @@ var chap_grammar_list = [
     alt_def: '',
     meaning: '"The [least / liminal / lower-bounded] noun"',
     use: {
-      text: 'Indicates that the noun is the lowest degree.  ie: easiest, lightest, shortest, etc.  The specific superlative adjective seems to be implied.',
+      text: 'Indicates that the noun is the lowest degree.  ie: easiest, lightest, shortest, etc.  The specific superlative adjective (eg: least, lowest, lightest) seems to be implied.',
       species: []
     },
     example: [

@@ -1,8 +1,8 @@
 "use strict";
 
-var local_course_name = '日本語４００';
-var local_course_path = 'JAPN0400'
-var local_chap_name = '第８課';
+var local_course_name = '日本語５００';
+var local_course_path = 'JAPN0500'
+var local_chap_name = 'L１';
 
 /**
 {

@@ -219,7 +219,8 @@ function searchKanji(query, callback) {
 
 $(window).on('load', function() {
   let grammar_ajaxes = [];
-  let grammar_dfd = $.Deferred();
+  let kanji_ajaxes = [];
+  let dfd = $.Deferred();
 
   for (var courseIndex=0; courseIndex<database.length; courseIndex++) {
     let courseData = database[courseIndex];
@@ -248,16 +249,19 @@ $(window).on('load', function() {
 
       var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
 
-      $.getJSON(kanji_JSONpath, function(json) {
-        total_kanji = total_kanji.concat(json);
-      }).fail(function(jqxhr, status, err) {
-        console.log(status + ", " + err)
+      kanji_ajaxes.push(function() {
+        $.getJSON(kanji_JSONpath, function(json) {
+          total_kanji = total_kanji.concat(json);
+        }).fail(function(jqxhr, status, err) {
+          console.log(status + ", " + err)
+        });
       });
     }
   }
 
-  grammar_dfd.done(grammar_ajaxes).done(function () { console.log("grammar loaded"); $("#grammar-loading-text").css("display", "none"); });
-  grammar_dfd.resolve();
+  dfd.done(grammar_ajaxes).done(function () { console.log("grammar loaded"); });
+  dfd.done(kanji_ajaxes).done(function () { console.log("kanji loaded"); });
+  dfd.resolve();
 
   // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
   // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }

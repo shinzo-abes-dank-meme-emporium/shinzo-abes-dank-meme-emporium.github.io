@@ -256,7 +256,7 @@ $(window).on('load', function() {
     }
   }
 
-  grammar_dfd.done(grammar_ajaxes).done(function () { $("#grammar-loading-text").css("display", "none"); });
+  grammar_dfd.done(grammar_ajaxes).done(function () { console.log("grammar loaded"); $("#grammar-loading-text").css("display", "none"); });
   grammar_dfd.resolve();
 
   // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }

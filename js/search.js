@@ -243,8 +243,8 @@ $(window).on('load', function() {
               })
             }
           }
-        });
-      )
+        })
+      );
 
       var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
 

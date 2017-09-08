@@ -197,7 +197,6 @@ function searchKanji(query, callback) {
   callback = callback || noop
 
   let noResults = true;
-  console.log(total_kanji.length);
   for (var i=0; i<total_kanji.length; i++) {
     let kanji_entry = total_kanji[i];
     // let kanji_path = total_kanji[i].path;
@@ -219,6 +218,9 @@ function searchKanji(query, callback) {
 }
 
 $(window).on('load', function() {
+  let loading_kanji = 0;
+  let loading_grammar = 0;
+
   for (var courseIndex=0; courseIndex<database.length; courseIndex++) {
     let courseData = database[courseIndex];
 
@@ -239,6 +241,7 @@ $(window).on('load', function() {
               path: grammar_entry_path
             })
           }
+          loading_grammar--;
         }
       });
 
@@ -246,14 +249,18 @@ $(window).on('load', function() {
 
       $.getJSON(kanji_JSONpath, function(json) {
         total_kanji = total_kanji.concat(json);
+        loading_kanji--;
       }).fail(function(jqxhr, status, err) {
         console.log(status + ", " + err)
       });
+
+      loading_kanji++;
+      loading_grammar++;
     }
   }
 
-  $("#kanji-loading-text").css("display", "none");
-  $("#grammar-loading-text").css("display", "none");
+  while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
+  while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }
   $(".search-bar").css("display", "initial");
 });
 

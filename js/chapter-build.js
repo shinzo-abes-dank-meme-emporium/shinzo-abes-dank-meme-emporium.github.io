@@ -14,8 +14,9 @@ $(window).on('load', function() {
   var course_name = local_course_name;
   var course_path = local_course_path;
   var chap_name = local_chap_name;
-  // var kanji_list = $.csv.toObjects(chap_kanji_str);
+  var kanji_list;// = $.csv.toObjects(chap_kanji_str);
   $.getJSON("./kanji.JSON", function(json) {
+    kanji_list = json.data;
     console.log(json.data);
   })
   var grammar_list = chap_grammar_list;

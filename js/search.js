@@ -219,7 +219,7 @@ function searchKanji(query, callback) {
 
 $(window).on('load', function() {
   let grammar_ajaxes = [];
-  let dfd = $.Deferred();
+  let grammar_dfd = $.Deferred();
 
   for (var courseIndex=0; courseIndex<database.length; courseIndex++) {
     let courseData = database[courseIndex];
@@ -256,7 +256,7 @@ $(window).on('load', function() {
     }
   }
 
-  dfd.done(grammar_ajaxes).done(function (n) { console.log(n); }); //$("#grammar-loading-text").css("display", "none"); })
+  grammar_dfd.done(grammar_ajaxes).done(function () { $("#grammar-loading-text").css("display", "none"); })
 
   // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
   // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }

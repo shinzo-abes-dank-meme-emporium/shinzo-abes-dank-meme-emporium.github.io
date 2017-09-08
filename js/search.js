@@ -13,6 +13,9 @@ const database = [
   },{
     course: 'JAPN0400',
     chapters: ['L8', 'L9', 'L10', 'L11', 'L12', 'L13', 'L14', 'L15']
+  },{
+    course: 'JAPN0500',
+    chapters: ['L1']
   }
 ]
 
@@ -109,13 +112,12 @@ function buildKanjiEntry(entry) {
   var kl_kanji = entry.kanji;
   var kl_reading = entry.reading;
   var kl_meaning = entry.meaning;
-  var kl_class = '';
-  if(entry.kaku == 'hai') { 
-    kl_class =  '"kanji-entry kaku"'; 
-  }
-  else { 
-    kl_class =  '"kanji-entry"'; 
-  }
+
+  var kl_suru = (kanji_list[i].suru == 'hai');
+  var kl_kaku = (kanji_list[i].kaku == 'hai');
+
+  var kl_class = '"kanji-entry';
+  if(kl_kaku) { kl_class +=  ' kaku"'; }
   
   var kanji_entry = [
   '<div class=' + kl_class + '">',
@@ -219,27 +221,30 @@ $(window).on('load', function() {
   for (var courseIndex=0; courseIndex<database.length; courseIndex++) {
     let courseData = database[courseIndex];
 
-    let courseName = courseData.course;
+    let coursePath = courseData.course;
     let courseChapters = courseData.chapters;
 
     for (var chapterIndex=0; chapterIndex<courseChapters.length; chapterIndex++) {
-      let chapterName = courseChapters[chapterIndex];
+      let chapterPath = courseChapters[chapterIndex];
 
       $.getScript({
-        url: initURL + '/' + courseName + '/' + chapterName + '/' + dataFilename,
+        url: initURL + '/' + coursePath + '/' + chapterPath + '/' + dataFilename,
         success: function(data) {
           for (var grammarIndex=0; grammarIndex<chap_grammar_list.length; grammarIndex++) {
             let grammar_entry = chap_grammar_list[grammarIndex];
-            let grammar_entry_path = initURL + '/' + courseName + '/' + chapterName + '/#content-grammar-point-' + grammarIndex;
+            let grammar_entry_path = initURL + '/' + coursePath + '/' + chapterPath + '/#content-grammar-point-' + grammarIndex;
             total_grammar.push({
               entry: grammar_entry,
               path: grammar_entry_path
             })
           }
-
-          let kanji_list = $.csv.toObjects(chap_kanji_str);
-          total_kanji = total_kanji.concat(kanji_list);
         }
+      });
+
+      var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
+
+      $.getJSON(kanji_JSONpath, function(json) {
+        total_kanji.concat(json);
       });
     }
   }

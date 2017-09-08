@@ -230,7 +230,7 @@ $(window).on('load', function() {
     for (var chapterIndex=0; chapterIndex<courseChapters.length; chapterIndex++) {
       let chapterPath = courseChapters[chapterIndex];
 
-      grammar_ajaxes.push(
+      grammar_ajaxes.push(function() {
         $.getScript({
           url: initURL + '/' + coursePath + '/' + chapterPath + '/' + dataFilename,
           success: function(data) {
@@ -244,7 +244,7 @@ $(window).on('load', function() {
             }
           }
         })
-      );
+      });
 
       var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
 
@@ -256,7 +256,7 @@ $(window).on('load', function() {
     }
   }
 
-  // dfd.done(grammar_ajaxes).done(function (n) { console.log(n); }); //$("#grammar-loading-text").css("display", "none"); })
+  dfd.done(grammar_ajaxes).done(function (n) { console.log(n); }); //$("#grammar-loading-text").css("display", "none"); })
 
   // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
   // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }

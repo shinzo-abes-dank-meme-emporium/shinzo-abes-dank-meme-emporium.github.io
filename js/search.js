@@ -197,6 +197,7 @@ function searchKanji(query, callback) {
   callback = callback || noop
 
   let noResults = true;
+  console.log(total_kanji.length);
   for (var i=0; i<total_kanji.length; i++) {
     let kanji_entry = total_kanji[i];
     // let kanji_path = total_kanji[i].path;
@@ -245,7 +246,6 @@ $(window).on('load', function() {
 
       $.getJSON(kanji_JSONpath, function(json) {
         total_kanji = total_kanji.concat(json);
-        console.log(total_kanji)
       }).fail(function(jqxhr, status, err) {
         console.log(status + ", " + err)
       });

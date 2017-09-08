@@ -244,8 +244,7 @@ $(window).on('load', function() {
       var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
 
       $.getJSON(kanji_JSONpath, function(json) {
-        total_kanji.concat(json);
-        console.log(total_kanji);
+        total_kanji = total_kanji.concat(json);
       }).fail(function(jqxhr, status, err) {
         console.log(status + ", " + err)
       });

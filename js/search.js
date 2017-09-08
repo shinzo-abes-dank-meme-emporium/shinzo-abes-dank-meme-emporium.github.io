@@ -256,7 +256,7 @@ $(window).on('load', function() {
     }
   }
 
-  dfd.done(grammar_ajaxes).done(function (n) { console.log(n); }); //$("#grammar-loading-text").css("display", "none"); })
+  // dfd.done(grammar_ajaxes).done(function (n) { console.log(n); }); //$("#grammar-loading-text").css("display", "none"); })
 
   // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
   // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }

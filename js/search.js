@@ -209,7 +209,6 @@ function searchKanji(query, callback) {
 
     if (kanji.includes(query) || clean_reading.includes(query)) {
       noResults = false;
-      console.log(kanji_entry)
       buildKanjiEntry(kanji_entry);
     }
   }
@@ -252,7 +251,6 @@ $(window).on('load', function() {
       });
     }
   }
-  console.log("FINAL:" + total_kanji.length)
 
   $("#kanji-loading-text").css("display", "none");
   $("#grammar-loading-text").css("display", "none");

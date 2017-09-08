@@ -245,12 +245,13 @@ $(window).on('load', function() {
 
       $.getJSON(kanji_JSONpath, function(json) {
         total_kanji = total_kanji.concat(json);
+        console.log(total_kanji)
       }).fail(function(jqxhr, status, err) {
         console.log(status + ", " + err)
       });
     }
   }
-  console.log(total_kanji)
+  console.log("FINAL:" + total_kanji.length)
 
   $("#kanji-loading-text").css("display", "none");
   $("#grammar-loading-text").css("display", "none");

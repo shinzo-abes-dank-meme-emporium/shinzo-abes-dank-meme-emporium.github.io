@@ -245,6 +245,7 @@ $(window).on('load', function() {
 
       $.getJSON(kanji_JSONpath, function(json) {
         total_kanji.concat(json);
+        console.log(kanji_JSONpath);
       });
     }
   }

@@ -38,7 +38,7 @@ $(window).on('load', function() {
   var chap_name = local_chap_name;
   var chap_path = local_chap_path;
 
-  var kanji_JSONpath = "/json/kanji/" + chap_name + "-" + chap_path + "-kanji.JSON";
+  var kanji_JSONpath = "/json/kanji/" + course_path + "-" + chap_path + "-kanji.JSON";
 
   $.getJSON(kanji_JSONpath, function(json) {
     prepareKanji(json)

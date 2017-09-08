@@ -113,8 +113,8 @@ function buildKanjiEntry(entry) {
   var kl_reading = entry.reading;
   var kl_meaning = entry.meaning;
 
-  var kl_suru = (kanji_list[i].suru == 'hai');
-  var kl_kaku = (kanji_list[i].kaku == 'hai');
+  var kl_suru = (entry.suru == 'hai');
+  var kl_kaku = (entry.kaku == 'hai');
 
   var kl_class = '"kanji-entry';
   if(kl_kaku) { kl_class +=  ' kaku"'; }

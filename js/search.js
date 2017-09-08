@@ -218,8 +218,8 @@ function searchKanji(query, callback) {
 }
 
 $(window).on('load', function() {
-  let loading_kanji = 0;
-  let loading_grammar = 0;
+  let grammar_ajaxes = [];
+  let dfd = $.Deferred();
 
   for (var courseIndex=0; courseIndex<database.length; courseIndex++) {
     let courseData = database[courseIndex];
@@ -230,34 +230,33 @@ $(window).on('load', function() {
     for (var chapterIndex=0; chapterIndex<courseChapters.length; chapterIndex++) {
       let chapterPath = courseChapters[chapterIndex];
 
-      $.getScript({
-        url: initURL + '/' + coursePath + '/' + chapterPath + '/' + dataFilename,
-        success: function(data) {
-          for (var grammarIndex=0; grammarIndex<chap_grammar_list.length; grammarIndex++) {
-            let grammar_entry = chap_grammar_list[grammarIndex];
-            let grammar_entry_path = initURL + '/' + coursePath + '/' + chapterPath + '/#content-grammar-point-' + grammarIndex;
-            total_grammar.push({
-              entry: grammar_entry,
-              path: grammar_entry_path
-            })
+      grammar_ajaxes.push(
+        $.getScript({
+          url: initURL + '/' + coursePath + '/' + chapterPath + '/' + dataFilename,
+          success: function(data) {
+            for (var grammarIndex=0; grammarIndex<chap_grammar_list.length; grammarIndex++) {
+              let grammar_entry = chap_grammar_list[grammarIndex];
+              let grammar_entry_path = initURL + '/' + coursePath + '/' + chapterPath + '/#content-grammar-point-' + grammarIndex;
+              total_grammar.push({
+                entry: grammar_entry,
+                path: grammar_entry_path
+              })
+            }
           }
-          loading_grammar--;
-        }
-      });
+        });
+      )
 
       var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
 
       $.getJSON(kanji_JSONpath, function(json) {
         total_kanji = total_kanji.concat(json);
-        loading_kanji--;
       }).fail(function(jqxhr, status, err) {
         console.log(status + ", " + err)
       });
-
-      loading_kanji++;
-      loading_grammar++;
     }
   }
+
+  dfd.done(grammar_ajaxes).done(function () { $("#grammar-loading-text").css("display", "none"); })
 
   // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
   // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }

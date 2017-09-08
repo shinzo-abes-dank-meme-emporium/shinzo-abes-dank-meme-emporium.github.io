@@ -17,7 +17,7 @@ $(window).on('load', function() {
   var kanji_list;// = $.csv.toObjects(chap_kanji_str);
   $.getJSON("./kanji.JSON", function(json) {
     kanji_list = json;
-    //console.log(json);
+    console.log(json);
   })
   var grammar_list = chap_grammar_list;
   var note_list = chap_note_list;

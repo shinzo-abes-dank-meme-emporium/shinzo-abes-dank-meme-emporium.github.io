@@ -3,6 +3,7 @@
 var local_course_name = '日本語３００';
 var local_course_path = 'JAPN0300'
 var local_chap_name = '第１課';
+var local_chap_path = 'L1';
 
 /**
 {

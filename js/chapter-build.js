@@ -36,7 +36,11 @@ $(window).on('load', function() {
   var course_name = local_course_name;
   var course_path = local_course_path;
   var chap_name = local_chap_name;
-  $.getJSON("./kanji.JSON", function(json) {
+  var chap_path = local_chap_path;
+
+  kanji_JSONpath = "/json/kanji/" + chap_name + "-" + chap_path + "-" "kanji.JSON";
+
+  $.getJSON(kanji_JSONpath, function(json) {
     prepareKanji(json)
   })
   var grammar_list = chap_grammar_list;

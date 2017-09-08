@@ -259,8 +259,8 @@ $(window).on('load', function() {
     }
   }
 
-  while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
-  while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }
+  // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
+  // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }
   $(".search-bar").css("display", "initial");
 });
 

@@ -8,16 +8,36 @@ const misc_id = "#content-misc";
 const misc_nav_id = "#sidebar-misc-list"
 const kanji_id = "#content-kanji";
 
+function prepareKanji(kanji_list) {
+  for (var i=0; i<kanji_list.length; i++) {
+    var kl_kanji = kanji_list[i].kanji;
+    var kl_reading = kanji_list[i].reading;
+    var kl_meaning = kanji_list[i].meaning;
+    var kl_suru = (kanji_list[i].suru == 'hai');
+    var kl_kaku = (kanji_list[i].kaku == 'hai');
+
+    var kl_class = '"kanji-entry';
+    if(kl_kaku) { kl_class +=  ' kaku"'; }
+
+    var kanji_entry = [
+    '<div class=' + kl_class + ' id="kanji-entry-' + i + '">',
+    '  <kanji class="kanji">' + kl_kanji + '</kanji>',
+    '  <kanji class="reading">' + kl_reading + '</kanji>',
+    '  <kanji class="meaning">' + kl_meaning + '</kanji>',
+    '</div>'
+    ].join('\n');
+
+    $(kanji_id).append(kanji_entry);
+  }
+}
+
 
 $(window).on('load', function() {
-
   var course_name = local_course_name;
   var course_path = local_course_path;
   var chap_name = local_chap_name;
-  var kanji_list;// = $.csv.toObjects(chap_kanji_str);
   $.getJSON("./kanji.JSON", function(json) {
-    kanji_list = json;
-    console.log(json);
+    prepareKanji(json)
   })
   var grammar_list = chap_grammar_list;
   var note_list = chap_note_list;
@@ -76,27 +96,6 @@ $(window).on('load', function() {
 
     $(misc_nav_id).append(note_nav_entry);
     $(misc_id).append(note_entry);
-  }
-
-  for (var i=0; i<kanji_list.length; i++) {
-    var kl_kanji = kanji_list[i].kanji;
-    var kl_reading = kanji_list[i].reading;
-    var kl_meaning = kanji_list[i].meaning;
-    var kl_suru = (kanji_list[i].suru == 'hai');
-    var kl_kaku = (kanji_list[i].kaku == 'hai');
-
-    var kl_class = '"kanji-entry';
-    if(kl_kaku) { kl_class +=  ' kaku"'; }
-
-    var kanji_entry = [
-    '<div class=' + kl_class + ' id="kanji-entry-' + i + '">',
-    '  <kanji class="kanji">' + kl_kanji + '</kanji>',
-    '  <kanji class="reading">' + kl_reading + '</kanji>',
-    '  <kanji class="meaning">' + kl_meaning + '</kanji>',
-    '</div>'
-    ].join('\n');
-
-    $(kanji_id).append(kanji_entry);
   }
 
   for(var i=0; i<grammar_list.length; i++) {

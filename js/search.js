@@ -220,7 +220,8 @@ function searchKanji(query, callback) {
 $(window).on('load', function() {
   let grammar_ajaxes = [];
   let kanji_ajaxes = [];
-  let dfd = $.Deferred();
+  let dfd_grammar = $.Deferred();
+  let dfd_kanji = $.Deferred();
 
   for (var courseIndex=0; courseIndex<database.length; courseIndex++) {
     let courseData = database[courseIndex];
@@ -242,8 +243,8 @@ $(window).on('load', function() {
                 entry: grammar_entry,
                 path: grammar_entry_path
               })
-              console.log("loading grammar " + coursePath + " " + chapterPath)
             }
+            console.log("loading grammar " + coursePath + " " + chapterPath)
           }
         })
       });
@@ -261,9 +262,10 @@ $(window).on('load', function() {
     }
   }
 
-  dfd.done(grammar_ajaxes).done(function () { console.log("...grammar loaded"); });
-  dfd.done(kanji_ajaxes).done(function () { console.log("kanji loaded"); });
-  dfd.resolve();
+  dfd_grammar.done(grammar_ajaxes).done(function () { console.log("...grammar loaded"); });
+  dfd_kanji.done(kanji_ajaxes).done(function () { console.log("...kanji loaded"); });
+  dfd_grammar.resolve();
+  dfd_kanji.resolve();
 
   // i don't actually think these loading texts work; they are an artefact of when I didn't use deferred; TO FIX
   $("#grammar-loading-text").css("display", "none");

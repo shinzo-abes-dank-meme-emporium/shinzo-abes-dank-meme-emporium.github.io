@@ -264,9 +264,9 @@ $(window).on('load', function() {
   dfd.resolve();
 
   // i don't actually think these loading texts work; they are an artefact of when I didn't use deferred; TO FIX
-  $("#grammar-loading-text").css("display", "none"); }
-  $("#kanji-loading-text").css("display", "none"); }
-  
+  $("#grammar-loading-text").css("display", "none");
+  $("#kanji-loading-text").css("display", "none");
+
   $(".search-bar").css("display", "initial");
 });
 

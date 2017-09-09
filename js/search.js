@@ -263,8 +263,10 @@ $(window).on('load', function() {
   dfd.done(kanji_ajaxes).done(function () { console.log("kanji loaded"); });
   dfd.resolve();
 
-  // while(loading_grammar > 0) { $("#grammar-loading-text").css("display", "none"); }
-  // while(loading_kanji > 0) { $("#kanji-loading-text").css("display", "none"); }
+  // i don't actually think these loading texts work; they are an artefact of when I didn't use deferred; TO FIX
+  $("#grammar-loading-text").css("display", "none"); }
+  $("#kanji-loading-text").css("display", "none"); }
+  
   $(".search-bar").css("display", "initial");
 });
 

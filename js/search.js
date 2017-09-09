@@ -242,6 +242,7 @@ $(window).on('load', function() {
                 entry: grammar_entry,
                 path: grammar_entry_path
               })
+              console.log("loading grammar " + coursePath + " " + chapterPath)
             }
           }
         })
@@ -252,6 +253,7 @@ $(window).on('load', function() {
       kanji_ajaxes.push(function() {
         $.getJSON(kanji_JSONpath, function(json) {
           total_kanji = total_kanji.concat(json);
+          console.log("loading kanji " + coursePath + " " + chapterPath)
         }).fail(function(jqxhr, status, err) {
           console.log(status + ", " + err)
         });
@@ -259,7 +261,7 @@ $(window).on('load', function() {
     }
   }
 
-  dfd.done(grammar_ajaxes).done(function () { console.log("grammar loaded"); });
+  dfd.done(grammar_ajaxes).done(function () { console.log("...grammar loaded"); });
   dfd.done(kanji_ajaxes).done(function () { console.log("kanji loaded"); });
   dfd.resolve();
 

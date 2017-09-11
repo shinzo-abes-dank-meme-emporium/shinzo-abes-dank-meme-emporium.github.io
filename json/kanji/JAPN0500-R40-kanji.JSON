@@ -14,7 +14,7 @@
     "reading": "しゃかい",
     "meaning": "(n.) society",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -23,7 +23,7 @@
     "reading": "きょうどうけんきゅう",
     "meaning": "(n.) joint research",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -32,7 +32,7 @@
     "reading": "はじ（まる）",
     "meaning": "(godan v. intrans) something starts",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -50,7 +50,7 @@
     "reading": "（トヨタ）じどうしゃ",
     "meaning": "(n.) Toyota Motor Corp.",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -95,7 +95,7 @@
     "reading": "へ（る）",
     "meaning": "(godan v.) to decrease",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -131,7 +131,7 @@
     "reading": "こうじょう",
     "meaning": "(n.) factory",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -140,7 +140,7 @@
     "reading": "せいさん",
     "meaning": "(n.) production, manufature",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": "〜力：productivity"
   },
   {
@@ -149,7 +149,7 @@
     "reading": "じつげん",
     "meaning": "(n.) implementation, materialization, realization",
     "suru": "hai",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": "〜する"
   },
   {
@@ -167,7 +167,7 @@
     "reading": "こんご",
     "meaning": "(adv) from now",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -176,7 +176,7 @@
     "reading": "ぜんご",
     "meaning": "(adv) around, approximately",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -185,7 +185,7 @@
     "reading": "こじん",
     "meaning": "(n.) individual",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -198,12 +198,21 @@
     "nooto": ""
   },
   {
+    "line": 4,
+    "kanji": "使う",
+    "reading": "つか（う）",
+    "meaning": "(godan v.t.) to use",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },
+  {
     "line": 5,
     "kanji": "開発",
     "reading": "かいはつ",
     "meaning": "(n.) development",
     "suru": "hai",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -221,7 +230,7 @@
     "reading": "にんげん",
     "meaning": "(n.) human being",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -248,7 +257,7 @@
     "reading": "く（み）あ（わせる）",
     "meaning": "(ichidan v. trans) to join together, to combine",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": ""
   },
   {
@@ -275,7 +284,7 @@
     "reading": "はんだん",
     "meaning": "(n.) judgement, decision",
     "suru": "hai",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": "〜する"
   },
   {
@@ -293,7 +302,7 @@
     "reading": "あんぜん",
     "meaning": "(adj.al n.) safety, security",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": "〜に"
   },
   {
@@ -302,7 +311,7 @@
     "reading": "わた（る）",
     "meaning": "(godan v. intrans) to cross over, to go across",
     "suru": "",
-    "kaku": "",
+    "kaku": "hai",
     "nooto": "渡れる：v.pot"
   },
   {

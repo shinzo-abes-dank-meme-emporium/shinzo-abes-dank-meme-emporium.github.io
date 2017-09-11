@@ -15,7 +15,7 @@ const database = [
     chapters: ['L8', 'L9', 'L10', 'L11', 'L12', 'L13', 'L14', 'L15']
   },{
     course: 'JAPN0500',
-    chapters: ['L1']
+    chapters: ['R40']
   }
 ]
 

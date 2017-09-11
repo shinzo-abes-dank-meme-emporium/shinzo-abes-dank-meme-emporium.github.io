@@ -2,8 +2,8 @@
 
 var local_course_name = '日本語５００';
 var local_course_path = 'JAPN0500'
-var local_chap_name = 'L１';
-var local_chap_path = 'L1'
+var local_chap_name = 'Ｒ４０';
+var local_chap_path = 'R40'
 
 
 

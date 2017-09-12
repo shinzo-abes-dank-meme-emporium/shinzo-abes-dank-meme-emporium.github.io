@@ -15,7 +15,7 @@ const database = [
     chapters: ['L8', 'L9', 'L10', 'L11', 'L12', 'L13', 'L14', 'L15']
   },{
     course: 'JAPN0500',
-    chapters: ['R40']
+    chapters: ['R6', 'R40']
   }
 ]
 
@@ -266,7 +266,7 @@ $(window).on('load', function() {
   dfd_grammar.resolve();
   dfd_kanji.resolve();
 
-  // i don't actually think these loading texts work; they are an artefact of when I didn't use deferred; TO FIX
+  // i don't actually think these loading texts work; they are an artifact of when I didn't use deferred; TO FIX
   $("#grammar-loading-text").css("display", "none");
   $("#kanji-loading-text").css("display", "none");
 
@@ -302,6 +302,15 @@ $("#kanji-clear-button").click(function() {
 });
 $("#grammar-clear-button").click(function() {
   $(grammar_results_ID).empty();
+});
+
+$("#furigana-showhide-button").click(function() {
+  if ($("ruby").is(":visible")) {
+    $("ruby").css("display", "none");
+  }
+  else {
+    $("ruby").css("display", "visible");
+  }
 });
 
 

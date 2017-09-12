@@ -121,7 +121,7 @@ function buildKanjiEntry(entry) {
   
   var kanji_entry = [
   '<div class=' + kl_class + '">',
-  '  <kanji class="kanji">' + kl_kanji + '</kanji>',
+  '  <kanji class="kanji"><ruby><rb>' + kl_kanji + '</rb><rt>' + kl_reading + '</rt></ruby></kanji>',
   '  <kanji class="reading">' + kl_reading + '</kanji>',
   '  <kanji class="meaning">' + kl_meaning + '</kanji>',
   '</div>'

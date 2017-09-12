@@ -305,12 +305,7 @@ $("#grammar-clear-button").click(function() {
 });
 
 $("#furigana-showhide-button").click(function() {
-  if ($("rt").is(":hidden")) {
-    $("rt").css("display", "visible");
-  }
-  else {
-    $("rt").css("display", "none");
-  }
+  $("rt").toggle();
 });
 
 

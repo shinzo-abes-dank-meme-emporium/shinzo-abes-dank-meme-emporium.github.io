@@ -305,11 +305,11 @@ $("#grammar-clear-button").click(function() {
 });
 
 $("#furigana-showhide-button").click(function() {
-  if ($("ruby").is(":visible")) {
-    $("ruby").css("display", "none");
+  if ($("rt").is(":hidden")) {
+    $("rt").css("display", "visible");
   }
   else {
-    $("ruby").css("display", "visible");
+    $("rt").css("display", "none");
   }
 });
 

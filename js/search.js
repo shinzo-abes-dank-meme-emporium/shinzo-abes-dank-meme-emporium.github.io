@@ -19,6 +19,15 @@ const database = [
   }
 ]
 
+// this is kind of fucked up but whatever
+// require([]) is async call, probably needed because of circular dependency?  Shit.  Maybe put search.js to load after require in head <script> tag?
+let wanakana;
+require(['./js/wanakana.min.js'], function(script) {
+  wanakana = script;
+});
+// import wanakana from './js/wanakana.min';
+
+
 
 /*
 [
@@ -36,7 +45,8 @@ let total_grammar = [];
     kanji: '',
     reading: '',
     meaning: '',
-    (opt)kaku: 'hai' or ''
+    (opt)kaku: 'hai' or '',
+    (opt)suru: 'hai' or ''
   }
 ]
 */
@@ -108,6 +118,25 @@ function buildGrammarEntry(entry, path) {
   $(grammar_results_ID).append(grammar_entry);
 }
 
+function cutReading(reading) {
+  let cutup = [];
+  let inParens = false;
+
+  for (var i=0; i<reading.length; i++) {
+    let reading_token = reading[i];
+
+    if (!inParens) {
+      if (reading_token.charAt(0) === '（') { inParens = true; }
+      else if (reading_token !== '〜') { cutup.push(reading_token); }
+    }
+    else if (inParens) {
+      if (reading_token.charAt(0) === '）') { inParens = false; }
+    }
+  }
+
+  return cutup
+}
+
 function buildKanjiEntry(entry) {
   var kl_kanji = entry.kanji;
   var kl_reading = entry.reading;
@@ -117,11 +146,28 @@ function buildKanjiEntry(entry) {
   var kl_kaku = (entry.kaku == 'hai');
 
   var kl_class = '"kanji-entry';
-  if(kl_kaku) { kl_class +=  ' kaku"'; }
+  if(kl_kaku) { kl_class += ' kaku"'; }
+  if(kl_suru) { kl_class += ' suru"'; }
+
+  var ruby_block = '';
+  var burst_kanji = wanakana.tokenize(kl_kanji); //[]
+  var burst_reading = wanakana.tokenize(kl_reading); //[]
+  var cut_reading = cutReading(burst_reading);
+
+  for (var i=0; i<burst_kanji.length; i++) {
+    var kanji_token = burst_kanji[i];
+    var furigana = '';
+
+    if (wanakana.isKanji(kanji_token)) {
+      furigana = cut_reading.splice(0,1)[0];
+    }
+
+    ruby_block = ruby_block.concat('<rb>', kanji_token, '</rb><rt>', furigana, '</rt>');
+  }
   
   var kanji_entry = [
   '<div class=' + kl_class + '">',
-  '  <kanji class="kanji"><ruby><rb>' + kl_kanji + '</rb><rt>' + kl_reading + '</rt></ruby></kanji>',
+  '  <kanji class="kanji"><ruby>' + ruby_block + '</ruby></kanji>',
   '  <kanji class="reading">' + kl_reading + '</kanji>',
   '  <kanji class="meaning">' + kl_meaning + '</kanji>',
   '</div>'
@@ -244,16 +290,16 @@ $(window).on('load', function() {
                 path: grammar_entry_path
               })
             }
-            console.log("loading grammar " + coursePath + " " + chapterPath)
+            // console.log("loading grammar " + coursePath + " " + chapterPath)
           }
         })
       });
 
       kanji_ajaxes.push(function() {
-        var kanji_JSONpath = "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
+        var kanji_JSONpath = initURL + "/json/kanji/" + coursePath + "-" + chapterPath + "-kanji.JSON";
         $.getJSON(kanji_JSONpath, function(json) {
           total_kanji = total_kanji.concat(json);
-          console.log("loading kanji " + coursePath + " " + chapterPath)
+          // console.log("loading kanji " + coursePath + " " + chapterPath)
         }).fail(function(jqxhr, status, err) {
           console.log(status + ", " + err)
         });

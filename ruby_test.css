@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+rt {
+  display: none;
+}
+
 /*
 rt {
   border-left: solid 1px red;

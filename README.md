@@ -20,3 +20,5 @@
   all kanji sections feature kanji, reading, meaning, and furigana
     all kanji sections where a kanji was denoted as "must write" are highlighted yellow
     kanji sections for specific chapters feature toggling kanji, reading, and meaning
+    
+  experimental Jisho section, uses Jisho API 1.0

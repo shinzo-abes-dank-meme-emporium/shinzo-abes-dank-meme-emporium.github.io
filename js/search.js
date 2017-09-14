@@ -176,12 +176,11 @@ function buildKanjiEntry(entry) {
   $(kanji_results_ID).append(kanji_entry);
 }
 
-function polyIncluded(test, ...argList) {
+function polyIncluded(testEl, ...argList) {
   let isIncluded = false;
   for (var i=0; i<argList.length; i++) {
-    if (argList[i].includes(test)) {
-      isIncluded = true;
-    }
+    let testArg = argList[i].toLowerCase();
+    isIncluded = testArg.includes(testEl);
   }
 
   return isIncluded

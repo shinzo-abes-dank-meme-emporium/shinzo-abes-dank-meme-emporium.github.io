@@ -8,20 +8,64 @@ const misc_id = "#content-misc";
 const misc_nav_id = "#sidebar-misc-list"
 const kanji_id = "#content-kanji";
 
+const initURL = 'https://shinzo-abes-dank-meme-emporium.github.io'
+
+let wanakana;
+
+function cutReading(reading) {
+  let cutup = [];
+  let inParens = false;
+
+  for (var i=0; i<reading.length; i++) {
+    let reading_token = reading[i];
+
+    if (!inParens) {
+      if (reading_token.charAt(0) === '（') { inParens = true; }
+      else if (reading_token !== '〜') { cutup.push(reading_token); }
+    }
+    else if (inParens) {
+      if (reading_token.charAt(0) === '）') { inParens = false; }
+    }
+  }
+
+  return cutup
+}
+
+// kanji_list is a JSON of kanji
 function prepareKanji(kanji_list) {
   for (var i=0; i<kanji_list.length; i++) {
     var kl_kanji = kanji_list[i].kanji;
     var kl_reading = kanji_list[i].reading;
     var kl_meaning = kanji_list[i].meaning;
+
     var kl_suru = (kanji_list[i].suru == 'hai');
     var kl_kaku = (kanji_list[i].kaku == 'hai');
 
     var kl_class = '"kanji-entry';
     if(kl_kaku) { kl_class +=  ' kaku"'; }
+    else if(kl_suru) { kl_class += ' suru"'; }
+    else { kl_class += '"'; }
+
+    var ruby_block = '';
+    var burst_kanji = wanakana.tokenize(kl_kanji); //[]
+
+    var burst_reading = wanakana.tokenize(kl_reading); //[]
+    var cut_reading = cutReading(burst_reading);
+
+    for (var j=0; j<burst_kanji.length; j++) {
+      var kanji_token = burst_kanji[j];
+      var furigana = '';
+
+      if (wanakana.isKanji(kanji_token)) {
+        furigana = cut_reading.splice(0,1)[0];
+      }
+
+      ruby_block = ruby_block.concat('<rb>', kanji_token, '</rb><rt>', furigana, '</rt>');
+    }
 
     var kanji_entry = [
     '<div class=' + kl_class + ' id="kanji-entry-' + i + '">',
-    '  <kanji class="kanji">' + kl_kanji + '</kanji>',
+    '  <kanji class="kanji"><ruby>' + ruby_block + '</ruby></kanji>',
     '  <kanji class="reading">' + kl_reading + '</kanji>',
     '  <kanji class="meaning">' + kl_meaning + '</kanji>',
     '</div>'
@@ -33,12 +77,20 @@ function prepareKanji(kanji_list) {
 
 
 $(window).on('load', function() {
+  require([initURL + '/js/wanakana.min.js'], function(script) {
+    wanakana = script;
+    postWanakanaLoad();
+  });
+});
+
+function postWanakanaLoad() {
   var course_name = local_course_name;
   var course_path = local_course_path;
   var chap_name = local_chap_name;
   var chap_path = local_chap_path;
 
-  var kanji_JSONpath = "/json/kanji/" + course_path + "-" + chap_path + "-kanji.JSON";
+  var kanji_JSONpath = initURL + "/json/kanji/" + course_path + "-" + chap_path + "-kanji.JSON";
+
 
   $.getJSON(kanji_JSONpath, function(json) {
     prepareKanji(json)
@@ -169,27 +221,28 @@ $(window).on('load', function() {
     $(grammar_id).append(grammar_entry);
   }
   
+}
+
+
+$( "#toggle-kanji" ).on( "click", function() {
+  $("kanji.kanji").toggle();
+});
+$( "#toggle-meaning" ).on( "click", function() {
+  $("kanji.meaning").toggle();
+});
+$( "#toggle-reading" ).on( "click", function() {
+  $("kanji.reading").toggle();
+});
+$("#toggle-furigana").click(function() {
+  $("rt").toggle();
 });
 
 
-$( "#show-kanji" ).on( "click", function() {
-  $("kanji.kanji").show();
-});
-$( "#hide-kanji" ).on( "click", function() {
-  $("kanji.kanji").hide();
-});
-$( "#show-reading" ).on( "click", function() {
-  $("kanji.reading").show();
-});
-$( "#hide-reading" ).on( "click", function() {
-  $("kanji.reading").hide();
-});
-$( "#show-meaning" ).on( "click", function() {
-  $("kanji.meaning").show();
-});
-$( "#hide-meaning" ).on( "click", function() {
-  $("kanji.meaning").hide();
-});
+
+
+
+
+
 
 // $( "#foo" ).on( "click", function() {
 //   alert( $( this ).text() );

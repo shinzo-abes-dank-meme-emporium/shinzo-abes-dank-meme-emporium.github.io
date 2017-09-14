@@ -60,6 +60,7 @@ a:hover {
   overflow-y: scroll;
   position: fixed;
   height: 100%;
+  background-color: white;
 }
 
 .sidebar-topic {
@@ -84,6 +85,8 @@ a:hover {
   float: right;
   width: 80%;
   border-left-style: solid;
+  margin-bottom: 1.8em;
+  background-color: white;
 }
 
 .content-topic {
@@ -131,13 +134,14 @@ a:hover {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   background-color: #ffdbe2;
-  padding: 2% 0 2% 0;
-  width: 100%;
+  padding: 0.5em;
+  width: 80%;
   text-align: center;
   font-size: 0.8em;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  z-index: -1;
 }
 
 rt {

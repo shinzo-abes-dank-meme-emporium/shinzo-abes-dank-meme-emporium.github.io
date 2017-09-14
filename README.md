@@ -1,5 +1,10 @@
 # shinzo-abes-dank-meme-emporium.github.io
 
+USES:
+require.js
+wanakana
+jquery
+
 9/12/2017 first changelog, features as of now:
   searchable kanji for 300, 400, and updating 500
     searches kanji and reading using kanji or hiragana

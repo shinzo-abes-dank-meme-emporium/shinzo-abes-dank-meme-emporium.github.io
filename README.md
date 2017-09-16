@@ -5,6 +5,9 @@ require.js
 wanakana
 jquery
 
+9/15/2017
+  got mobile basics down
+
 9/12/2017 first changelog, features as of now:
   searchable kanji for 300, 400, and updating 500
     searches kanji and reading using kanji or hiragana

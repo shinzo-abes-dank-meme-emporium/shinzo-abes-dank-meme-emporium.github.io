@@ -77,19 +77,27 @@ function prepareKanji(kanji_list) {
 
 
 $(window).on('load', function() {
-  if (screen.width <= 950) {
-    var course_path = local_course_path;
-    var chap_path = local_chap_path;
-    var redirect = './m.html'
-    window.location = redirect;
-  }
-  else {
-    require([initURL + '/js/wanakana.min.js'], function(script) {
-      wanakana = script;
-      postWanakanaLoad();
-    });
-  }
+  require([initURL + '/js/wanakana.min.js'], function(script) {
+    wanakana = script;
+    postWanakanaLoad();
+    // TESTFUNCTION();
+  });
 });
+
+function TESTFUNCTION() {
+  var course_name = local_course_name;
+  var course_path = local_course_path;
+  var chap_name = local_chap_name;
+  var chap_path = local_chap_path;
+
+  var kanji_JSONpath = initURL + "/json/kanji/" + course_path + "-" + chap_path + "-kanji.JSON";
+
+
+  $.getJSON(kanji_JSONpath, function(json) {
+    prepareKanji(json)
+  })
+}
+
 
 function postWanakanaLoad() {
   var course_name = local_course_name;
@@ -108,13 +116,13 @@ function postWanakanaLoad() {
 
   $(header_id).append('／<a href="/">日本語</a>／<a href="/' + local_course_path + '">' + local_course_name + '</a>／' + chap_name);
 
-  //fix navbars and top bar
-  $(".sidebar").css("margin-top", $(".page-header").outerHeight());
-  $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
-  $(".content").css("margin-top", $(".page-header").outerHeight());
+  // //fix navbars and top bar
+  // $(".sidebar").css("margin-top", $(".page-header").outerHeight());
+  // $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
+  // $(".content").css("margin-top", $(".page-header").outerHeight());
 
-  $(".anchor:before").css("margin-top", -$(".page-header").outerHeight());
-  $(".anchor:before").css("height", $(".page-header").outerHeight());
+  // $(".anchor:before").css("margin-top", -$(".page-header").outerHeight());
+  // $(".anchor:before").css("height", $(".page-header").outerHeight());
 
 
   /**
@@ -243,6 +251,27 @@ $( "#toggle-reading" ).on( "click", function() {
 });
 $("#toggle-furigana").click(function() {
   $("rt").toggle();
+});
+
+$( "#content-grammar" ).on( "click", ".grammar-entry", function() {
+  var section_name = $(this).attr('id');
+  console.log(section_name + ' clicked');
+  $(this).children('.grammar-use').toggle();
+});
+
+$( ".content-topic" ).on( "click", function() {
+  var section_name = $(this).parent().attr('id');
+  console.log($(this).parent().attr('id') + ' clicked');
+  switch(section_name) {
+    case "content-grammar":
+      $(".grammar-entry").toggle(); break;
+    case "content-misc":
+      $(".note-entry").toggle(); break;
+    case "content-kanji":
+      $(".kanji-toggle-button").toggle();
+      $(".kanji-entry").toggle();
+      break;
+  }
 });
 
 

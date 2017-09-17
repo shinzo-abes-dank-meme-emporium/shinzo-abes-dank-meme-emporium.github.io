@@ -1,7 +1,6 @@
 .kanji-entry {
   border-top: solid 1px;
   padding-left: 10px;
-  display: none;
 }
 
 .kanji-entry.kaku {
@@ -33,9 +32,9 @@ kanji.meaning {
 
 .grammar-entry {
 /*  padding: 0 10px 20px 10px;*/
-  display: none;
+/*  display: none;*/
   border: solid 3px black;
-  font-size: 2.8em;
+  font-size: 2em;
   margin-bottom: 30px;
 }
 

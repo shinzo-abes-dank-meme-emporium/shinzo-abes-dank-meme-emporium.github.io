@@ -2,11 +2,11 @@
 
 const header_id = "#page-header-nav";
 
-const grammar_id = "#content-grammar";
-const grammar_nav_id = "#sidebar-grammar-list"
+const grammar_id = "#grammar-entry-wrapper";
+// const grammar_nav_id = "#sidebar-grammar-list"
 const misc_id = "#content-misc";
-const misc_nav_id = "#sidebar-misc-list"
-const kanji_id = "#content-kanji";
+// const misc_nav_id = "#sidebar-misc-list"
+const kanji_id = "#kanji-entry-wrapper";
 
 const initURL = 'https://shinzo-abes-dank-meme-emporium.github.io'
 
@@ -45,6 +45,8 @@ function prepareKanji(kanji_list) {
     if(kl_kaku) { kl_class +=  ' kaku"'; }
     else if(kl_suru) { kl_class += ' suru"'; }
     else { kl_class += '"'; }
+
+    if(kl_kanji == '・') { kl_kanji = kl_reading; }
 
     var ruby_block = '';
     var burst_kanji = wanakana.tokenize(kl_kanji); //[]
@@ -272,12 +274,12 @@ $( ".content-topic" ).on( "click", function() {
   console.log($(this).parent().attr('id') + ' clicked');
   switch(section_name) {
     case "content-grammar":
-      $(".grammar-entry").toggle(); break;
+      $("#grammar-entry-wrapper").toggle(); break;
     case "content-misc":
       $(".note-entry").toggle(); break;
     case "content-kanji":
       $(".kanji-toggle-button").toggle();
-      $(".kanji-entry").toggle();
+      $("#kanji-entry-wrapper").toggle();
       break;
   }
 });

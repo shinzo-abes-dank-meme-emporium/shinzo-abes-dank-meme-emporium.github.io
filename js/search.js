@@ -149,6 +149,8 @@ function buildKanjiEntry(entry) {
   if(kl_kaku) { kl_class += ' kaku"'; }
   if(kl_suru) { kl_class += ' suru"'; }
 
+  if(kl_kanji == '・') { kl_kanji = kl_reading; }
+
   var ruby_block = '';
   var burst_kanji = wanakana.tokenize(kl_kanji); //[]
   var burst_reading = wanakana.tokenize(kl_reading); //[]

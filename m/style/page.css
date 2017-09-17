@@ -99,6 +99,10 @@ a:hover {
   margin: 20px 0 20px 0;
 }
 
+.content-wrapper {
+  display: none;
+}
+
 /*
 .content-topic:before { 
   display: block; 

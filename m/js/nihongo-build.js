@@ -7,17 +7,12 @@ const course_nav_id = '#sidebar-course-list'
 
 
 $(window).on('load', function() {
-  if (screen.width <= 950) {
-    var redirect = './m.html' + location.hash;
-    window.location = redirect;
-  }
-
   var course_list = local_course_list;
 
   //fix navbars and top bar
-  $(".sidebar").css("margin-top", $(".page-header").outerHeight());
-  $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
-  $(".content").css("margin-top", $(".page-header").outerHeight());
+  // $(".sidebar").css("margin-top", $(".page-header").outerHeight());
+  // $(".sidebar").css("padding-bottom", $(".page-header").outerHeight());
+  // $(".content").css("margin-top", $(".page-header").outerHeight());
 
   for(var i=0; i<course_list.length; i++) {
     var cl_course_name = course_list[i].name;

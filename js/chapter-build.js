@@ -80,7 +80,7 @@ $(window).on('load', function() {
   if (screen.width <= 950) {
     var course_path = local_course_path;
     var chap_path = local_chap_path;
-    var redirect = './m.html'
+    var redirect = './m.html' + location.hash;
     window.location = redirect;
   }
   else {
@@ -227,6 +227,13 @@ function postWanakanaLoad() {
 
     $(grammar_nav_id).append(grammar_nav_entry);
     $(grammar_id).append(grammar_entry);
+  }
+
+  // V IMPORTANTE MY FRIENDERINOS
+  if (location.hash) {
+    var container = $('body');
+    var scrollTo = $(location.hash);
+    container.scrollTop(scrollTo.offset().top); // - container.offset().top + container.scrollTop());
   }
   
 }

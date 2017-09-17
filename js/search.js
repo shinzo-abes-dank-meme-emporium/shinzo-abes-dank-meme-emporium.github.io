@@ -180,12 +180,13 @@ function polyIncluded(testEl, ...argList) {
   let isIncluded = false;
   for (var i=0; i<argList.length; i++) {
     let testArg = argList[i].toLowerCase();
-    isIncluded = testArg.includes(testEl);
+    isIncluded = isIncluded || testArg.includes(testEl);
   }
 
   return isIncluded
 }
 
+// handles multiple search terms, but usually not needed
 function isMatch(splitQuery, grammar_entry) {
   if (splitQuery.length == 0) {
     return true;

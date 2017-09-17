@@ -236,6 +236,14 @@ function postWanakanaLoad() {
     $(grammar_nav_id).append(grammar_nav_entry);
     $(grammar_id).append(grammar_entry);
   }
+
+  // V IMPORTANTE MY FRIENDERINOS
+  if (location.hash) {
+    $(".grammar-entry").show();
+    var container = $('body');
+    var scrollTo = $(location.hash);
+    container.scrollTop(scrollTo.offset().top); // - container.offset().top + container.scrollTop());
+  }
   
 }
 

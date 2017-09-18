@@ -321,11 +321,16 @@ $(window).on('load', function() {
   $(".search-bar").css("display", "initial");
 });
 
+$( "#grammar-search-results" ).on( "click", ".grammar-entry", function() {
+  var section_name = $(this).attr('id');
+  console.log(section_name + ' clicked');
+  $(this).children('.grammar-use').toggle();
+});
+
 $("#grammar-submit-button").click(function() {
   var input = $('#grammar-search-input').val();
   searchGrammar(input)
 });
-
 $('#grammar-search-input').keyup(function(e) {
   if(e.which == 13) {
     var input = $('#grammar-search-input').val();
@@ -337,7 +342,6 @@ $("#kanji-submit-button").click(function() {
   var input = $('#kanji-search-input').val();
   searchKanji(input)
 });
-
 $('#kanji-search-input').keyup(function(e) {
   if(e.keyCode == 13) {
     var input = $('#kanji-search-input').val();

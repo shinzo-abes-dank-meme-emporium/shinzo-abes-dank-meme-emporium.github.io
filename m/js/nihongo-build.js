@@ -27,7 +27,7 @@ $(window).on('load', function() {
     '  <li class="sidebar-subtopic"><a href="#nihongo-course-' + i + '">' + cl_course_name + '</a></li>'
     ].join('\n');
 
-    $(course_nav_id).append(course_nav_entry);
+    // $(course_nav_id).append(course_nav_entry);
     $(course_id).append(course_entry);
   }
   

@@ -168,7 +168,7 @@ function postWanakanaLoad() {
     '  <li class="sidebar-subtopic"><a href="#content-note-' + i + '">' + nl_spec + '</a></li>'
     ].join('\n');
 
-    $(misc_nav_id).append(note_nav_entry);
+    // $(misc_nav_id).append(note_nav_entry);
     $(misc_id).append(note_entry);
   }
 
@@ -235,13 +235,13 @@ function postWanakanaLoad() {
     '  <li class="sidebar-subtopic"><a href="#content-grammar-point-' + i + '">' + gl_spec + '</a></li>'
     ].join('\n');
 
-    $(grammar_nav_id).append(grammar_nav_entry);
+    // $(grammar_nav_id).append(grammar_nav_entry);
     $(grammar_id).append(grammar_entry);
   }
 
   // V IMPORTANTE MY FRIENDERINOS
   if (location.hash) {
-    $(".grammar-entry").show();
+    $("#grammar-entry-wrapper").show();
     var container = $('body');
     var scrollTo = $(location.hash);
     container.scrollTop(scrollTo.offset().top); // - container.offset().top + container.scrollTop());

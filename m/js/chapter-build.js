@@ -62,12 +62,12 @@ function prepareKanji(kanji_list) {
         furigana = cut_reading.splice(0,1)[0];
       }
 
-      ruby_block = ruby_block.concat('<rb>', kanji_token, '</rb><rt>', furigana, '</rt>');
+      ruby_block = ruby_block.concat('<rb>', kanji_token, '<rt>', furigana);
     }
 
     var kanji_entry = [
     '<div class=' + kl_class + ' id="kanji-entry-' + i + '">',
-    '  <kanji class="kanji"><ruby>' + ruby_block + '</ruby></kanji>',
+    '  <kanji class="kanji"><ruby><rb><rt>' + ruby_block + '</ruby></kanji>',
     '  <kanji class="reading">' + kl_reading + '</kanji>',
     '  <kanji class="meaning">' + kl_meaning + '</kanji>',
     '</div>'

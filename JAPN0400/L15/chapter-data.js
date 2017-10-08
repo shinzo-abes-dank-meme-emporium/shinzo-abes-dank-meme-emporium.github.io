@@ -219,6 +219,26 @@ var chap_grammar_list = [
     ],
     other: '...'
   },{
+    grammar_point: '(noun)だらけ（の・だ）',
+    spec: '(noun)だらけ',
+    alt_def: '',
+    meaning: '"Full of (noun)" [negative context]',
+    use: {
+      text: 'Used with limited groups of nouns (eg: どろ、間違い、穴).  Carries negative connotations.  As a nounal suffix, だらけ can modify another noun by の or be made a statement by だ。',
+      species: []
+    },
+    example: [
+      {
+        sentence: {
+          ante: '『間違い',
+          highlight: 'だらけ',
+          post: 'の作文を直すのは時間がかかる。』'
+        },
+        translation: 'It is time consuming to correct compositions full of mistakes.'
+      }
+    ],
+    other: 'cf. いっぱい "full"'
+  },{
     grammar_point: '(noun)の余地がない',
     spec: '(noun)の余地がない',
     alt_def: 'のよちがない、[neg.]',

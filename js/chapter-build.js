@@ -231,9 +231,8 @@ function postWanakanaLoad() {
 
   // V IMPORTANTE MY FRIENDERINOS
   if (location.hash) {
-    var container = $('body');
-    var scrollTo = $(location.hash);
-    container.scrollTop(scrollTo.offset().top); // - container.offset().top + container.scrollTop());
+    var anchor = $(location.hash);
+    window.scrollTo(0, anchor.offset().top);
   }
   
 }

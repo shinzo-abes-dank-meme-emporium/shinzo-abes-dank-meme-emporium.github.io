@@ -61,6 +61,7 @@ a:hover {
   position: fixed;
   height: 100%;
   background-color: white;
+  border-right-style: solid;
 }
 
 .sidebar-topic {
@@ -84,7 +85,7 @@ a:hover {
 .content {
   float: right;
   width: 80%;
-  border-left-style: solid;
+/*  border-left-style: solid;*/
   margin-bottom: 1.8em;
   background-color: white;
 }

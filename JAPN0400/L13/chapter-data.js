@@ -521,10 +521,10 @@ var chap_grammar_list = [
           jap: '(adjい)い 限り（の）',
           eng: '：As far as adj; To the adj limit'
         },{
-          jap: '(adjい)な 限り（の）',
+          jap: '(adjな)な 限り（の）',
           eng: '：As far as adj; To the limit of adj'
         },{
-          jap: '(also:) (adjい)である 限り（の）',
+          jap: '(also:) (adjな)である 限り（の）',
           eng: '：As far as adj; To the limit of adj'
         },{
           jap: '(noun)である 限り（の）',

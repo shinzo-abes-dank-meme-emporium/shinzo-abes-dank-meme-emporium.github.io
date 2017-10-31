@@ -11,7 +11,7 @@
 }
 
 .result-deck {
-  border-left: solid black;
+/*  border-left: solid black;*/
 }
 
 input[type="text"] {
@@ -116,6 +116,7 @@ button.search-button {
 
 .remove-button {
   margin: 5px;
+  margin-right: 20px;
   font-size: 1.5em;
   float: right;
   font-weight: bold;
@@ -133,4 +134,8 @@ button.search-button {
 
 .jisho-disclaimer {
   font-size: 0.8em;
+}
+
+.footer {
+  margin-left: 20%;
 }

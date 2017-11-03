@@ -190,7 +190,7 @@ var chap_grammar_list = [
           jap: 'verb(plain)ため に',
           eng: '：In order to verb.  (lit. verb-pupose-ly)'
         },{
-          jap: 'verb(plainため の(noun)',
+          jap: 'verb(plain)ため の(noun)',
           eng: '：A noun to verb.  (lit. A for-the-purpose-of-verb noun)'
         }
       ]

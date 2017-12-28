@@ -146,6 +146,7 @@ function buildKanjiEntry(entry) {
   var kl_kaku = (entry.kaku == 'hai');
 
   var kl_class = '"kanji-entry';
+
   if(kl_kaku) { kl_class += ' kaku"'; }
   if(kl_suru) { kl_class += ' suru"'; }
 
@@ -321,9 +322,11 @@ $(window).on('load', function() {
   $(".search-bar").css("display", "initial");
 });
 
+// NEED TO SEPERATE THIS FROM THE MAIN PAGE
+//bug: hides it on desktop ver.; needs to be only on mobile; no search.js for mobile, must recoordinate
 $( "#grammar-search-results" ).on( "click", ".grammar-entry", function() {
   var section_name = $(this).attr('id');
-  console.log(section_name + ' clicked');
+  console.log(section_name);
   $(this).children('.grammar-use').toggle();
 });
 

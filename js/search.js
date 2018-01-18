@@ -16,6 +16,9 @@ const database = [
   },{
     course: 'JAPN0500',
     chapters: ['R6', 'R40']
+  },{
+    course: 'KCJS-C',
+    chapters: ['KIC-38']
   }
 ]
 

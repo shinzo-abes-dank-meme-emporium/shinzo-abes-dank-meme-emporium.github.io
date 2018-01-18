@@ -8,5 +8,7 @@ const local_course_list = [
 },{
   name: '日本語５００',
   path: 'JAPN0500'
-}
+},{
+  name: 'ＫＣＪＳ　Ｃ　Ｃｌａｓｓ',
+  path: 'KCJS-C'
 ];

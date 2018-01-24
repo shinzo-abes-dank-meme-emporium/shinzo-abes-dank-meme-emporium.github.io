@@ -18,7 +18,7 @@ const database = [
     chapters: ['R6', 'R40']
   },{
     course: 'KCJS-C',
-    chapters: ['KIC-38']
+    chapters: ['KIC-38', 'KIC-39']
   }
 ]
 

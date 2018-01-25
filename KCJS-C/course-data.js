@@ -7,5 +7,8 @@ const local_chap_list = [
   },{
     name: 'KIC 第３９回',
     path: 'KIC-39'
+  },{
+    name: 'KIC 第４０回',
+    path: 'KIC-40'
   }
 ];

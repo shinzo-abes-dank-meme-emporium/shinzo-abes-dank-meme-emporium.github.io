@@ -1,0 +1,101 @@
+[
+  {
+    "kanji": "階段",
+    "reading": "かいだん",
+    "meaning": "(n.) stairs",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "役所",
+    "reading": "やくしょ",
+    "meaning": "(n.) government office",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "殺す",
+    "reading": "ころ（す）",
+    "meaning": "(godan v.tr.) to kill, murder",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "施設",
+    "reading": "しせつ",
+    "meaning": "(n.) facilities, and institution",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "設ける",
+    "reading": "もう（ける）",
+    "meaning": "(ichidan v.tr.) to establish, provide",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "準備",
+    "reading": "じゅんび",
+    "meaning": "(n.) preparation (+する)",
+    "suru": "hai",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "備える",
+    "reading": "そな（える）",
+    "meaning": "(godan v.tr.) to prepare for, be furnished with/equipped with",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "成長率",
+    "reading": "せいちょうりつ",
+    "meaning": "(n.) (economic) growth rate",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "率直（な）",
+    "reading": "そっちょく（な）",
+    "meaning": "(adj.al n.) frank, candid, straightforward",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "率いる",
+    "reading": "ひき（いる）",
+    "meaning": "(ichidan v.tr.) to lead, command",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "講演",
+    "reading": "こうえん",
+    "meaning": "(n.) lecture (+する)",
+    "suru": "hai",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "絵",
+    "reading": "え",
+    "meaning": "(n.) painting, drawing",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "絵画",
+    "reading": "かいが",
+    "meaning": "(n.) picture, drawing, painting",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "給料",
+    "reading": "きゅうりょう",
+    "meaning": "(n.) salary, one's pay",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  }
+]

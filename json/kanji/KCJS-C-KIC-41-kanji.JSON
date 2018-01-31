@@ -21,6 +21,13 @@
     "kaku": "hai",
     "nooto": ""
   },{
+    "kanji": "自殺",
+    "reading": "じさつ",
+    "meaning": "(n.) suicide",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
     "kanji": "施設",
     "reading": "しせつ",
     "meaning": "(n.) facilities, and institution",
@@ -31,6 +38,13 @@
     "kanji": "設ける",
     "reading": "もう（ける）",
     "meaning": "(ichidan v.tr.) to establish, provide",
+    "suru": "",
+    "kaku": "hai",
+    "nooto": ""
+  },{
+    "kanji": "施す",
+    "reading": "ほどこ（す）",
+    "meaning": "(godan v.tr.) to give, give alms",
     "suru": "",
     "kaku": "hai",
     "nooto": ""
